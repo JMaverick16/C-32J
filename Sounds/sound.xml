@@ -588,7 +588,7 @@
     <speedbrake>
         <name>speedbrake</name>
         <mode>in-transit</mode>
-        <path>Sounds/flaps.wav</path>
+        <path>Sounds/speedbrakes.wav</path>
         <property>/surface-positions/speedbrake-pos-norm</property>
         <volume>
             <property>sim/sound/effects/volume</property>
