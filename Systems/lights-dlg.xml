@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+	<name>lights-dlg</name>
+	<layout>vbox</layout>
+
+	<text>
+		<label>Boeing 757-200 Light Controller</label>
+	</text>
+
+	<hrule />
+
+	<group>
+		<layout>vbox</layout>
+
+		<checkbox>
+			<label>Landing lights</label>
+			<property>controls/lighting/landing-lights[0]</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+		<checkbox>
+			<label>Navigation lights</label>
+			<property>controls/lighting/nav-lights</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+		<checkbox>
+			<label>Beacon</label>
+			<property>controls/lighting/beacon</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+		<checkbox>
+			<label>Strobe lights</label>
+			<property>controls/lighting/strobe</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+		<checkbox>
+			<label>Logo lights</label>
+			<property>controls/lighting/logo-lights</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+		<checkbox>
+			<label>Wing lights</label>
+			<property>controls/lighting/wing-lights</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+		<checkbox>
+			<label>Taxi light</label>
+			<property>controls/lighting/taxi-lights</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+		<checkbox>
+			<label>Runway turn off lights</label>
+			<property>controls/lighting/turn-off-lights</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+	</group>
+
+	<hrule />
+
+	<group>
+		<layout>vbox</layout>
+
+		<button>
+			<legend>Close</legend>
+			<default>true</default>
+			<key>Esc</key>
+		<padding>10</padding>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+	</group>
+
+</PropertyList>
