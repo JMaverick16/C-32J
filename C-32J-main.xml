@@ -248,7 +248,7 @@
 		<menubar>
 			<default>
 				<menu n="100">			
-					<label>Boeing 757-200</label>
+					<label>Boeing C-32J</label>
 					<enabled type="bool">true</enabled>
 
 					<item>
