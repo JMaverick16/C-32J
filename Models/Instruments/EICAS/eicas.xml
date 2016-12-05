@@ -49,6 +49,7 @@ it0uchpods
 		<object-name>egtt</object-name>
 		<object-name>epr1</object-name>
 		<object-name>epr2</object-name>
+		<object-name>eprlim</object-name>
 		<object-name>epr1lim</object-name>
 		<object-name>epr2lim</object-name>
 		<object-name>n11</object-name>
@@ -276,6 +277,23 @@ it0uchpods
 	</text>
 	
 	<text>
+		<name>eprlim</name>
+		<offsets>
+			<x-m>-0.0045</x-m>
+			<y-m> 0.0540</y-m>
+			<z-m> 0.0885</z-m>
+		</offsets>
+		<alignment>center-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">T/O</format>
+		<property>autopilot/serviceable</property>
+		<font>helvetica_bold.txf</font>
+		<character-size>0.009</character-size>
+		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
+	</text>
+	
+	<text>
 		<name>epr1lim</name>
 		<offsets>
 			<x-m>-0.0045</x-m>
@@ -455,6 +473,7 @@ it0uchpods
 	
 	<animation>
 		<type>material</type>
+		<object-name>eprlim</object-name>
 		<object-name>epr1lim</object-name>
 		<object-name>epr2lim</object-name>
 		<diffuse>
