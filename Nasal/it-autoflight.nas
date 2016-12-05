@@ -215,7 +215,7 @@ setlistener("/it-autoflight/input/vert", func {
 	flchthrust();
 	alandt.stop();
 	alandt1.start();
-    setprop("/it-autoflight/autoland/target-vs", "-700");
+    setprop("/it-autoflight/autoland/target-vs", "-500");
   }
 });
 
