@@ -780,3 +780,10 @@ setlistener("/it-autoflight/output/athr", func {
 		setprop("/it-autoflight/custom/athr-armed", 1);
 	}
 });
+
+  setlistener("engines/engine[0]/epr-actual", func {
+    setprop("engines/engine[0]/epr-actualx100", (getprop("engines/engine[0]/epr-actual") * 100));
+  });
+  setlistener("engines/engine[1]/epr-actual", func {
+  	setprop("engines/engine[1]/epr-actualx100", (getprop("engines/engine[1]/epr-actual") * 100));
+  });

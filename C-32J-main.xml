@@ -103,9 +103,12 @@
 				<name>IT-AUTOFLIGHT</name>
 				<path>Aircraft/C-32J/Systems/it-autoflight.xml</path>
 			</autopilot>
+			<!-- Uses a custom EPR based autothrottle -->
 			<autopilot>
-				<name>IT-AUTOTHRUST</name>
-				<path>Aircraft/C-32J/Systems/it-autothrust.xml</path>
+				<path>Aircraft/C-32J/Systems/custom-autothrust.xml</path>
+			</autopilot>
+			<autopilot>
+				<path>Aircraft/C-32J/Systems/engine-timing.xml</path>
 			</autopilot>
 			<autopilot>
 				<name>Autobrake</name>
@@ -461,6 +464,10 @@
 	</engines>
 
 	<controls>
+		<engines>
+			<kp>0.015</kp>
+			<kp-spd>0.35</kp-spd>
+		</engines>
 		<flight>
 			<fdm-speedbrake type="double">0</fdm-speedbrake>
 			<ground-spoilers-cmd-norm type="double">0</ground-spoilers-cmd-norm>
@@ -681,6 +688,9 @@
 		<itaf>
 			<file>Aircraft/C-32J/Nasal/it-autoflight.nas</file>
 		</itaf>
+		<thrust>
+			<file>Aircraft/C-32J/Nasal/thrust.nas</file>
+		</thrust>
 		<electrical>
 			<file>Aircraft/C-32J/Nasal/electrical.nas</file>
 		</electrical>
