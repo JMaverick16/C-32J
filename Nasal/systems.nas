@@ -775,3 +775,8 @@ var efis = {
 var EFIS_l = efis.new(0);
 var EFIS_r = efis.new(1);
 
+setlistener("/it-autoflight/output/athr", func {
+	if (getprop("/it-autoflight/output/athr") == 1) {
+		setprop("/it-autoflight/custom/athr-armed", 1);
+	}
+});

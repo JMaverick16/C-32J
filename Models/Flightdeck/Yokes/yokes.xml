@@ -31,7 +31,7 @@
  <object-name>left_yoke</object-name>
   <object-name>autopilot_disengage</object-name>
  <property>controls/flight/aileron</property>
- <factor>45</factor>
+ <factor>60</factor>
  <center>
   <x-m>1.3</x-m>
   <y-m>-0.550</y-m>
@@ -73,7 +73,7 @@
  <object-name>EFB2</object-name>
  <object-name>autopilot_disengage2</object-name>
  <property>controls/flight/aileron</property>
- <factor>45</factor>
+ <factor>60</factor>
  <center>
   <x-m> 1.3</x-m>
   <y-m> 0.550</y-m>
@@ -155,20 +155,15 @@
 			<button>0</button>
 			<repeatable type="bool">false</repeatable>
 			<binding>
-				<command>nasal</command>
-				<script>Boeing757.afds.APyokebtn();</script>
-			</binding>
-			<!--binding>
-				<command>property-cycle</command>
-				<property>autopilot/disengaged-btn</property>
+				<command>property-assign</command>
+				<property>/it-autoflight/input/ap1</property>
 				<value>0</value>
-				<value>1</value>
 			</binding>
 			<binding>
 				<command>property-assign</command>
-				<property>autopilot/settings/engaged</property>
-				<value type="bool">false</value>
-			</binding-->
+				<property>/it-autoflight/input/ap2</property>
+				<value>0</value>
+			</binding>
 		</action>
 	</animation>
 

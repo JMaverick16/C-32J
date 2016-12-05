@@ -157,7 +157,7 @@
 		</offsets>
 	</model>
 	<model>
-		<path>Aircraft/C-32J/Models/Instruments/AI/AI.xml</path>
+		<path>Aircraft/C-32J/Models/Instruments/AI/AI2.xml</path>
 		<offsets>
 			<x-m>0.9638</x-m>
 			<y-m>0.5449</y-m>

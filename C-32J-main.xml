@@ -126,6 +126,9 @@
 			<autopilot>
 				<path>Aircraft/C-32J/Systems/757-flt-ctrls.xml</path>
 			</autopilot>
+			<property-rule n="100">
+				<path>Systems/fl2070_sound.xml</path>
+			</property-rule>
 		</systems>
 		<instrumentation>
 			<path>Aircraft/C-32J/Systems/instrumentation.xml</path>
@@ -398,10 +401,17 @@
 			<kp>0.10</kp>
 		</gs>
 		<autoland>
-			<kp-pitch>0.01</kp-pitch>
+			<kp-pitch>0.015</kp-pitch>
 		</autoland>
 	</config>
+	<custom>
+		<athr-armed>0</athr-armed>
+	</custom>
 </it-autoflight>
+
+<speeds>
+	<vmo>340</vmo>
+</speeds>
 
 	<consumables>
 		<fuel>

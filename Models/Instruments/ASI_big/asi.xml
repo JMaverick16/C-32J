@@ -73,7 +73,7 @@
 		<type>rotate</type>
 		<object-name>Vmo.needle</object-name>
 		<object-name>Vmo.marker</object-name>
-		<property>instrumentation/afds/max-airspeed-kts</property>
+		<property>/speeds/vmo</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>297.166667</dep></entry>
 			<entry><ind>60</ind><dep>287.66667</dep></entry>
