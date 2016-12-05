@@ -75,7 +75,7 @@
 			<display>IDENT</display>
 			<ident>
 				<model>C-32J</model>
-				<engines>RB211-535E4B</engines>
+				<engines>RB211-535E4</engines>
 			</ident>
 			<input />
 			<serviceable type="bool">true</serviceable>
@@ -103,12 +103,13 @@
 		</mass-and-balance>
 	</limits>
 
-	<!--nasal>
+	<nasal>
 		<aar>
 	        	<file>Aircraft/Generic/aar.nas</file>
 		</aar>
 	</nasal>
-	<systems>
+	
+	<!--systems>
 		<refuel>
 			<type>boom</type>
 			<serviceable type="bool">true</serviceable>

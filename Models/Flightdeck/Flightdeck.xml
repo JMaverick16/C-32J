@@ -649,7 +649,7 @@
 	<model>
 		<path>Aircraft/C-32J/Models/Instruments/Stby-AI/stby-ai.xml</path>
 		<offsets>
-			<x-m>0.9607</x-m>
+			<x-m>0.9599</x-m>
 			<y-m>-0.2597</y-m>
 			<z-m>1.2439</z-m>
 			<pitch-deg>-5.5</pitch-deg>
