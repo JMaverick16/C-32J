@@ -29,7 +29,7 @@
 				<file>C-32J</file>
 				<texture>C-32J.png</texture>
 			</livery>
-			<variant type="int">2</variant>
+			<variant type="int">1</variant>
 		</model>
 
 		<weight n="0">
