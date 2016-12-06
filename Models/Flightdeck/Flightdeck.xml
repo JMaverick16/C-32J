@@ -1136,18 +1136,18 @@
 	<model>
 		<path>Aircraft/C-32J/Models/Instruments/hud/hud.xml</path>
 		<offsets>
-			<x-m>1.13</x-m>
-			<y-m>-2.5</y-m>
-			<z-m>1.76</z-m>
+			<x-m>1.38</x-m>
+			<y-m>-0.537</y-m>
+			<z-m>1.64</z-m>
 		</offsets>
 	</model>
 
 	<model>
 		<path>Aircraft/C-32J/Models/Instruments/hud/hud.xml</path>
 		<offsets>
-			<x-m>1.13</x-m>
-			<y-m>2.5</y-m>
-			<z-m>1.76</z-m>
+			<x-m>1.38</x-m>
+			<y-m>0.537</y-m>
+			<z-m>1.64</z-m>
 		</offsets>
 	</model>
 
