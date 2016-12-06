@@ -75,25 +75,13 @@
 				<y>1</y>
 			</axis>
 		</transform>
-		<transform>
-			<subtype>texrotate</subtype>
-			<property alias="../../../params/indicated-roll-deg" />
-			<axis>
-				<x>0</x>
-				<y>0</y>
-				<z>-1</z>
-			</axis>
-			<center>
-				<x>0.5</x>
-				<y>0.5</y>
-			</center>
-		</transform>
 	</animation>
 
 	<animation>
 		<name>Attitude indicator roll pointer</name>
 		<type>rotate</type>
 		<object-name>rollarrow</object-name>
+		<object-name>ball</object-name>
 		<property alias="../../params/indicated-roll-deg" />
 		<axis>
 			<x>1</x>
