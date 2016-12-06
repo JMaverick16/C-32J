@@ -6,19 +6,12 @@
  
     <path>clock.ac</path>
 	
-    <animation>
+    <!--animation>
     <type>scale</type>
     <x-offset>0.9</x-offset>
     <y-offset>0.9</y-offset>
     <z-offset>0.9</z-offset>
-    </animation>
-
-    <animation>
-    <type>scale</type>
-    <x-offset>0.90</x-offset>
-    <y-offset>0.90</y-offset>
-    <z-offset>0.90</z-offset>
-    </animation>
+    </animation-->
 
 	<effect>
 		<inherits-from>Effects/model-transparent</inherits-from>
