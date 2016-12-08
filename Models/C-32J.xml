@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <PropertyList>
 
@@ -408,8 +408,8 @@
 		</offsets>
 	</model>
 	<model>
-		<name>tyre-smoke-p</name>
-		<path>Aircraft/Generic/Effects/tyre-smoke-port.xml</path>
+		<name>tyre-smoke-l</name>
+		<path>Aircraft/C-32J/Effects/tyre-smoke-left.xml</path>
 		<offsets>
 			<x-m>25.395</x-m>
 			<y-m>-3.767</y-m>
@@ -417,8 +417,8 @@
 		</offsets>
 	</model>
 	<model>
-		<name>tyre-smoke-s</name>
-		<path>Aircraft/Generic/Effects/tyre-smoke-stbd.xml</path>
+		<name>tyre-smoke-r</name>
+		<path>Aircraft/C-32J/Effects/tyre-smoke-right.xml</path>
 		<offsets>
 			<x-m>25.395</x-m>
 			<y-m>3.767</y-m>
@@ -2966,6 +2966,103 @@
 		<object-name>Windows</object-name>
 	</animation>
   
+ <!--New Shader By Gabriel Hernandez(YV3399)-->
+   <effect>
+               <inherits-from>Aircraft/C-32J/Models/Effects/C32Jreflect</inherits-from>
+                <object-name>Fuselage</object-name>
+		<object-name>Wingroot1</object-name>
+		<object-name>Wingroot2</object-name>
+		<object-name>NoseGear.LeftDr2</object-name>
+		<object-name>NoseGear.RightDr2</object-name>
+		<object-name>NoseGear.RightDr1</object-name>
+		<object-name>NoseGear.LeftDr1</object-name>
+	    	<object-name>MainGearDr1</object-name>
+	    	<object-name>MainGearDr2</object-name>
+    		<object-name>MainGearDr3</object-name>
+    		<object-name>MainGearDr4</object-name>
+		<object-name>Rudder</object-name>
+		<object-name>VStab</object-name>
+    		<object-name>VHFantenna.top</object-name>
+    		<object-name>VHFantenna.bot</object-name>
+		<object-name>Wing1</object-name>
+		<object-name>Wing2</object-name>
+    		<object-name>Fuseage.001</object-name>
+    		<object-name>SpoilOutL1</object-name>
+    		<object-name>SpoilOutL2</object-name>
+    		<object-name>SpoilOutL3</object-name>
+    		<object-name>SpoilOutL4</object-name>
+    		<object-name>SpoilOutR1</object-name>
+    		<object-name>SpoilOutR2</object-name>
+    		<object-name>SpoilOutR3</object-name>
+    		<object-name>SpoilOutR4</object-name>
+    		<object-name>SpoilInL1</object-name>
+    		<object-name>SpoilInL2</object-name>
+    		<object-name>SpoilInL3</object-name>
+    		<object-name>SpoilInL4</object-name>
+    		<object-name>SpoilInR1</object-name>
+    		<object-name>SpoilInR2</object-name>
+    		<object-name>SpoilInR3</object-name>
+    		<object-name>SpoilInR4</object-name>
+    		<object-name>SpoilInR1</object-name>
+    		<object-name>Slat1</object-name>
+    		<object-name>Slat2</object-name>
+    		<object-name>Slat3</object-name>
+    		<object-name>Slat4</object-name>
+    		<object-name>WingletL</object-name>
+    		<object-name>WingletR</object-name>
+    		<object-name>Aileron1</object-name>
+    		<object-name>Aileron2</object-name>
+    		<object-name>Flap1</object-name>
+    		<object-name>Flap2</object-name>
+    		<object-name>Flap3</object-name>
+    		<object-name>Flap4</object-name>
+    		<object-name>Flap5</object-name>
+    		<object-name>Flap6</object-name>
+    		<object-name>Flap7</object-name>
+    		<object-name>Flap8</object-name>
+    		<object-name>pala1.001</object-name>
+    		<object-name>pala1.002</object-name>
+    		<object-name>pala1.003</object-name>
+    		<object-name>pala1.004</object-name>
+    		<object-name>FlapTk1</object-name>
+    		<object-name>Aileron1</object-name>
+    		<object-name>Aileron2</object-name>
+    		<object-name>Flap1</object-name>
+    		<object-name>Flap2</object-name>
+    		<object-name>Flap3</object-name>
+    		<object-name>Flap4</object-name>
+    		<object-name>Flap5</object-name>
+    		<object-name>Flap6</object-name>
+    		<object-name>Flap7</object-name>
+    		<object-name>Flap8</object-name>
+    		<object-name>pala1.001</object-name>
+    		<object-name>pala1.002</object-name>
+    		<object-name>pala1.003</object-name>
+    		<object-name>pala1.004</object-name>
+    		<object-name>pala1</object-name>
+    		<object-name>pala2</object-name>
+    		<object-name>FlapTk1</object-name>
+    		<object-name>FlapTk2</object-name>
+    		<object-name>FlapTk3</object-name>
+    		<object-name>FlapTk4</object-name>
+    		<object-name>FlapTk5</object-name>
+    		<object-name>FlapTk6</object-name>
+    		<object-name>FlapTk7</object-name>
+    		<object-name>FlapTk8</object-name>
+    		<object-name>FlapTk1.001</object-name>
+    		<object-name>FlapTk2.001</object-name>
+    		<object-name>FlapTk3.001</object-name>
+    		<object-name>FlapTk4.001</object-name>
+    		<object-name>FlapTk5.001</object-name>
+    		<object-name>FlapTk6.001</object-name>
+    		<object-name>FlapTk7.001</object-name>
+    		<object-name>FlapTk8.001</object-name>
+    		<object-name>HorzStab1</object-name>
+    		<object-name>HorzStab2</object-name>
+    		<object-name>Elevator1</object-name>
+    		<object-name>Elevator2</object-name>
+        </effect>
+
 	<effect>
 		<name>Landing/Logo Lightmap</name>
 		<inherits-from>Aircraft/C-32J/Models/Effects/lightmap-200</inherits-from>
@@ -3063,4 +3160,18 @@
     		<object-name>Elevator2</object-name>
 	</effect>
 
+<!-- Lights Winglets By YV3399 -->
+
+	<animation>
+		<name>Winglet illumination</name>
+		<type>material</type>
+		<object-name>WingletL</object-name>
+		<object-name>WingletR</object-name>
+		<emission>
+			<red>0.25</red>
+			<green>0.25</green>
+			<blue>0.25</blue>
+			<factor-prop>controls/lighting/logo-lights</factor-prop>
+		</emission>
+	</animation>
 </PropertyList>

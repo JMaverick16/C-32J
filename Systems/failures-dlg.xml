@@ -37,6 +37,20 @@
 		</checkbox>
 	</group>
 
+       <checkbox>
+		<label>Fail Flaps</label>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+		<binding>
+			<command>nasal</command>
+			<script>
+			setprop("/sim/failure-manager/controls/flight/flaps/serviceable", 0);
+			</script>
+		</binding>
+		<live>true</live>
+	</checkbox>
+
 	<hrule/>
 
 	<group>
