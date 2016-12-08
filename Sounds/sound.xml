@@ -544,18 +544,19 @@
         <max-dist>100.0</max-dist>
     </nosmoke>
 
-   <overspeed>
+    <!-- Overspeed warning -->
+    <overspeed>
         <name>Overspeed warning</name>
-        <path>Aircraft/C-32J/Sounds/overspeed.wav</path>
+        <path>Sounds/overspeed.wav</path>
         <mode>looped</mode>
         <condition>
             <greater-than>
                 <property>velocities/airspeed-kt</property>
-                <value>340</value>
+                <value>345</value>
             </greater-than>
         </condition>
         <volume>
-            <factor>1.0</factor>
+            <property>sim/sound/effects/volume</property>
         </volume>
     </overspeed>
         
