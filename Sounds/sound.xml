@@ -299,11 +299,11 @@
         <path>Aircraft/C-32J/Sounds/gear.wav</path>
         <property>/gear/gear[0]/position-norm</property>
         <volume>
-            <property>sim/sound/effects/volume</property>
+            <factor>1.5</factor>
         </volume>
         <pitch>
             <internal>dt_play</internal>
-            <offset>0.7</offset>
+            <offset>1.0</offset>
             <factor>-0.001</factor>
         </pitch>
         <position>
@@ -314,6 +314,7 @@
         <reference-dist>5.0</reference-dist>
         <max-dist>10.0</max-dist>
     </gear1>
+
 
     <gear1>
         <name>gear-lock</name>
@@ -467,7 +468,7 @@
     <speedbrake>
         <name>speedbrake</name>
         <mode>in-transit</mode>
-        <path>Sounds/speedbrakes.wav</path>
+        <path>Aircraft/C-32J/Sounds/speedbrakes.wav</path>
         <property>/surface-positions/speedbrake-pos-norm</property>
         <volume>
             <property>sim/sound/effects/volume</property>
@@ -547,16 +548,16 @@
     <!-- Overspeed warning -->
     <overspeed>
         <name>Overspeed warning</name>
-        <path>Sounds/overspeed.wav</path>
+        <path>Aircraft/C-32J/Sounds/overspeed.wav</path>
         <mode>looped</mode>
         <condition>
             <greater-than>
                 <property>velocities/airspeed-kt</property>
-                <value>345</value>
+                <value>350</value>
             </greater-than>
         </condition>
         <volume>
-            <property>sim/sound/effects/volume</property>
+            <factor>1.0</factor>
         </volume>
     </overspeed>
         

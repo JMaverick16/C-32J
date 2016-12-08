@@ -5,7 +5,7 @@
 		<model>
 			<livery>
 				<name>Boeing C-32J</name>
-				<texture>C-32J.png</texture>
+				<texture>Liveries/C-32J.png</texture>
 			</livery>  	  
 		</model>
 	</sim>
