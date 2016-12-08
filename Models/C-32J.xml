@@ -2561,6 +2561,7 @@
     		<object-name>VHFantenna.fwd</object-name>
 		<object-name>WingletL</object-name>
 		<object-name>WingletR</object-name>
+		<object-name>C32antennas</object-name>
 		<property-base>sim/model/livery</property-base>
 		<texture-prop>texture</texture-prop>
 		<texture>C-32J.png</texture>
