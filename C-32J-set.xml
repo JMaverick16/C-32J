@@ -27,7 +27,7 @@
 			<path>Aircraft/C-32J/Models/C-32J.xml</path>
 			<livery>
 				<file>C-32J</file>
-				<texture>C-32J.png</texture>
+				<!--texture>C-32J.png</texture-->
 			</livery>
 			<variant type="int">1</variant>
 		</model>
@@ -44,17 +44,7 @@
 			<max-lb>57125</max-lb>
 			<min-lb>0</min-lb>
 		</weight>
-		<menubar>
-			<default>
-				<menu n="100">			
-					<label>Boeing C-32J</label>
-					<item n="1">
-					    <label>-----</label>
-					    <enabled>false</enabled>
-					</item>
-				</menu>
-			</default>
-		</menubar>
+		
 		<engines type="string">RR</engines>
 	</sim>
 
