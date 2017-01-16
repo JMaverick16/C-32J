@@ -153,10 +153,26 @@
 		<type>select</type>
 		<object-name>THRtoggle</object-name>
 		<condition>
+			<and>
 			<equals>
-				<property>/instrumentation/afds/ap-modes/speed-mode</property>
-				<value>THR</value>
+				<property>/it-autoflight/output/athr</property>
+				<value>1</value>
 			</equals>
+			<or>
+			<equals>
+				<property>/it-autoflight/mode/vert</property>
+				<value>T/O CLB</value>
+			</equals>
+			<equals>
+				<property>/it-autoflight/mode/vert</property>
+				<value>G/A CLB</value>
+			</equals>
+			</or>
+			<equals>
+				<property>/it-autoflight/output/thr-mode</property>
+				<value>2</value>
+			</equals>
+			</and>
 		</condition>
 	</animation>
 	<animation>

@@ -329,11 +329,6 @@ setlistener("sim/signals/fdm-initialized", func {
 	}
 	itaf.ap_init();			
 	var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/C-32J/Systems/autopilot-dlg.xml");
-	setprop("/it-autoflight/settings/retard-enable", 1);   # Enable or disable automatic autothrottle retard.
-	setprop("/it-autoflight/settings/retard-ft", 40);      # Add this to change the retard altitude.
-	setprop("/it-autoflight/settings/land-flap", 0.667);   # Define the landing flaps here. This is needed for autoland, and retard.
-	setprop("/it-autoflight/settings/land-enable", 1);     # Enable or disable automatic landing.
-	setprop("/it-autoflight/autoland/flare-altitude", 30); # Altitude when the flare mode starts in an autoland.
 	settimer(func {
 #	    engineLoop(0);
 #	    engineLoop(1);
@@ -709,7 +704,7 @@ var instruments =
 	var adfbug1 = getprop("orientation/heading-deg") + getprop("instrumentation/adf/indicated-bearing-deg");
 	var adfbug2 = getprop("orientation/heading-deg") + getprop("instrumentation/adf[1]/indicated-bearing-deg");
 	var radialbug = getprop("orientation/heading-deg") - getprop("orientation/heading-magnetic-deg") + getprop("instrumentation/nav[0]/radials/selected-deg");
-#	setprop("sim/model/B757/heading-bug-deg", calcBugDeg(getprop("autopilot/settings/heading-bug-deg")));
+#	setprop("sim/model/B757/heading-bug-deg", calcBugDeg(getprop("/it-autoflight/input/hdg")));
 	setprop("sim/model/B757/heading-bug-deg", calcBugDeg(true_hdgbug));
 	setprop("sim/model/B757/nav1-track-deg", calcBugDeg(radialbug));
 	setprop("sim/model/B757/nav1-bug-deg", calcBugDeg(getprop("instrumentation/nav[0]/heading-deg")));

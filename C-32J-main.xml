@@ -378,39 +378,46 @@
 			<umin>-0.50</umin>
 			<umax>0.50</umax>
 			<kp>0.08</kp>
+			<kp-vloc>0.09</kp-vloc>
 			<ti>10.0</ti>
 			<td>0.00001</td>
+			<kp-cws>0.09</kp-cws>
 		</roll>
-		<vorloc>
-			<kp>0.08</kp>
-			<ti>10.0</ti>
-			<td>0.00001</td>
-		</vorloc>
 		<pitch>
 			<umin>-0.30</umin>
 			<umax>0.30</umax>
 			<kp>-0.09</kp>
 			<ti>10.0</ti>
 			<td>0.0001</td>
+			<kp-cws>-0.07</kp-cws>
 		</pitch>
-		<flch>
-			<umin>-0.30</umin>
-			<umax>0.30</umax>
-			<kp>-0.10</kp>
-			<ti>10.0</ti>
-			<td>0.00001</td>
-		</flch>
-		<gs>
-			<kp>0.10</kp>
-		</gs>
+		<cmd>
+			<roll-scale>6</roll-scale>
+			<vorloc>-5.0</vorloc>
+			<alt>0.03</alt>
+			<vs>0.07</vs>
+			<flch>-0.30</flch>
+			<gs>0.10</gs>
+		</cmd>
 		<autoland>
+			<kp-roll>0.10</kp-roll>
 			<kp-pitch>0.015</kp-pitch>
+			<kp-rudder>-0.2</kp-rudder>
 		</autoland>
 	</config>
+	<settings>
+		<flare-altitude>30</flare-altitude>
+		<land-enable>1</land-enable>
+		<land-flap>0.667</land-flap>
+		<retard-ft>40</retard-ft>
+		<retard-enable>1</retard-enable>
+		<toga-pitch>20</toga-pitch>
+	</settings>
 	<custom>
 		<athr-armed>0</athr-armed>
 	</custom>
 </it-autoflight>
+
 
 <speeds>
 	<vmo>340</vmo>
