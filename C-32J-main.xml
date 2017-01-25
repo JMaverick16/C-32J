@@ -406,6 +406,7 @@
 		</autoland>
 	</config>
 	<settings>
+		<enable-cws>0</enable-cws>
 		<flare-altitude>30</flare-altitude>
 		<land-enable>1</land-enable>
 		<land-flap>0.667</land-flap>
