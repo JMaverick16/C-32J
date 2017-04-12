@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <PropertyList>
- <path>Aircraft/KC-137R/Models/Cockpit/Instruments/hud/hud.ac</path>
+ <path>hud.ac</path>
 
  <animation>
   <type>pick</type>
