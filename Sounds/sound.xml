@@ -507,6 +507,34 @@
         </volume>
     </apoff>
 
+   <apon>
+   <name>apon</name>
+   <path>/Aircraft/C-32J/Sounds/apon.wav</path>
+   <condition>
+	<greater-than>
+      <property>/it-autoflight/output/ap1</property>
+        <value>0</value>
+     </greater-than>
+   </condition>
+   <volume>
+    <factor>10.0</factor>
+   </volume>
+  </apon>
+  
+  <apon>
+   <name>apon2</name>
+   <path>/Aircraft/C-32J/Sounds/apon.wav</path>
+   <condition>
+   	<greater-than>
+      <property>/it-autoflight/output/ap2</property>
+        <value>0</value>
+      </greater-than>
+   </condition>
+   <volume>
+    <factor>10.0</factor>
+   </volume>
+  </apon>
+
     <!-- Seatbelt/No smoking signs -->
     <seatbelt>
         <name>Seatbelt sign</name>
