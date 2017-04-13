@@ -377,11 +377,11 @@
 		<roll>
 			<umin>-0.50</umin>
 			<umax>0.50</umax>
-			<kp>0.08</kp>
-			<kp-vloc>0.09</kp-vloc>
+			<kp>0.07</kp>
+			<kp-vloc>0.08</kp-vloc>
 			<ti>10.0</ti>
 			<td>0.00001</td>
-			<kp-cws>0.09</kp-cws>
+			<kp-cws>0.08</kp-cws>
 		</roll>
 		<pitch>
 			<umin>-0.30</umin>
@@ -398,7 +398,7 @@
 			<alt>0.03</alt>
 			<vs>0.08</vs>
 			<fpa>0.30</fpa>
-			<flch>-4.0</flch>
+			<flch>-3.9</flch>
 			<gs>0.11</gs>
 		</cmd>
 		<autoland>
