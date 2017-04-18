@@ -153,15 +153,15 @@
 	<!-- FUEL AND PAYLOAD -->
 	<!-- Total fuel capacity: 92,169 pounds -->
 	<!-- Left wing fuel tank -->
-	<tank x="-24.3" y="8.25" z="0.8" jet="true" capacity="14579" />
+	<tank x="-24.3" y="8.25" z="0.8" jet="true" capacity="16579" />
 	<!-- Right wing fuel tank -->
-	<tank x="-24.3" y="-8.25" z="0.8" jet="true" capacity="14579" />
+	<tank x="-24.3" y="-8.25" z="0.8" jet="true" capacity="16579" />
 	<!-- Center fuel tank -->
-	<tank x="-22.0" y="0.0" z="-0.75" jet="true" capacity="46391" />
+	<tank x="-22.0" y="0.0" z="-0.75" jet="true" capacity="54391" />
 	<!-- Aux fuel tanks -->
 	<!-- Step up to 8310, was 6310 -->
-	<tank x="-20.0" y="0.0" z="-0.75" jet="true" capacity="8310" />
-	<tank x="-24.0" y="0.0" z="-0.75" jet="true" capacity="8310" />
+	<tank x="-20.0" y="0.0" z="-0.75" jet="true" capacity="8410" />
+	<tank x="-24.0" y="0.0" z="-0.75" jet="true" capacity="8410" />
 
 	<!-- Crew -->
 	<weight x="-2.5" y="0.0" z="1.0" mass-prop="/sim/weight[0]/weight-lb" size="0.0" solve-weight="0.0" idx="0" weight="600.0" />

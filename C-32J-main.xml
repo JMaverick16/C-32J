@@ -479,6 +479,9 @@
 		<engines>
 			<kp>0.015</kp>
 			<kp-spd>0.35</kp-spd>
+			<epr-roc-thr>16</epr-roc-thr>
+			<epr-roc-pitch>3</epr-roc-pitch>
+			<epr-roc-retard>16</epr-roc-retard>
 		</engines>
 		<flight>
 			<fdm-speedbrake type="double">0</fdm-speedbrake>
