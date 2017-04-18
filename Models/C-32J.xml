@@ -69,7 +69,6 @@
   	<animation>
 		<type>select</type>
 		<object-name>cabin</object-name>
-		<object-name>seats</object-name>
 		<condition>
 		    <property>sim/model/cabin-visible</property>
 		</condition>
@@ -77,7 +76,6 @@
 	<animation>
 		<type>range</type>
 		<object-name>cabin</object-name>
-		<object-name>seats</object-name>
 		<min-m>0</min-m>
 		<max-m>100</max-m>
 	</animation>
@@ -428,10 +426,10 @@
 		</axis>
 	</animation>
 	<!-- SEATS -->
-	<model>
+	<!--model>
 	<name>seats</name>
   <path>Aircraft/C-32J/Models/seats/seats.xml</path>
-	</model>
+	</model-->
 	
 	<!-- WINGS -->
 	<!-- Ailerons -->
