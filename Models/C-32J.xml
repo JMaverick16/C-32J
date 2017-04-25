@@ -425,11 +425,6 @@
 			<z2-m>2.2953</z2-m>
 		</axis>
 	</animation>
-	<!-- SEATS -->
-	<!--model>
-	<name>seats</name>
-  <path>Aircraft/C-32J/Models/seats/seats.xml</path>
-	</model-->
 	
 	<!-- WINGS -->
 	<!-- Ailerons -->

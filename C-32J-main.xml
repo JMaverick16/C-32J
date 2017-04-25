@@ -667,10 +667,10 @@
 				<binding>
 					<command>property-cycle</command>
 					<property>controls/flight/speedbrake-lever</property>
-					<value>0</value> <!-- DOWN -->
+					<value>0</value> <!-- OFF -->
 					<value>1</value> <!-- ARMED -->
 					<value>2</value> <!-- 50% -->
-					<value>3</value> <!-- UP -->
+					<value>3</value> <!-- FULL -->
 				</binding>
 			</key>
 			<key n="61">
@@ -752,6 +752,9 @@
 		<pressurization>
 			<file>Aircraft/C-32J/Nasal/cabin-pressure.nas</file>
 		</pressurization>
+		<aar>
+	        <file>Aircraft/Generic/aar.nas</file>
+		</aar>
 	</nasal>
 
 	<aircraft>
@@ -776,6 +779,15 @@
 		<electrical-hours type="float">0</electrical-hours>
 		<flight-hours type="float">0</flight-hours>
 	</hour-meters>
+	<!--refuel>
+			<type>boom</type>
+			<serviceable type="bool">true</serviceable>
+			<max-fuel-transfer-lbs-min>6000</max-fuel-transfer-lbs-min>
+			<offset-x-m>0.0</offset-x-m>
+			<offset-y-m>0.0</offset-y-m>
+			<offset-z-m>0.0</offset-z-m>
+			<range type="int">200</range>
+		</refuel-->
     </systems>
 
     <limits n="0">

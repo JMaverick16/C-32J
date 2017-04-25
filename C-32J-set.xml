@@ -4,7 +4,7 @@
 
 	<sim>
 		<description>Boeing C-32J</description>
-		<status>early production</status>
+		<status>development</status>
 		<author>J Maverick 16, Joshua Davidson (it0uchpods), Tikibar</author>
 		<rating>
 		      	<FDM type="int">3</FDM>
@@ -74,8 +74,8 @@
 		    <powered type="bool">false</powered>
 		    <xy type="bool">true</xy>
 		    <frequencies>
-			<selected-frequency n="0">29</selected-frequency>
-			<selected-frequency n="4">Y</selected-frequency>
+			<selected-frequency n="0">92</selected-frequency>
+			<selected-frequency n="4">X</selected-frequency>
 		    </frequencies>
 		</tacan>
 		<efis n="0">
@@ -92,23 +92,5 @@
 		    <maximum-landing-mass-lbs>210000</maximum-landing-mass-lbs>
 		</mass-and-balance>
 	</limits>
-
-	<nasal>
-		<aar>
-	        	<file>Aircraft/Generic/aar.nas</file>
-		</aar>
-	</nasal>
-	
-	<!--systems>
-		<refuel>
-			<type>boom</type>
-			<serviceable type="bool">true</serviceable>
-			<max-fuel-transfer-lbs-min>6000</max-fuel-transfer-lbs-min>
-			<offset-x-m>0.0</offset-x-m>
-			<offset-y-m>0.0</offset-y-m>
-			<offset-z-m>0.0</offset-z-m>
-			<range type="int">200</range>
-		</refuel>
-	</systems-->
 
 </PropertyList>
