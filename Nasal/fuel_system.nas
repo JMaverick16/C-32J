@@ -41,7 +41,7 @@ var fuelsys = {
 	var capacity_wing = (getprop('/consumables/fuel/tank/capacity-gal_us') + getprop('/consumables/fuel/tank[1]/capacity-gal_us')) * density;
 	var capacity_center = getprop('/consumables/fuel/tank[2]/capacity-gal_us') * density;
 	var fuel_lbs = me.lev[0].getValue() + me.lev[1].getValue() + me.lev[2].getValue();
-#	if (me.aircraft.getValue() == 'C-32A'){
+#	if (me.aircraft.getValue() == 'C-32J'){
 	if (me.variant == 2) {
 		fuel_lbs += me.lev[3].getValue() + me.lev[4].getValue();
 	}
@@ -51,7 +51,7 @@ var fuelsys = {
 		me.lev[2].setValue(0);
 		me.lev[3].setValue(0);
 		me.lev[4].setValue(0);
-#	} else if (me.aircraft.getValue() == 'C-32A' and fuel_lbs > (capacity_wing + capacity_center)) {
+#	} else if (me.aircraft.getValue() == 'C-32J' and fuel_lbs > (capacity_wing + capacity_center)) {
 	} else if (me.variant == 2 and fuel_lbs > (capacity_wing + capacity_center)) {
 		setprop('/consumables/fuel/tank/level-norm', 1);
 		setprop('/consumables/fuel/tank[1]/level-norm', 1);
@@ -72,7 +72,7 @@ var fuelsys = {
 	var Rsel = 0;
 	var Csel = 0;
 
-#	var aux_fuel = (me.aircraft.getValue() == 'C-32A' and !(me.emp[3].getBoolValue() and me.emp[4].getBoolValue()));
+#	var aux_fuel = (me.aircraft.getValue() == 'C-32J' and !(me.emp[3].getBoolValue() and me.emp[4].getBoolValue()));
 	var aux_fuel = (me.variant == 2 and !(me.emp[3].getBoolValue() and me.emp[4].getBoolValue()));
 
 	var n1L = getprop("engines/engine[0]/rpm");
@@ -125,7 +125,7 @@ var fuelsys = {
 	}
 
 	# Deselect empty tanks and set the tank selection statuses
-#	if (me.aircraft.getValue() == 'C-32A') {
+#	if (me.aircraft.getValue() == 'C-32J') {
 	if (me.variant == 2) {
 		if (me.emp[3].getBoolValue()) me.sel[3].setBoolValue(0);
 		else me.sel[3].setBoolValue(Csel);
