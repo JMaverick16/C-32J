@@ -273,15 +273,15 @@
 		</position>
 	</engine>
 	
-	<!--engine>
+	<engine>
         <name>reverser1</name>
         <mode>looped</mode>
         <path>Aircraft/C-32J/Sounds/reverser.wav</path>
         <condition>
-            <property>engines/engine[0]/running</property>
+            <property>engines/engine[1]/running</property>
         </condition>
         <volume>
-            <property>surface-positions/reverser-norm[0]</property>
+            <property>/instrumentation/eicas/msg/*L R THRUST REV SET\n</property>
         </volume>
         <volume>
             <property>/controls/engines/engine[0]/throttle</property>
@@ -302,17 +302,18 @@
             <property>engines/engine[1]/running</property>
         </condition>
         <volume>
-            <property>surface-positions/reverser-norm[0]</property>
+            <property>/instrumentation/eicas/msg/*L R THRUST REV SET\n</property>
         </volume>
         <volume>
-            <property>sim/sound/Evolume</property>
+            <property>/controls/engines/engine[0]/throttle</property>
+            <factor>1</factor>
         </volume>
         <position>
             <x>0.0</x>
             <y>20</y>
             <z>0.0</z>
         </position>
-    </engine-->
+    </engine>
 	
     <rumble>
         <name>rumble</name>
