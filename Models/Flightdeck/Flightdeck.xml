@@ -179,25 +179,7 @@
 </model>
 
 
-	<!-- HSI -->
-	<!--model>
-		<path>Aircraft/C-32J/Models/Instruments/EHSI/EHSI.xml</path>
-		<offsets>
-			<x-m>0.9882</x-m>
-			<y-m>-0.5439</y-m>
-			<z-m>1.0590</z-m>
-			<pitch-deg>-8</pitch-deg>
-		</offsets>
-	</model>
-	<model>
-		<path>Aircraft/C-32J/Models/Instruments/EHSI/EHSI.xml</path>
-		<offsets>
-			<x-m>0.9882</x-m>
-			<y-m>0.5449</y-m>
-			<z-m>1.0590</z-m>
-			<pitch-deg>-8</pitch-deg>
-		</offsets>
-	</model-->
+	<!-- ND -->
 	<model>
 		<path>Aircraft/C-32J/Models/Instruments/ND/efis_L.xml</path>
 		<offsets>
@@ -647,9 +629,9 @@
 	<model>
 		<path>Aircraft/C-32J/Models/Instruments/stby-alt/stby-alt.xml</path>
 		<offsets>
-			<x-m>0.9927</x-m>
+			<x-m>0.9789</x-m>
 			<y-m>-0.2582</y-m>
-			<z-m>1.0377</z-m>
+			<z-m>1.1360</z-m>
 			<pitch-deg>-8</pitch-deg>
 		</offsets>
 	</model>
@@ -707,9 +689,9 @@
 	<model>
 		<path>Aircraft/C-32J/Models/Instruments/ASI/asi.xml</path>
 		<offsets>
-			<x-m>0.9789</x-m>
+			<x-m>0.9927</x-m>
 			<y-m>-0.2582</y-m>
-			<z-m>1.1360</z-m>
+			<z-m>1.0377</z-m>
 			<pitch-deg>-8</pitch-deg>
 		</offsets>
 	</model>
