@@ -626,7 +626,7 @@
 			<pitch-deg>-8</pitch-deg>
 		</offsets>
 	</model>
-	<model>
+	<!--model>
 		<path>Aircraft/C-32J/Models/Instruments/Altimeter/altimeter.xml</path>
 		<offsets>
 			<x-m>0.9927</x-m>
@@ -634,13 +634,22 @@
 			<z-m>1.0377</z-m>
 			<pitch-deg>-8</pitch-deg>
 		</offsets>
-	</model>
+	</model-->
 	<model>
 		<path>Aircraft/C-32J/Models/Instruments/Altimeter/altimeter.xml</path>
 		<offsets>
 			<x-m>0.9685</x-m>
 			<y-m>0.6847</y-m>
 			<z-m>1.2123</z-m>
+			<pitch-deg>-8</pitch-deg>
+		</offsets>
+	</model>
+	<model>
+		<path>Aircraft/C-32J/Models/Instruments/stby-alt/stby-alt.xml</path>
+		<offsets>
+			<x-m>0.9927</x-m>
+			<y-m>-0.2582</y-m>
+			<z-m>1.0377</z-m>
 			<pitch-deg>-8</pitch-deg>
 		</offsets>
 	</model>

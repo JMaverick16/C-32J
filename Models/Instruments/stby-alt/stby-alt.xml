@@ -5,6 +5,13 @@
 <path>stbyalt.ac</path>
 
     <animation>
+    <type>scale</type>
+    <x-offset>1.11</x-offset>
+    <y-offset>1.11</y-offset>
+    <z-offset>1.11</z-offset>
+    </animation>
+
+    <animation>
         <type>material</type>
         <object-name>ALT.face</object-name>
         <object-name>ALT.needle</object-name>
