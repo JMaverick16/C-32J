@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name>Boeing C-32J-20</name>
+				<texture>Liveries/C-32J-20.png</texture>
+			</livery>  	  
+		</model>
+	</sim>
+</PropertyList>

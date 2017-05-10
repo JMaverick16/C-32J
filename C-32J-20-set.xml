@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList include="C-32J-main.xml">
+
+	<sim>
+		<description>Boeing C-32J-20</description>
+		<status>development</status>
+		<author>J Maverick 16, Joshua Davidson (it0uchpods), Tikibar</author>
+		<rating>
+		      	<FDM type="int">3</FDM>
+      			<systems type="int">4</systems>
+      			<cockpit type="int">4</cockpit>
+      			<model type="int">4</model>
+		</rating>
+		<flight-model>yasim</flight-model>
+		<aero>C-32J-20</aero>
+
+		<startup>
+			<splash-texture>Aircraft/C-32J/splash2.png</splash-texture>
+		</startup>
+
+		<instrumentation>
+ 			<path>Aircraft/C-32J/Systems/instrumentation-C32.xml</path>
+		</instrumentation>
+
+		<model>
+			<path>Aircraft/C-32J/Models/C-32J-20.xml</path>
+			<livery>
+				<file>C-32J-20</file>
+				<!--texture>C-32J.png</texture-->
+			</livery>
+			<variant type="int">1</variant>
+		</model>
+
+		<weight n="0">
+			<name>Crew</name>
+			<weight-lb>250</weight-lb>
+			<max-lb>600</max-lb>
+			<min-lb>120</min-lb>
+		</weight>
+		<weight n="1">
+			<name>Pax/Baggage/Cargo</name>
+			<weight-lb>14844</weight-lb>
+			<max-lb>57125</max-lb>
+			<min-lb>0</min-lb>
+		</weight>
+		
+		<engines type="string">PW</engines>
+	</sim>
+
+	<consumables>
+		<fuel>
+			<tank n="3">
+				<name>Fwd Aux</name>
+			</tank>
+			<tank n="4">
+				<name>Aft Aux</name>
+			</tank>
+		</fuel>
+	</consumables>
+
+	<instrumentation>
+		<!-- CDU stuff: http://wiki.flightgear.org/index.php/Howto:_Implement_a_Control_Display_Unit -->
+		<cdu>
+			<display>IDENT</display>
+			<ident>
+				<model>C-32J-20</model>
+				<engines>PW2040</engines>
+			</ident>
+			<input />
+			<serviceable type="bool">true</serviceable>
+		</cdu>
+		<tacan>
+		    <powered type="bool">false</powered>
+		    <xy type="bool">true</xy>
+		    <frequencies>
+			<selected-frequency n="0">92</selected-frequency>
+			<selected-frequency n="4">X</selected-frequency>
+		    </frequencies>
+		</tacan>
+		<efis n="0">
+			<tacan alias="/instrumentation/tacan/powered"/>
+		</efis>
+		<efis n="1">
+			<tacan alias="/instrumentation/tacan/powered"/>
+		</efis>
+	</instrumentation>
+
+	<limits n="0">
+		<mass-and-balance>
+		    <maximum-takeoff-mass-lbs>255000</maximum-takeoff-mass-lbs>
+		    <maximum-landing-mass-lbs>210000</maximum-landing-mass-lbs>
+		</mass-and-balance>
+	</limits>
+
+</PropertyList>
