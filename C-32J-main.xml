@@ -375,9 +375,6 @@
 			<line>Off........do nothing</line>
 			<line>Arm........deploy speedbrakes on touchdown</line>
 			<line>Deploy.....deploy speedbrakes</line>
-			<line />
-			<line>Autopilot key commands listed here apply to the 757-200 only.</line>
-			<line>For a full list of autopilot key commands not specific to this aircraft, check the documentation included with FlightGear.</line>
 		</help>
 
 		<airport>
