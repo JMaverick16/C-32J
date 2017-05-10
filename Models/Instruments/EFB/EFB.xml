@@ -7,13 +7,6 @@ Syd Adams
 
  <path>EFB.ac</path>
 
-    <animation>
-    <type>scale</type>
-    <x-offset>1.1</x-offset>
-    <y-offset>1.1</y-offset>
-    <z-offset>1.1</z-offset>
-    </animation>
-
     <panel>
         <path>Aircraft/C-32J/Models/Instruments/EFB/chart.xml</path>
         <bottom-left>
