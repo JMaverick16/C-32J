@@ -3,8 +3,8 @@
 
 ## LIVERY SELECT
 ################
-if (getprop("sim/model/variant") == 3) {
-	aircraft.livery.init("Aircraft/C-32J/Models/Liveries-300");
+if (getprop("sim/model/variant") == 2) {
+	aircraft.livery.init("Aircraft/C-32J/Models/Liveries20");
 } else {
 	aircraft.livery.init("Aircraft/C-32J/Models/Liveries");
 
