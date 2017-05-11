@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+
+
+  <path>PWengines.ac</path>
+
+	<animation>
+                <type>spin</type>
+                <object-name>keskiosa_2</object-name>
+                <object-name>turbofan_2</object-name>
+                <factor>67</factor>
+                <property>engines/engine[0]/rpm</property>
+                <center>
+                        <x-m>16.5414</x-m>
+                        <y-m>-6.3737 </y-m>
+                        <z-m>-1.0562</z-m>
+                </center>
+                <axis>
+                        <x>-1</x>
+                        <y>0</y>
+                        <z>0</z>
+                </axis>
+        </animation>
+
+
+        <animation>
+                <type>spin</type>
+                <object-name>keskiosa_1</object-name>
+                <object-name>turbofan_1</object-name>
+                <factor>67</factor>
+                <property>engines/engine[1]/rpm</property>
+                <center>
+                        <x-m>16.5414</x-m>
+                        <y-m>6.3672</y-m>
+                        <z-m>-1.0562</z-m>
+                </center>
+                <axis>
+                         <x>1</x>
+                        <y>0</y>
+                        <z>0</z>
+                </axis>
+        </animation>
+
+	<animation>
+                <type>translate</type>
+                <object-name>LReverserTurbofan</object-name>
+                <!--property>surface-positions/left-reverser-pos-norm</property-->
+                <property>sim/multiplay/generic/float[6]</property>
+                <factor>0.4</factor>
+                <axis>
+                        <x>1</x>
+                        <y>0</y>
+                        <z>0</z>
+                </axis>
+        </animation>
+        <animation>
+                <type>translate</type>
+                <object-name>RReverserTurbofan</object-name>
+                <!--property>surface-positions/right-reverser-pos-norm</property-->
+                <property>sim/multiplay/generic/float[7]</property>
+                <factor>0.4</factor>
+                <axis>
+                        <x>1</x>
+                        <y>0</y>
+                        <z>0</z>
+                </axis>
+        </animation>
+
+	<animation>
+		<type>shader</type>
+		<shader>chrome</shader>
+		<texture>chrome1.png</texture>
+		<object-name>Engine.001</object-name>
+	</animation>
+
+	<effect>
+		<name>Left Lightmap</name>
+		<inherits-from>Effects/model-combined-deferred</inherits-from>
+		<parameters>
+		    <lightmap-enabled>1</lightmap-enabled>
+		    <lightmap-multi>1</lightmap-multi>
+		    <lightmap-factor n="0">0.0</lightmap-factor>
+		    <lightmap-factor n="1">0.0</lightmap-factor>
+		    <lightmap-factor n="2">
+			<use>systems/electrical/lighting/wing-lights</use>
+		    </lightmap-factor>
+		    <lightmap-color n="2">0.5 0.5 0.5</lightmap-color>
+		    <lightmap-factor n="3">
+			<use>/environment/moonlight</use>
+		    </lightmap-factor>
+		    <lightmap-color n="3">0.1 0.1 0.15</lightmap-color>
+		    <texture n="3">
+			<image>Aircraft/C-32J/Models/Effects/LPW-lightmap.png</image>
+		    </texture>
+		</parameters>
+		<object-name>EngineL</object-name>
+		<object-name>LReverserTurbofan</object-name>
+		<object-name>PylonL</object-name>
+		<object-name>IntakeL</object-name>
+	</effect>
+
+	<effect>
+		<name>Right Lightmap</name>
+		<inherits-from>Effects/model-combined-deferred</inherits-from>
+		<parameters>
+		    <lightmap-enabled>1</lightmap-enabled>
+		    <lightmap-multi>1</lightmap-multi>
+		    <lightmap-factor n="0">0.0</lightmap-factor>
+		    <lightmap-factor n="1">0.0</lightmap-factor>
+		    <lightmap-factor n="2">
+			<use>systems/electrical/lighting/wing-lights</use>
+		    </lightmap-factor>
+		    <lightmap-color n="2">0.5 0.5 0.5</lightmap-color>
+		    <lightmap-factor n="3">
+			<use>/environment/moonlight</use>
+		    </lightmap-factor>
+		    <lightmap-color n="3">0.1 0.1 0.15</lightmap-color>
+		    <texture n="3">
+			<image>Aircraft/C-32J/Models/Effects/RPW-lightmap.png</image>
+		    </texture>
+		</parameters>
+		<object-name>EngineR</object-name>
+		<object-name>RReverserTurbofan</object-name>
+		<object-name>PylonR</object-name>
+		<object-name>IntakeR</object-name>
+	</effect>
+
+       	<animation>
+		<type>material</type>
+		<object-name>EngineL</object-name>
+		<object-name>EngineR</object-name>
+		<object-name>LReverserTurbofan</object-name>
+		<object-name>RReverserTurbofan</object-name>
+		<property-base>sim/model/livery</property-base>
+		<texture-prop>texture</texture-prop>
+		<texture>C-32J-20.png</texture>
+	</animation>
+
+</PropertyList>

@@ -3,7 +3,7 @@
 <PropertyList include="C-32J-main.xml">
 
 	<sim>
-		<description>Boeing C-32J</description>
+		<description>Boeing C-32J-20</description>
 		<status>development</status>
 		<author>J Maverick 16, Joshua Davidson (it0uchpods), Tikibar</author>
 		<rating>
@@ -13,10 +13,10 @@
       			<model type="int">4</model>
 		</rating>
 		<flight-model>yasim</flight-model>
-		<aero>C-32J</aero>
+		<aero>C-32J-20</aero>
 
 		<startup>
-			<splash-texture>Aircraft/C-32J/splash.png</splash-texture>
+			<splash-texture>Aircraft/C-32J/splash2.png</splash-texture>
 		</startup>
 
 		<instrumentation>
@@ -24,9 +24,9 @@
 		</instrumentation>
 
 		<model>
-			<path>Aircraft/C-32J/Models/C-32J.xml</path>
+			<path>Aircraft/C-32J/Models/C-32J-20.xml</path>
 			<livery>
-				<file>C-32J</file>
+				<file>C-32J-20</file>
 				<!--texture>C-32J.png</texture-->
 			</livery>
 			<variant type="int">1</variant>
@@ -45,7 +45,7 @@
 			<min-lb>0</min-lb>
 		</weight>
 		
-		<engines type="string">RR</engines>
+		<engines type="string">PW</engines>
 		
 		<systems>
 			<autopilot>
@@ -57,7 +57,7 @@
 				<path>Aircraft/C-32J/Systems/custom-autothrust.xml</path>
 			</autopilot>
 			<autopilot>
-				<path>Aircraft/C-32J/Systems/engine-timing.xml</path>
+				<path>Aircraft/C-32J/Systems/engine-timingPW.xml</path>
 			</autopilot>
 			<autopilot>
 				<name>Autobrake</name>
@@ -88,9 +88,9 @@
 		<engines>
 			<kp>0.015</kp>
 			<kp-spd>0.35</kp-spd>
-			<epr-roc-thr>16</epr-roc-thr>
+			<epr-roc-thr>13</epr-roc-thr>
 			<epr-roc-pitch>4</epr-roc-pitch>
-			<epr-roc-retard>16</epr-roc-retard>
+			<epr-roc-retard>13</epr-roc-retard>
 		</engines>
 	</controls>
 
@@ -110,8 +110,8 @@
 		<cdu>
 			<display>IDENT</display>
 			<ident>
-				<model>C-32J</model>
-				<engines>RB211-535E4</engines>
+				<model>C-32J-20</model>
+				<engines>PW2040</engines>
 			</ident>
 			<input />
 			<serviceable type="bool">true</serviceable>
@@ -141,7 +141,7 @@
 	
 	<nasal>
 		<thrust>
-			<file>Aircraft/C-32J/Nasal/thrust.nas</file>
+			<file>Aircraft/C-32J/Nasal/thrustPW.nas</file>
 		</thrust>
 	</nasal>
 

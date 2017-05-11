@@ -97,42 +97,6 @@
 			<no-smoking-sign type="bool">false</no-smoking-sign>
 			<seatbelt-sign type="bool">false</seatbelt-sign>
 		</sound>
-
-		<systems>
-			<autopilot>
-				<name>IT-AUTOFLIGHT</name>
-				<path>Aircraft/C-32J/Systems/it-autoflight.xml</path>
-			</autopilot>
-			<!-- Uses a custom EPR based autothrottle -->
-			<autopilot>
-				<path>Aircraft/C-32J/Systems/custom-autothrust.xml</path>
-			</autopilot>
-			<autopilot>
-				<path>Aircraft/C-32J/Systems/engine-timing.xml</path>
-			</autopilot>
-			<autopilot>
-				<name>Autobrake</name>
-				<path>Aircraft/C-32J/Systems/757-autobrake.xml</path>
-			</autopilot>
-			<autopilot>
-				<name>Spoilers</name>
-				<path>Aircraft/C-32J/Systems/757-spoilers.xml</path>
-			</autopilot>
-			<autopilot>
-				<name>Pushback</name>
-				<path>Aircraft/C-32J/Systems/pushback.xml</path>
-			</autopilot>
-			<autopilot>
-				<name>Cabin Pressurization</name>
-				<path>Aircraft/C-32J/Systems/pressurization.xml</path>
-			</autopilot>
-			<autopilot>
-				<path>Aircraft/C-32J/Systems/757-flt-ctrls.xml</path>
-			</autopilot>
-			<property-rule n="100">
-				<path>Systems/fl2070_sound.xml</path>
-			</property-rule>
-		</systems>
 		<instrumentation>
 			<path>Aircraft/C-32J/Systems/instrumentation.xml</path>
 		</instrumentation>
@@ -487,14 +451,7 @@
 		</engine>
 	</engines>
 
-	<controls>
-		<engines>
-			<kp>0.015</kp>
-			<kp-spd>0.35</kp-spd>
-			<epr-roc-thr>16</epr-roc-thr>
-			<epr-roc-pitch>3</epr-roc-pitch>
-			<epr-roc-retard>16</epr-roc-retard>
-		</engines>
+	<controls n="0">
 		<flight>
 			<fdm-speedbrake type="double">0</fdm-speedbrake>
 			<ground-spoilers-cmd-norm type="double">0</ground-spoilers-cmd-norm>
@@ -715,9 +672,6 @@
 		<itaf>
 			<file>Aircraft/C-32J/Nasal/it-autoflight.nas</file>
 		</itaf>
-		<thrust>
-			<file>Aircraft/C-32J/Nasal/thrust.nas</file>
-		</thrust>
 		<electrical>
 			<file>Aircraft/C-32J/Nasal/electrical.nas</file>
 		</electrical>
