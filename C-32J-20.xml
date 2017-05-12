@@ -151,17 +151,17 @@
 	</gear>
 
 	<!-- FUEL AND PAYLOAD -->
-	<!-- Total fuel capacity: 100,370 pounds (This is an extended range plane) -->
+	<!-- Total fuel capacity: 101,470 pounds (This is an extended range plane) -->
 	<!-- Left wing fuel tank -->
-	<tank x="-24.3" y="8.25" z="0.8" jet="true" capacity="15580" />
+	<tank x="-24.3" y="8.25" z="0.8" jet="true" capacity="15880" />
 	<!-- Right wing fuel tank -->
-	<tank x="-24.3" y="-8.25" z="0.8" jet="true" capacity="15580" />
+	<tank x="-24.3" y="-8.25" z="0.8" jet="true" capacity="15880" />
 	<!-- Center fuel tank -->
-	<tank x="-22.0" y="0.0" z="-0.75" jet="true" capacity="52390" />
+	<tank x="-22.0" y="0.0" z="-0.75" jet="true" capacity="52690" />
 	<!-- Aux fuel tanks -->
-	<!-- Step up to 8310, was 6310; now 8410 -->
-	<tank x="-20.0" y="0.0" z="-0.75" jet="true" capacity="8410" />
-	<tank x="-24.0" y="0.0" z="-0.75" jet="true" capacity="8410" />
+	<!-- Step up to 8510, was 8310 -->
+	<tank x="-20.0" y="0.0" z="-0.75" jet="true" capacity="8510" />
+	<tank x="-24.0" y="0.0" z="-0.75" jet="true" capacity="8510" />
 
 	<!-- Crew -->
 	<weight x="-2.5" y="0.0" z="1.0" mass-prop="/sim/weight[0]/weight-lb" size="0.0" solve-weight="0.0" idx="0" weight="600.0" />

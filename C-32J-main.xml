@@ -237,7 +237,7 @@
 					<enabled type="bool">true</enabled>
 
 					<item>
-						<label>Autostart</label>
+						<label>Autostart/Shutdown</label>
 						<binding>
 							<command>property-toggle</command>
 							<property>sim/model/start-idling</property>
