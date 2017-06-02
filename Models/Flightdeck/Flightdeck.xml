@@ -638,11 +638,11 @@
 
 	<!-- Standby Attitude Indicator -->
 	<model>
-		<path>Aircraft/C-32J/Models/Instruments/Stby-AI/stby-ai.xml</path>
+		<path>Aircraft/C-32J/Models/Instruments/Stby-AI/Digital/stby-ai.xml</path>
 		<offsets>
-			<x-m>0.9607</x-m>
-			<y-m>-0.2597</y-m>
-			<z-m>1.2439</z-m>
+			<x-m>0.9665</x-m>
+			<y-m>-0.26</y-m>
+			<z-m>1.245</z-m>
 			<pitch-deg>-5.5</pitch-deg>
 		</offsets>
 	</model>
@@ -687,7 +687,7 @@
 		</offsets>
 	</model>
 	<model>
-		<path>Aircraft/C-32J/Models/Instruments/ASI/asi.xml</path>
+		<path>Aircraft/C-32J/Models/Instruments/Stby-ASI/asi.xml</path>
 		<offsets>
 			<x-m>0.9927</x-m>
 			<y-m>-0.2582</y-m>
