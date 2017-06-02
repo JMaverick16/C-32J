@@ -687,11 +687,11 @@
 		</offsets>
 	</model>
 	<model>
-		<path>Aircraft/C-32J/Models/Instruments/Stby-ASI/asi.xml</path>
+		<path>Aircraft/C-32J/Models/Instruments/TACAN/ci/ci.xml</path>
 		<offsets>
 			<x-m>0.9927</x-m>
 			<y-m>-0.2582</y-m>
-			<z-m>1.0377</z-m>
+			<z-m>1.04</z-m>
 			<pitch-deg>-8</pitch-deg>
 		</offsets>
 	</model>
