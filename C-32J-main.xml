@@ -346,6 +346,37 @@
 				<start-offset-m>35</start-offset-m>
 			</runways>
 		</airport>
+		
+		<systems>
+			<autopilot n="1">
+				<name>IT-AUTOFLIGHT</name>
+				<path>Aircraft/C-32J/Systems/it-autoflight.xml</path>
+			</autopilot>
+			<!-- Uses a custom EPR based autothrottle -->
+			<autopilot n="2">
+				<path>Aircraft/C-32J/Systems/custom-autothrust.xml</path>
+			</autopilot>
+			<autopilot n="4">
+				<name>Autobrake</name>
+				<path>Aircraft/C-32J/Systems/757-autobrake.xml</path>
+			</autopilot>
+			<autopilot n="5">
+				<name>Spoilers</name>
+				<path>Aircraft/C-32J/Systems/757-spoilers.xml</path>
+			</autopilot>
+			<autopilot n="6">
+				<name>Pushback</name>
+				<path>Aircraft/C-32J/Systems/pushback.xml</path>
+			</autopilot>
+			<autopilot n="7">
+				<name>Cabin Pressurization</name>
+				<path>Aircraft/C-32J/Systems/pressurization.xml</path>
+			</autopilot>
+			<autopilot n="8">
+				<path>Aircraft/C-32J/Systems/757-flt-ctrls.xml</path>
+			</autopilot>
+		</systems>
+		
 	</sim>
 
 <it-autoflight>
@@ -360,9 +391,9 @@
 			<kp-cws>0.08</kp-cws>
 		</roll>
 		<pitch>
-			<umin>-0.45</umin>
-			<umax>0.45</umax>
-			<kp>-0.09</kp>
+			<umin>-0.40</umin>
+			<umax>0.40</umax>
+			<kp>-0.07</kp>
 			<ti>10.0</ti>
 			<td>0.0001</td>
 			<kp-cws>-0.07</kp-cws>
@@ -380,7 +411,7 @@
 		</autoland>
 	</config>
 	<settings>
-		<default-bank-limit>30</default-bank-limit> <!-- Set the Default Bank Limit -->
+		<default-bank-limit>25</default-bank-limit> <!-- Set the Default Bank Limit -->
 		<enable-cws>0</enable-cws> <!-- Enable/Disable CWS -->
 		<land-enable>1</land-enable> <!-- Enable/Disable Autoland -->
 		<land-flap>0.667</land-flap> <!-- Minimum Flap used for Landing -->
@@ -389,7 +420,7 @@
 		<togaspd>167</togaspd> <!-- V2 + 10kts -->
 		<lat-agl-ft>200</lat-agl-ft> <!-- Set to 999999 if you do not want T/O to change automatically to HDG, or LNAV -->
 		<reduc-agl-ft>1500</reduc-agl-ft> <!-- Set to 999999 if you do not want TOGA to change automatically to FLCH -->
-		<autoland-without-ap>0</autoland-without-ap> <!-- Engage LAND and FLARE Modes even if the AP is off -->
+		<autoland-without-ap>1</autoland-without-ap> <!-- Engage LAND and FLARE Modes even if the AP is off -->
 	</settings>
 	<custom>
 		<athr-armed>0</athr-armed>
@@ -399,6 +430,16 @@
 <speeds>
 	<vmo>340</vmo>
 </speeds>
+ 
+	<modes>
+		<altimeter>
+			<inhg>1</inhg>
+		</altimeter>
+		<stby>
+			<powah>1</powah>
+			<inhg>1</inhg>
+		</stby>
+	</modes>
 
 	<consumables>
 		<fuel>
@@ -664,6 +705,7 @@
 			<file>Aircraft/C-32J/Nasal/pneumatic.nas</file>
 			<file>Aircraft/C-32J/Nasal/hydraulic.nas</file>
 			<file>Aircraft/Generic/limits.nas</file>
+			<file>Aircraft/C-32J/Nasal/ci-tacan.nas</file>
 		</Boeing757>
 		<itaf>
 			<file>Aircraft/C-32J/Nasal/it-autoflight.nas</file>

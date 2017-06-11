@@ -329,7 +329,7 @@
         <volume>
             <property>/velocities/groundspeed-kt</property>
             <type>log</type>
-            <factor>0.6</factor>
+            <factor>0.4</factor>
         </volume>
     </rumble>
 

@@ -8,6 +8,12 @@
   <action>
    <button>1</button>
     <binding>
+	 <condition>
+	  <greater-than-equals>
+		<property>systems/electrical/outputs/efis</property>
+		<value>15</value>
+	  </greater-than-equals>
+	 </condition>
      <command>property-toggle</command>
      <property>/controls/switches/hud-flip[1]</property>
 	<value>0</value>
@@ -22,6 +28,12 @@
   <action>
    <button>0</button>
     <binding>
+	 <condition>
+	  <greater-than-equals>
+		<property>systems/electrical/outputs/efis</property>
+		<value>15</value>
+	  </greater-than-equals>
+	 </condition>
      <command>property-toggle</command>
      <property>/controls/switches/hud[1]</property>
 	<value>0</value>
@@ -115,6 +127,8 @@
    <object-name>vstext</object-name>
    <object-name>vs-a</object-name>
    <object-name>vs-b</object-name>
+   <object-name>ap.annun</object-name>
+   <object-name>fd.annun</object-name>
 	<property>/controls/switches/hud-flip[1]</property>
 	<factor>-120</factor>
 	<center>
@@ -212,9 +226,15 @@
    <object-name>vstext</object-name>
    <object-name>vs-a</object-name>
    <object-name>vs-b</object-name>
+   <object-name>ap.annun</object-name>
+   <object-name>fd.annun</object-name>
    <condition>
      <and>
       <property>/controls/switches/hud[1]</property>
+	  <greater-than-equals>
+		<property>systems/electrical/outputs/efis</property>
+		<value>15</value>
+	  </greater-than-equals>
       <not>
       <property>sim/crashed</property>
       </not>
@@ -469,7 +489,7 @@
    <object-name>vs1000</object-name>
    <condition>
    <greater-than>
-    <property>it-autoflight/internal/vert-speed-fpm</property>
+    <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
     <value>999.999</value>
    </greater-than>
   </condition>
@@ -480,7 +500,7 @@
    <object-name>vs-1000</object-name>
    <condition>
    <less-than>
-    <property>it-autoflight/internal/vert-speed-fpm</property>
+    <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
     <value>-999.999</value>
    </less-than>
   </condition>
@@ -493,7 +513,7 @@
    <object-name>vs-1</object-name>
    <condition>
    <less-than>
-    <property>it-autoflight/internal/vert-speed-fpm</property>
+    <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
     <value>0</value>
    </less-than>
   </condition>
@@ -506,7 +526,7 @@
    <object-name>vs1</object-name>
    <condition>
    <greater-than-equals>
-    <property>it-autoflight/internal/vert-speed-fpm</property>
+    <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
     <value>0</value>
    </greater-than-equals>
   </condition>
@@ -518,11 +538,11 @@
    <condition>
    <and>
    <less-than>
-    <property>it-autoflight/internal/vert-speed-fpm</property>
+    <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
     <value>0</value>
    </less-than>
    <greater-than>
-    <property>it-autoflight/internal/vert-speed-fpm</property>
+    <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
     <value>-1000</value>
    </greater-than>
    </and>
@@ -534,7 +554,7 @@
    <object-name>vs-b</object-name>
    <condition>
    <less-than>
-    <property>it-autoflight/internal/vert-speed-fpm</property>
+    <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
     <value>-999.999</value>
    </less-than>
   </condition>
@@ -2363,7 +2383,7 @@
   <animation>
    <type>textranslate</type>
    <object-name>vs1000</object-name>
-   <property>it-autoflight/internal/vert-speed-fpm</property>
+   <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
    <factor>0.0001</factor>
    <step>1000.0</step>
    <axis>
@@ -2376,7 +2396,7 @@
   <animation>
    <type>textranslate</type>
    <object-name>vs-1000</object-name>
-   <property>it-autoflight/internal/vert-speed-fpm</property>
+   <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
    <factor>-0.0001</factor>
    <bias>999</bias>
    <step>1000.0</step>
@@ -2390,7 +2410,7 @@
   <animation>
    <type>textranslate</type>
    <object-name>vs100</object-name>
-   <property>it-autoflight/internal/vert-speed-fpm</property>
+   <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
    <factor>-0.001</factor>
    <step>100.0</step>
    <axis>
@@ -2403,7 +2423,7 @@
   <animation>
    <type>textranslate</type>
    <object-name>vs-100</object-name>
-   <property>it-autoflight/internal/vert-speed-fpm</property>
+   <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
    <factor>-0.001</factor>
    <bias>99</bias>
    <step>100.0</step>
@@ -2417,7 +2437,7 @@
   <animation>
    <type>textranslate</type>
    <object-name>vs10</object-name>
-   <property>it-autoflight/internal/vert-speed-fpm</property>
+   <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
    <factor>0.01</factor>
    <step>10.0</step>
    <axis>
@@ -2430,7 +2450,7 @@
   <animation>
    <type>textranslate</type>
    <object-name>vs-10</object-name>
-   <property>it-autoflight/internal/vert-speed-fpm</property>
+   <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
    <factor>-0.01</factor>
    <bias>9</bias>
    <step>10.0</step>
@@ -2444,7 +2464,7 @@
   <animation>
    <type>textranslate</type>
    <object-name>vs1</object-name>
-   <property>it-autoflight/internal/vert-speed-fpm</property>
+   <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
    <factor>0.01</factor>
    <step>10.0</step>
    <axis>
@@ -2457,7 +2477,7 @@
   <animation>
    <type>textranslate</type>
    <object-name>vs-1</object-name>
-   <property>it-autoflight/internal/vert-speed-fpm</property>
+   <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
    <factor>-0.1</factor>
    <bias>.9</bias>
    <step>1.0</step>
@@ -2467,5 +2487,40 @@
      <z>0</z>
    </axis>
  </animation>
+
+<animation>
+	<type>select</type>
+	<object-name>fd.annun</object-name>
+	<condition>
+		<or>
+			<equals>
+				<property>/it-autoflight/output/fd1</property>
+				<value>1</value>
+			</equals>
+			<equals>
+				<property>/it-autoflight/output/fd2</property>
+				<value>1</value>
+			</equals>
+		</or>
+	</condition>
+</animation>
+
+<animation>
+	<type>select</type>
+	<object-name>ap.annun</object-name>
+	<condition>
+		<or>
+			<equals>
+				<property>/it-autoflight/output/ap1</property>
+				<value>1</value>
+			</equals>
+			<equals>
+				<property>/it-autoflight/output/ap2</property>
+				<value>1</value>
+			</equals>
+		</or>
+	</condition>
+</animation>
+
  
 </PropertyList>

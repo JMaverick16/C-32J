@@ -2,8 +2,10 @@
 <PropertyList include="instrumentation.xml">
 
     <tacan>
-	<name>tacan</name>
-	<number>0</number>
+      <name>tacan</name>
+      <number>0</number>
+      <serviceable type="bool" archive="y">true</serviceable>
+      <switch-position type="int" archive="y">0</switch-position>
     </tacan>
 
 </PropertyList>

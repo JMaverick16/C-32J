@@ -4,7 +4,47 @@ MATERIAL "Lights.001" rgb 1 1 1  amb 1 1 1  emis 1 1 1  spec 0 0 0  shi 0  trans
 MATERIAL "Transparent" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 1 1 1  shi 64  trans 0.95
 MATERIAL "ac3dmat1" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0 0 0  shi 128  trans 0
 OBJECT world
-kids 86
+kids 88
+OBJECT poly
+name "ap.annun"
+data 9
+Mesh.1184
+texture "pfd3.png"
+crease 30.000000
+numvert 4
+0.001616 0.052559 -0.046303
+0.001616 0.05678 -0.046304
+0.001616 0.052559 -0.059267
+0.001616 0.05678 -0.059267
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+3 0.769531 0.416016
+1 0.673828 0.416016
+0 0.673828 0.384766
+2 0.769531 0.384766
+kids 0
+OBJECT poly
+name "fd.annun"
+data 9
+Mesh.1141
+texture "pfd3.png"
+crease 30.000000
+numvert 4
+0.001331 0.05269 -0.032211
+0.001331 0.056655 -0.032211
+0.001331 0.05269 -0.044387
+0.001331 0.056655 -0.044387
+numsurf 1
+SURF 0x0
+mat 1
+refs 4
+3 0.769531 0.478516
+1 0.673828 0.478516
+0 0.673828 0.447266
+2 0.769531 0.447266
+kids 0
 OBJECT poly
 name "Pedestal"
 data 4
