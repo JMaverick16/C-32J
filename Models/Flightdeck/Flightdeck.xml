@@ -840,7 +840,28 @@
 		</offsets>
 	</model>
 	<model>
-		<path>Aircraft/C-32J/Models/Instruments/secondary_EICAS/eicas.xml</path>
+		<path>Aircraft/C-32J/Models/Instruments/EICAS/eicas2pw.xml</path>
+		<condition>
+			<equals>
+				<property>/sim/engines</property>
+				<value>PW</value>
+			</equals>
+		</condition>
+		<offsets>
+			<x-m>0.9880</x-m>
+			<y-m>0.003</y-m>
+			<z-m>1.0552</z-m>
+			<pitch-deg>-8</pitch-deg>
+		</offsets>
+	</model>
+	<model>
+		<path>Aircraft/C-32J/Models/Instruments/EICAS/eicas2rr.xml</path>
+		<condition>
+			<equals>
+				<property>/sim/engines</property>
+				<value>RR</value>
+			</equals>
+		</condition>
 		<offsets>
 			<x-m>0.9880</x-m>
 			<y-m>0.003</y-m>

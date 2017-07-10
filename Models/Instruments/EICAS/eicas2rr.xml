@@ -1,0 +1,369 @@
+﻿<!--
+it0uchpods
+757 EICAS
+-->
+
+<PropertyList>
+
+ <path>eicas2rr.ac</path>
+ 
+	<animation>
+		<type>scale</type>
+		<x-offset>0.8</x-offset>
+		<y-offset>0.8</y-offset>
+		<z-offset>0.8</z-offset>
+	</animation>
+	
+	<animation>
+		<type>select</type>
+		<object-name>n2</object-name>
+		<object-name>n3</object-name>
+		<object-name>ff</object-name>
+		<object-name>n2.1</object-name>
+		<object-name>n2.2</object-name>
+		<object-name>n3.1</object-name>
+		<object-name>n3.2</object-name>
+		<object-name>ff.1</object-name>
+		<object-name>ff.2</object-name>
+		<object-name>n2t</object-name>
+		<object-name>n3t</object-name>
+		<object-name>fft</object-name>
+		<object-name>n21</object-name>
+		<object-name>n22</object-name>
+		<object-name>n31</object-name>
+		<object-name>n32</object-name>
+		<object-name>ff1</object-name>
+		<object-name>ff2</object-name>
+		<condition>
+            <greater-than>
+				<property>systems/electrical/outputs/efis</property>
+				<value>15</value>
+            </greater-than>
+		</condition>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>n2.1</object-name>
+		<property>/engines/engine[0]/n2-ind</property>
+		<interpolation>
+			<entry><ind> 23</ind><dep>  0</dep></entry>
+			<entry><ind>115</ind><dep>215</dep></entry>
+		</interpolation>
+		<center>
+			<y-m>0.0057</y-m>
+			<z-m>0.0662</z-m>
+		</center>
+		<axis>
+			<x>-1</x> 
+			<y> 0</y> 
+			<z> 0</z> 
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>n2.2</object-name>
+		<property>/engines/engine[1]/n2-ind</property>
+		<interpolation>
+			<entry><ind> 23</ind><dep>  0</dep></entry>
+			<entry><ind>115</ind><dep>215</dep></entry>
+		</interpolation>
+		<center>
+			<y-m>0.0725</y-m>
+			<z-m>0.0662</z-m>
+		</center>
+		<axis>
+			<x>-1</x> 
+			<y> 0</y> 
+			<z> 0</z> 
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>n3.1</object-name>
+		<property>/engines/engine[0]/n3</property>
+		<interpolation>
+			<entry><ind> 23</ind><dep>  0</dep></entry>
+			<entry><ind>115</ind><dep>215</dep></entry>
+		</interpolation>
+		<center>
+			<y-m>0.0059</y-m>
+			<z-m>0.0027</z-m>
+		</center>
+		<axis>
+			<x>-1</x> 
+			<y> 0</y> 
+			<z> 0</z> 
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>n3.2</object-name>
+		<property>/engines/engine[1]/n3</property>
+		<interpolation>
+			<entry><ind> 23</ind><dep>  0</dep></entry>
+			<entry><ind>115</ind><dep>215</dep></entry>
+		</interpolation>
+		<center>
+			<y-m>0.0728</y-m>
+			<z-m>0.0027</z-m>
+		</center>
+		<axis>
+			<x>-1</x> 
+			<y> 0</y> 
+			<z> 0</z> 
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>ff.1</object-name>
+		<property>/engines/engine[0]/fuel-flow-actual</property>
+		<interpolation>
+			<entry><ind> 0</ind><dep>  0</dep></entry>
+			<entry><ind>12</ind><dep>215</dep></entry>
+		</interpolation>
+		<center>
+			<y-m> 0.0059</y-m>
+			<z-m>-0.0602</z-m>
+		</center>
+		<axis>
+			<x>-1</x> 
+			<y> 0</y> 
+			<z> 0</z> 
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>ff.2</object-name>
+		<property>/engines/engine[1]/fuel-flow-actual</property>
+		<interpolation>
+			<entry><ind> 0</ind><dep>  0</dep></entry>
+			<entry><ind>12</ind><dep>215</dep></entry>
+		</interpolation>
+		<center>
+			<y-m> 0.0728</y-m>
+			<z-m>-0.0602</z-m>
+		</center>
+		<axis>
+			<x>-1</x> 
+			<y> 0</y> 
+			<z> 0</z> 
+		</axis>
+	</animation>
+	
+	<text>
+		<name>n2t</name>
+		<offsets>
+			<x-m>-0.0045</x-m>
+			<y-m> 0.0400</y-m>
+			<z-m> 0.0450</z-m>
+		</offsets>
+		<alignment>center-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">N2</format>
+		<property>autopilot/serviceable</property>
+		<font>helvetica_bold.txf</font>
+		<character-size>0.009</character-size>
+		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
+	</text>
+	
+	<text>
+		<name>n3t</name>
+		<offsets>
+			<x-m>-0.0045</x-m>
+			<y-m> 0.0400</y-m>
+			<z-m>-0.0180</z-m>
+		</offsets>
+		<alignment>center-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">N3</format>
+		<property>autopilot/serviceable</property>
+		<font>helvetica_bold.txf</font>
+		<character-size>0.009</character-size>
+		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
+	</text>
+
+	<text>
+		<name>fft</name>
+		<offsets>
+			<x-m>-0.0045</x-m>
+			<y-m> 0.0400</y-m>
+			<z-m>-0.0830</z-m>
+		</offsets>
+		<alignment>center-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">text-value</type>
+		<format type="string">FF</format>
+		<property>autopilot/serviceable</property>
+		<font>helvetica_bold.txf</font>
+		<character-size>0.009</character-size>
+		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
+	</text>
+	
+	<text>
+		<name>n21</name>
+		<offsets>
+			<x-m>-0.0045</x-m>
+			<y-m> 0.0270</y-m>
+			<z-m> 0.0755</z-m>
+		</offsets>
+		<alignment>right-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.1f</format>
+		<property>/engines/engine[0]/n2-ind</property>
+		<font>helvetica_bold.txf</font>
+		<character-size>0.012</character-size>
+		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
+	</text>
+	
+	<text>
+		<name>n22</name>
+		<offsets>
+			<x-m>-0.0045</x-m>
+			<y-m> 0.0934</y-m>
+			<z-m> 0.0755</z-m>
+		</offsets>
+		<alignment>right-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.1f</format>
+		<property>/engines/engine[1]/n2-ind</property>
+		<font>helvetica_bold.txf</font>
+		<character-size>0.012</character-size>
+		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
+	</text>
+	
+	<text>
+		<name>n31</name>
+		<offsets>
+			<x-m>-0.0045</x-m>
+			<y-m> 0.0340</y-m>
+			<z-m> 0.0120</z-m>
+		</offsets>
+		<alignment>right-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.1f</format>
+		<property>/engines/engine[0]/n3</property>
+		<font>helvetica_bold.txf</font>
+		<character-size>0.012</character-size>
+		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
+	</text>
+	
+	<text>
+		<name>n32</name>
+		<offsets>
+			<x-m>-0.0045</x-m>
+			<y-m> 0.1005</y-m>
+			<z-m> 0.0120</z-m>
+		</offsets>
+		<alignment>right-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.1f</format>
+		<property>/engines/engine[1]/n3</property>
+		<font>helvetica_bold.txf</font>
+		<character-size>0.012</character-size>
+		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
+	</text>
+	
+	<text>
+		<name>ff1</name>
+		<offsets>
+			<x-m>-0.0045</x-m>
+			<y-m> 0.0340</y-m>
+			<z-m>-0.0510</z-m>
+		</offsets>
+		<alignment>right-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%2.1f</format>
+		<property>/engines/engine[0]/fuel-flow-actual</property>
+		<font>helvetica_bold.txf</font>
+		<character-size>0.012</character-size>
+		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
+	</text>
+	
+	<text>
+		<name>ff2</name>
+		<offsets>
+			<x-m>-0.0045</x-m>
+			<y-m> 0.1005</y-m>
+			<z-m>-0.0510</z-m>
+		</offsets>
+		<alignment>right-center</alignment>
+		<axis-alignment>yz-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%2.1f</format>
+		<property>/engines/engine[1]/fuel-flow-actual</property>
+		<font>helvetica_bold.txf</font>
+		<character-size>0.012</character-size>
+		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
+	</text>
+	
+	<animation>
+		<type>material</type>
+		<object-name>n2t</object-name>
+		<object-name>n3t</object-name>
+		<object-name>fft</object-name>
+		<diffuse>
+            <red>0.25</red>
+            <green>0.5</green>
+            <blue>1.0</blue>
+		</diffuse>
+		<ambient>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</ambient>
+		<specular>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</specular>
+		<emission>
+            <red>0.25</red>
+            <green>0.5</green>
+            <blue>1.0</blue>
+		</emission>
+	</animation>
+	
+	<animation>
+		<type>material</type>
+		<object-name>n21</object-name>
+		<object-name>n22</object-name>
+		<object-name>n31</object-name>
+		<object-name>n32</object-name>
+		<object-name>ff1</object-name>
+		<object-name>ff2</object-name>
+		<diffuse>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>1.0</blue>
+		</diffuse>
+		<ambient>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</ambient>
+		<specular>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+		</specular>
+		<emission>
+            <red>1.0</red>
+            <green>1.0</green>
+            <blue>1.0</blue>
+		</emission>
+	</animation>
+    
+</PropertyList>

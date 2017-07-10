@@ -243,8 +243,6 @@ var engineLoop = func(engine_no) {
 		rpm += getprop("sim/time/delta-realtime-sec") * 3;
 		setprop(engineOutTree ~ "rpm", rpm);
 		setprop(engineOutTree ~ "n2-ind", (2.5 * rpm));
-		if (getprop("sim/engines") == "RR")
-		    setprop(engineOutTree ~ "n3", (2.8 * rpm));
 	    }
 
 	    if (rpm >= getprop(engineOutTree ~ "n1")) {
@@ -263,21 +261,15 @@ var engineLoop = func(engine_no) {
 
 	    setprop(engineOutTree ~ "rpm", getprop(engineOutTree ~ "n1"));
 	    setprop(engineOutTree ~ "n2-ind", getprop(engineOutTree ~ "n2"));
-	    if (getprop("sim/engines") == "RR")
-		setprop(engineOutTree ~ "n3", (1.2 * getprop(engineOutTree ~ "n2")));
 	} else {
 	    if (getprop(engineOutTree ~ "rpm") > 0) {
 		var rpm = getprop(engineOutTree ~ "rpm");
 		rpm -= getprop("sim/time/delta-realtime-sec") * 2.5;
 		setprop(engineOutTree ~ "rpm", rpm);
 		setprop(engineOutTree ~ "n2-ind", (2.5 * rpm));
-		if (getprop("sim/engines") == "RR")
-		    setprop(engineOutTree ~ "n3", (2.8 * rpm));
 	    } else {
 		setprop(engineOutTree ~ "rpm", 0);
 		setprop(engineOutTree ~ "n2-ind", 0);
-		if (getprop("sim/engines") == "RR")
-		    setprop(engineOutTree ~ "n3", 0);
 	    }
 
 	    props.globals.getNode(engineOutTree ~ "running").setBoolValue(0);
@@ -323,10 +315,6 @@ var update_systems = func {
 setlistener("sim/signals/fdm-initialized", func {
 	props.globals.initNode("engines/engine[0]/n2-ind",0,"DOUBLE");
 	props.globals.initNode("engines/engine[1]/n2-ind",0,"DOUBLE");
-	if (getprop("sim/engines") == "RR") {
-	    props.globals.initNode("engines/engine[0]/n3",0,"DOUBLE");
-	    props.globals.initNode("engines/engine[1]/n3",0,"DOUBLE");
-	}
 	itaf.ap_init();			
 	var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/C-32J/Systems/autopilot-dlg.xml");
 	settimer(func {

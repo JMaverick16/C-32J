@@ -76,7 +76,7 @@
 		<output>/engines/engine[1]/egt-actual</output>
     </filter>
 	
-    <!--filter>
+    <filter>
         <name>FF L</name>
         <type>gain</type>
         <gain>1</gain>
@@ -84,10 +84,10 @@
         <input> 
             <expression>
                 <table>
-                    <property>/engines/engine[0]/fuel-flow-pph</property> 
+                    <property>/engines/engine[0]/fuel-flow-gph</property> 
                     <entry><ind>0</ind><dep>0</dep></entry>
-                    <entry><ind>0.1</ind><dep>2</dep></entry>
-                    <entry><ind>12000</ind><dep>12</dep></entry>
+                    <entry><ind>0.01</ind><dep>2</dep></entry>
+                    <entry><ind>2400</ind><dep>12</dep></entry>
                 </table>
             </expression>
         </input>
@@ -102,15 +102,15 @@
         <input> 
             <expression>
                 <table>
-                    <property>/engines/engine[1]/fuel-flow-pph</property> 
+                    <property>/engines/engine[1]/fuel-flow-gph</property> 
                     <entry><ind>0</ind><dep>0</dep></entry>
-                    <entry><ind>0.1</ind><dep>2</dep></entry>
-                    <entry><ind>12000</ind><dep>12</dep></entry>
+                    <entry><ind>0.01</ind><dep>2</dep></entry>
+                    <entry><ind>2400</ind><dep>12</dep></entry>
                 </table>
             </expression>
         </input>
 		<output>/engines/engine[1]/fuel-flow-actual</output>
-    </filter-->
+    </filter>
 
     <filter>
         <name>Oil Pressure L</name>
