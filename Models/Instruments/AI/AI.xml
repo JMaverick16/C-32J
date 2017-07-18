@@ -90,7 +90,7 @@
         <condition>
 			<and>
 				<property>sim/rendering/rembrandt/enabled</property>
-				<property>/it-autoflight/output/fd1</property>
+				<property>it-autoflight/output/fd1</property>
 			</and>
         </condition>
     </animation>
@@ -102,7 +102,7 @@
         <condition>
 			<and>
 				<not><property>sim/rendering/rembrandt/enabled</property></not>
-				<property>/it-autoflight/output/fd1</property>
+				<property>it-autoflight/output/fd1</property>
 			</and>
         </condition>
     </animation>
@@ -111,7 +111,7 @@
         <type>translate</type>
         <object-name>FDpitch</object-name>
         <object-name>FDpitch_rembrandt</object-name>
-        <property>/it-autoflight/fd/pitch-bar</property>
+        <property>it-autoflight/fd/pitch-bar</property>
         <factor>0.0005</factor>
         <axis>
             <x>0</x>
@@ -124,7 +124,7 @@
         <type>translate</type>
         <object-name>FDroll</object-name>
         <object-name>FDroll_rembrandt</object-name>
-        <property>/it-autoflight/fd/roll-bar</property>
+        <property>it-autoflight/fd/roll-bar</property>
         <factor>0.0002</factor>
         <axis>
             <x>0</x>

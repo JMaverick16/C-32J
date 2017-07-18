@@ -769,7 +769,7 @@
                 <repeatable>true</repeatable>
                 <binding>
                         <command>property-adjust</command>
-                        <property>/controls/flight/aileron-trim</property>
+                        <property>controls/flight/aileron-trim</property>
                         <step>0.05</step>
                         <min>-0.5</min>
                         <max>0.5</max>
@@ -792,7 +792,7 @@
                 <repeatable>true</repeatable>
                 <binding>
                         <command>property-adjust</command>
-                        <property>/controls/flight/aileron-trim</property>
+                        <property>controls/flight/aileron-trim</property>
                         <step>-0.05</step>
                         <min>-0.5</min>
                         <max>0.5</max>
@@ -843,7 +843,7 @@
 		<path>Aircraft/C-32J/Models/Instruments/EICAS/eicas2pw.xml</path>
 		<condition>
 			<equals>
-				<property>/sim/engines</property>
+				<property>sim/engines</property>
 				<value>PW</value>
 			</equals>
 		</condition>
@@ -858,7 +858,7 @@
 		<path>Aircraft/C-32J/Models/Instruments/EICAS/eicas2rr.xml</path>
 		<condition>
 			<equals>
-				<property>/sim/engines</property>
+				<property>sim/engines</property>
 				<value>RR</value>
 			</equals>
 		</condition>

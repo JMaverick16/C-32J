@@ -13,7 +13,7 @@
 		<name>Flight director</name>
 		<type>rotate</type>
 		<object-name>FDtoggle</object-name>
-		<property>/it-autoflight/input/fd1</property>
+		<property>it-autoflight/input/fd1</property>
 		<factor>30</factor>
 		<axis>
 			<x>0</x>
@@ -35,7 +35,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>/it-autoflight/input/fd1</property>
+				<property>it-autoflight/input/fd1</property>
 			</binding>
 		</action>
 	</animation>
@@ -44,7 +44,7 @@
 		<name>Flight director</name>
 		<type>rotate</type>
 		<object-name>FDtoggle2</object-name>
-		<property>/it-autoflight/input/fd2</property>
+		<property>it-autoflight/input/fd2</property>
 		<factor>30</factor>
 		<axis>
 			<x>0</x>
@@ -66,7 +66,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>/it-autoflight/input/fd2</property>
+				<property>it-autoflight/input/fd2</property>
 			</binding>
 		</action>
 	</animation>
@@ -78,7 +78,7 @@
 		<name>Autothrottle</name>
 		<type>rotate</type>
 		<object-name>THARM.switch</object-name>
-		<property>/it-autoflight/custom/athr-armed</property>
+		<property>it-autoflight/custom/athr-armed</property>
 		<factor>30</factor>
 		<axis>
 			<x>0</x>
@@ -119,11 +119,11 @@
 		<condition>
 		    <and>
 			<equals>
-				<property>/it-autoflight/output/athr</property>
+				<property>it-autoflight/output/athr</property>
 				<value>1</value>
 			</equals>
 			<equals>
-				<property>/it-autoflight/output/thr-mode</property>
+				<property>it-autoflight/output/thr-mode</property>
 				<value>0</value>
 			</equals>
 		    </and>
@@ -155,21 +155,21 @@
 		<condition>
 			<and>
 			<equals>
-				<property>/it-autoflight/output/athr</property>
+				<property>it-autoflight/output/athr</property>
 				<value>1</value>
 			</equals>
 			<or>
 			<equals>
-				<property>/it-autoflight/mode/vert</property>
+				<property>it-autoflight/mode/vert</property>
 				<value>T/O CLB</value>
 			</equals>
 			<equals>
-				<property>/it-autoflight/mode/vert</property>
+				<property>it-autoflight/mode/vert</property>
 				<value>G/A CLB</value>
 			</equals>
 			</or>
 			<equals>
-				<property>/it-autoflight/output/thr-mode</property>
+				<property>it-autoflight/output/thr-mode</property>
 				<value>2</value>
 			</equals>
 			</and>
@@ -203,7 +203,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>/it-autoflight/input/kts-mach</property>
+				<property>it-autoflight/input/kts-mach</property>
 			</binding>
 		</action>
 	</animation>
@@ -217,7 +217,7 @@
 		<object-name>IAS.led3</object-name>
 		<condition>
 			<not>
-			<property>/it-autoflight/input/kts-mach</property>
+			<property>it-autoflight/input/kts-mach</property>
 			</not>
 		</condition>
 	</animation>
@@ -225,7 +225,7 @@
 		<name>IAS setting 100's</name>
 		<type>textranslate</type>
 		<object-name>IAS.led1</object-name>
-		<property>/it-autoflight/input/spd-kts</property>
+		<property>it-autoflight/input/spd-kts</property>
 		<factor>0.001</factor>
 		<step>100</step>
 		<axis>
@@ -237,7 +237,7 @@
 		<name>IAS setting 10's</name>
 		<type>textranslate</type>
 		<object-name>IAS.led2</object-name>
-		<property>/it-autoflight/input/spd-kts</property>
+		<property>it-autoflight/input/spd-kts</property>
 		<factor>0.01</factor>
 		<step>10</step>
 		<axis>
@@ -249,7 +249,7 @@
 		<name>IAS setting 1's</name>
 		<type>textranslate</type>
 		<object-name>IAS.led3</object-name>
-		<property>/it-autoflight/input/spd-kts</property>
+		<property>it-autoflight/input/spd-kts</property>
 		<factor>0.1</factor>
 		<step>1</step>
 		<axis>
@@ -266,14 +266,14 @@
 		<object-name>MACH.led2</object-name>
 		<object-name>MACH.led3</object-name>
 		<condition>
-			<property>/it-autoflight/input/kts-mach</property>
+			<property>it-autoflight/input/kts-mach</property>
 		</condition>
 	</animation>
 	<animation>
 		<name>Mach setting .1's</name>
 		<type>textranslate</type>
 		<object-name>MACH.led1</object-name>
-		<property>/it-autoflight/input/spd-mach</property>
+		<property>it-autoflight/input/spd-mach</property>
 		<step>0.1</step>
 		<axis>
 			<x>0</x>
@@ -284,7 +284,7 @@
 		<name>Mach setting .01's</name>
 		<type>textranslate</type>
 		<object-name>MACH.led2</object-name>
-		<property>/it-autoflight/input/spd-mach</property>
+		<property>it-autoflight/input/spd-mach</property>
 		<factor>10</factor>
 		<step>0.01</step>
 		<axis>
@@ -296,7 +296,7 @@
 		<name>Mach setting .001's</name>
 		<type>textranslate</type>
 		<object-name>MACH.led3</object-name>
-		<property>/it-autoflight/input/spd-mach</property>
+		<property>it-autoflight/input/spd-mach</property>
 		<factor>100</factor>
 		<step>0.001</step>
 		<axis>
@@ -315,21 +315,21 @@
 			<binding>
 				<condition>
                                 <not>
-                                        <property>/it-autoflight/input/kts-mach</property>
+                                        <property>it-autoflight/input/kts-mach</property>
                                 </not>
                         	</condition>
                         	<command>property-adjust</command>
-                        	<property>/it-autoflight/input/spd-kts</property>
+                        	<property>it-autoflight/input/spd-kts</property>
                         	<step>10</step>
                         	<min>100</min>
                         	<max>399</max>
                 	</binding>
                 	<binding>
                         	<condition>
-                                        <property>/it-autoflight/input/kts-mach</property>
+                                        <property>it-autoflight/input/kts-mach</property>
                         	</condition>
                         	<command>property-adjust</command>
-                        	<property>/it-autoflight/input/spd-mach</property>
+                        	<property>it-autoflight/input/spd-mach</property>
                         	<step>0.01</step>
                         	<min>0.40</min>
                         	<max>0.95</max>
@@ -341,21 +341,21 @@
 			<binding>
 				<condition>
                                 <not>
-                                        <property>/it-autoflight/input/kts-mach</property>
+                                        <property>it-autoflight/input/kts-mach</property>
                                 </not>
 	                        </condition>
         	                <command>property-adjust</command>
-                        	<property>/it-autoflight/input/spd-kts</property>
+                        	<property>it-autoflight/input/spd-kts</property>
                         	<step>-10</step>
 	                        <min>100</min>
         	                <max>399</max>
                 	</binding>
 	                <binding>
         	                <condition>
-                                        <property>/it-autoflight/input/kts-mach</property>
+                                        <property>it-autoflight/input/kts-mach</property>
                 	        </condition>
                         	<command>property-adjust</command>
-                        	<property>/it-autoflight/input/spd-mach</property>
+                        	<property>it-autoflight/input/spd-mach</property>
         	                <step>-0.01</step>
                 	        <min>0.40</min>
                         	<max>0.95</max>
@@ -367,21 +367,21 @@
 			<binding>
 				<condition>
                                 <not>
-                                        <property>/it-autoflight/input/kts-mach</property>
+                                        <property>it-autoflight/input/kts-mach</property>
                                 </not>
                         	</condition>
                         	<command>property-adjust</command>
-                        	<property>/it-autoflight/input/spd-kts</property>
+                        	<property>it-autoflight/input/spd-kts</property>
                         	<step>1</step>
                         	<min>100</min>
                         	<max>399</max>
                 	</binding>
                 	<binding>
                         	<condition>
-                                        <property>/it-autoflight/input/kts-mach</property>
+                                        <property>it-autoflight/input/kts-mach</property>
                         	</condition>
                         	<command>property-adjust</command>
-                        	<property>/it-autoflight/input/spd-mach</property>
+                        	<property>it-autoflight/input/spd-mach</property>
                         	<step>0.01</step>
                         	<min>0.40</min>
                         	<max>0.95</max>
@@ -393,21 +393,21 @@
 			<binding>
 				<condition>
                                 <not>
-                                        <property>/it-autoflight/input/kts-mach</property>
+                                        <property>it-autoflight/input/kts-mach</property>
                                 </not>
 	                        </condition>
         	                <command>property-adjust</command>
-                        	<property>/it-autoflight/input/spd-kts</property>
+                        	<property>it-autoflight/input/spd-kts</property>
                         	<step>-1</step>
 	                        <min>100</min>
         	                <max>399</max>
                 	</binding>
 	                <binding>
         	                <condition>
-                                        <property>/it-autoflight/input/kts-mach</property>
+                                        <property>it-autoflight/input/kts-mach</property>
                 	        </condition>
                         	<command>property-adjust</command>
-                        	<property>/it-autoflight/input/spd-mach</property>
+                        	<property>it-autoflight/input/spd-mach</property>
         	                <step>-0.01</step>
                 	        <min>0.40</min>
                         	<max>0.95</max>
@@ -418,7 +418,7 @@
 		<name>Speed knob kt rotate</name>
 		<type>rotate</type>
 		<object-name>SPD.knob</object-name>
-		<property>/it-autoflight/input/spd-kts</property>
+		<property>it-autoflight/input/spd-kts</property>
 		<factor>2</factor>
 		<axis>
 			<x>-1</x>
@@ -435,7 +435,7 @@
 		<name>Speed knob Mach rotate</name>
 		<type>rotate</type>
 		<object-name>SPD.knob</object-name>
-		<property>/it-autoflight/input/spd-mach</property>
+		<property>it-autoflight/input/spd-mach</property>
 		<factor>2000</factor>
 		<axis>
 			<x>1</x>
@@ -456,7 +456,7 @@
 		<object-name>LNAV.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/it-autoflight/output/lat</property>
+				<property>it-autoflight/output/lat</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -471,7 +471,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-assign</command>
-				<property>/it-autoflight/input/lat</property>
+				<property>it-autoflight/input/lat</property>
 				<value>1</value>
 			</binding>
 		</action>
@@ -483,7 +483,7 @@
 		<type>select</type>
 		<object-name>VNAV.toggle</object-name>
 		<condition>
-			<property>/unused/unused</property>
+			<property>unused/unused</property>
 		</condition>
 	</animation>
 	<!--animation>
@@ -507,7 +507,7 @@
 		<object-name>FLCH.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/it-autoflight/output/vert</property>
+				<property>it-autoflight/output/vert</property>
 				<value>4</value>
 			</equals>
 		</condition>
@@ -522,7 +522,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-assign</command>
-				<property>/it-autoflight/input/vert</property>
+				<property>it-autoflight/input/vert</property>
 				<value>4</value>
 			</binding>
 			<binding>
@@ -541,7 +541,7 @@
 		<name>Heading setting 100's</name>
 		<type>textranslate</type>
 		<object-name>HDG.led1</object-name>
-		<property>/it-autoflight/input/hdg</property>
+		<property>it-autoflight/input/hdg</property>
 		<factor>0.001</factor>
 		<step>100</step>
 		<axis>
@@ -553,7 +553,7 @@
 		<name>Heading setting 10's</name>
 		<type>textranslate</type>
 		<object-name>HDG.led2</object-name>
-		<property>/it-autoflight/input/hdg</property>
+		<property>it-autoflight/input/hdg</property>
 		<factor>0.01</factor>
 		<step>10</step>
 		<axis>
@@ -565,7 +565,7 @@
 		<name>Heading setting 1's</name>
 		<type>textranslate</type>
 		<object-name>HDG.led3</object-name>
-		<property>/it-autoflight/input/hdg</property>
+		<property>it-autoflight/input/hdg</property>
 		<factor>0.1</factor>
 		<step>1</step>
 		<axis>
@@ -583,7 +583,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/it-autoflight/input/hdg</property>
+				<property>it-autoflight/input/hdg</property>
 				<step>10</step>
 				<min>1</min>
 				<max>361</max>
@@ -595,7 +595,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/it-autoflight/input/hdg</property>
+				<property>it-autoflight/input/hdg</property>
 				<step>-10</step>
 				<min>1</min>
 				<max>361</max>
@@ -607,7 +607,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/it-autoflight/input/hdg</property>
+				<property>it-autoflight/input/hdg</property>
 				<step>1</step>
 				<min>1</min>
 				<max>361</max>
@@ -619,7 +619,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/it-autoflight/input/hdg</property>
+				<property>it-autoflight/input/hdg</property>
 				<step>-1</step>
 				<min>1</min>
 				<max>361</max>
@@ -635,7 +635,7 @@
 			<repeatable>false</repeatable>
 			<binding>
 				<command>property-assign</command>
-				<property>/it-autoflight/input/lat</property>
+				<property>it-autoflight/input/lat</property>
 				<value>0</value>
 			</binding>
 		</action>
@@ -644,7 +644,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/it-autoflight/input/hdg</property>
+				<property>it-autoflight/input/hdg</property>
 				<step>1</step>
 				<min>0</min>
 				<max>360</max>
@@ -656,7 +656,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/it-autoflight/input/hdg</property>
+				<property>it-autoflight/input/hdg</property>
 				<step>-1</step>
 				<min>0</min>
 				<max>360</max>
@@ -669,7 +669,7 @@
 		<type>rotate</type>
 		<object-name>HDG.knob</object-name>
 		<object-name>HDG.select</object-name>
-		<property>/it-autoflight/input/hdg</property>
+		<property>it-autoflight/input/hdg</property>
 		<factor>3</factor>
 		<axis>
 			<x>-1</x>
@@ -703,7 +703,7 @@
 		<name>Bank limit knob rotate</name>
 		<type>rotate</type>
 		<object-name>BNK.knob</object-name>
-		<property>/it-autoflight/input/bank-limit</property>
+		<property>it-autoflight/input/bank-limit</property>
 		<interpolation>
 			<entry><ind>30</ind><dep>-22</dep></entry>
 			<entry><ind> 5</ind><dep>-44</dep></entry>
@@ -730,7 +730,7 @@
 		<object-name>HDGtoggle</object-name>
 		<condition>
 			<equals>
-				<property>/it-autoflight/output/lat</property>
+				<property>it-autoflight/output/lat</property>
 				<value>3</value>
 			</equals>
 		</condition>
@@ -745,7 +745,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-assign</command>
-				<property>/it-autoflight/input/lat</property>
+				<property>it-autoflight/input/lat</property>
 				<value>3</value>
 			</binding>
 		</action>
@@ -762,11 +762,11 @@
 		<condition>
 		    <and>
 				<equals>
-					<property>/it-autoflight/output/vert</property>
+					<property>it-autoflight/output/vert</property>
 					<value>1</value>
 				</equals>
 				<greater-than-equals>
-					<property>/it-autoflight/input/vs</property>
+					<property>it-autoflight/input/vs</property>
 					<value>0</value>
 				</greater-than-equals>
 		    </and>
@@ -776,7 +776,7 @@
 		<name>Vertical speed setting 1,000's</name>
 		<type>textranslate</type>
 		<object-name>VS.circle1</object-name>
-		<property>/it-autoflight/input/vs</property>
+		<property>it-autoflight/input/vs</property>
 		<factor>0.0001</factor>
 		<step>1000</step>
 		<axis>
@@ -788,7 +788,7 @@
 		<name>Vertical speed setting 100's</name>
 		<type>textranslate</type>
 		<object-name>VS.circle2</object-name>
-		<property>/it-autoflight/input/vs</property>
+		<property>it-autoflight/input/vs</property>
 		<factor>0.001</factor>
 		<step>100</step>
 		<axis>
@@ -800,7 +800,7 @@
 		<name>Vertical speed setting 10's</name>
 		<type>textranslate</type>
 		<object-name>VS.circle3</object-name>
-		<property>/it-autoflight/input/vs</property>
+		<property>it-autoflight/input/vs</property>
 		<factor>0.01</factor>
 		<step>10</step>
 		<axis>
@@ -812,7 +812,7 @@
 		<name>Vertical speed setting 1's</name>
 		<type>textranslate</type>
 		<object-name>VS.circle4</object-name>
-		<property>/it-autoflight/input/vs</property>
+		<property>it-autoflight/input/vs</property>
 		<factor>0.1</factor>
 		<step>1</step>
 		<axis>
@@ -831,11 +831,11 @@
 		<condition>
 		    <and>
 				<equals>
-					<property>/it-autoflight/output/vert</property>
+					<property>it-autoflight/output/vert</property>
 					<value>1</value>
 				</equals>
 				<less-than>
-					<property>/it-autoflight/input/vs</property>
+					<property>it-autoflight/input/vs</property>
 					<value>0</value>
 				</less-than>
 		    </and>
@@ -845,7 +845,7 @@
 		<name>Vertical speed negative setting 1,000's</name>
 		<type>textranslate</type>
 		<object-name>VS.circle1.-</object-name>
-		<property>/it-autoflight/input/vs</property>
+		<property>it-autoflight/input/vs</property>
 		<factor>-0.0001</factor>
 		<bias>999</bias>
 		<step>1000</step>
@@ -858,7 +858,7 @@
 		<name>Vertical speed negative setting 100's</name>
 		<type>textranslate</type>
 		<object-name>VS.circle2.-</object-name>
-		<property>/it-autoflight/input/vs</property>
+		<property>it-autoflight/input/vs</property>
 		<factor>-0.001</factor>
 		<bias>99</bias>
 		<step>100</step>
@@ -871,7 +871,7 @@
 		<name>Vertical speed negative setting 10's</name>
 		<type>textranslate</type>
 		<object-name>VS.circle3.-</object-name>
-		<property>/it-autoflight/input/vs</property>
+		<property>it-autoflight/input/vs</property>
 		<factor>-0.01</factor>
 		<bias>9</bias>
 		<step>10</step>
@@ -884,7 +884,7 @@
 		<name>Vertical speed negative setting 1's</name>
 		<type>textranslate</type>
 		<object-name>VS.circle4.-</object-name>
-		<property>/it-autoflight/input/vs</property>
+		<property>it-autoflight/input/vs</property>
 		<factor>-0.1</factor>
 		<bias>.9</bias>
 		<step>1</step>
@@ -904,7 +904,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/it-autoflight/input/vs</property>
+				<property>it-autoflight/input/vs</property>
 				<step>100</step>
 				<max>6000</max>
 			</binding>
@@ -915,7 +915,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/it-autoflight/input/vs</property>
+				<property>it-autoflight/input/vs</property>
 				<step>-100</step>
 				<min>-6000</min>
 			</binding>
@@ -928,7 +928,7 @@
 		<object-name>VS.toggle</object-name>
 		<condition>
 			<equals>
-				<property>/it-autoflight/output/vert</property>
+				<property>it-autoflight/output/vert</property>
 				<value>1</value>
 			</equals>
 		</condition>
@@ -943,7 +943,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-assign</command>
-				<property>/it-autoflight/input/vert</property>
+				<property>it-autoflight/input/vert</property>
 				<value>1</value>
 			</binding>
 		</action>
@@ -954,7 +954,7 @@
 		<name>Altitude setting 10,000's</name>
 		<type>textranslate</type>
 		<object-name>alt.circle1</object-name>
-		<property>/it-autoflight/input/alt</property>
+		<property>it-autoflight/input/alt</property>
 		<factor>0.00001</factor>
 		<step>10000</step>
 		<axis>
@@ -966,7 +966,7 @@
 		<name>Altitude setting 1,000's</name>
 		<type>textranslate</type>
 		<object-name>alt.circle2</object-name>
-		<property>/it-autoflight/input/alt</property>
+		<property>it-autoflight/input/alt</property>
 		<factor>0.0001</factor>
 		<step>1000</step>
 		<axis>
@@ -978,7 +978,7 @@
 		<name>Altitude setting 100's</name>
 		<type>textranslate</type>
 		<object-name>alt.circle3</object-name>
-		<property>/it-autoflight/input/alt</property>
+		<property>it-autoflight/input/alt</property>
 		<factor>0.001</factor>
 		<step>100</step>
 		<axis>
@@ -990,7 +990,7 @@
 		<name>Altitude setting 10's</name>
 		<type>textranslate</type>
 		<object-name>alt.circle4</object-name>
-		<property>/it-autoflight/input/alt</property>
+		<property>it-autoflight/input/alt</property>
 		<factor>0.01</factor>
 		<step>10</step>
 		<axis>
@@ -1002,7 +1002,7 @@
 		<name>Altitude setting 1's</name>
 		<type>rotate</type>
 		<object-name>alt.circle5</object-name>
-		<property>/it-autoflight/input/alt</property>
+		<property>it-autoflight/input/alt</property>
 		<factor>36</factor>
 		<step>1</step>
 		<axis>
@@ -1020,7 +1020,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/it-autoflight/input/alt</property>
+				<property>it-autoflight/input/alt</property>
 				<step>1000</step>
 				<max>50000</max>
 			</binding>
@@ -1030,7 +1030,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/it-autoflight/input/alt</property>
+				<property>it-autoflight/input/alt</property>
 				<step>-1000</step>
 				<min>0</min>
 			</binding>
@@ -1040,7 +1040,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/it-autoflight/input/alt</property>
+				<property>it-autoflight/input/alt</property>
 				<step>100</step>
 				<max>50000</max>
 			</binding>
@@ -1050,7 +1050,7 @@
 			<repeatable type="bool">true</repeatable>
 			<binding>
 				<command>property-adjust</command>
-				<property>/it-autoflight/input/alt</property>
+				<property>it-autoflight/input/alt</property>
 				<step>-100</step>
 				<min>0</min>
 			</binding>
@@ -1060,7 +1060,7 @@
 		<name>Altitude hold knob rotate</name>
 		<type>rotate</type>
 		<object-name>ALT.knob</object-name>
-		<property>/it-autoflight/input/alt</property>
+		<property>it-autoflight/input/alt</property>
 		<factor>0.36</factor>
 		<axis>
 			<x>-1</x>
@@ -1080,7 +1080,7 @@
 		<object-name>ALTtoggle</object-name>
 		<condition>
 			<equals>
-				<property>/it-autoflight/output/vert</property>
+				<property>it-autoflight/output/vert</property>
 				<value>0</value>
 			</equals>
 		</condition>
@@ -1095,7 +1095,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-assign</command>
-				<property>/it-autoflight/input/vert</property>
+				<property>it-autoflight/input/vert</property>
 				<value>0</value>
 			</binding>
 		</action>
@@ -1107,7 +1107,7 @@
 		<type>select</type>
 		<object-name>BC.toggle</object-name>
 		<condition>
-			<property>/unused/unused</property>
+			<property>unused/unused</property>
 		</condition>
 	</animation>
 
@@ -1120,20 +1120,20 @@
 			<and>
 				<or>
 					<equals>
-						<property>/it-autoflight/output/lat</property>
+						<property>it-autoflight/output/lat</property>
 						<value>2</value>
 					</equals>
 					<equals>
-						<property>/it-autoflight/output/loc-armed</property>
+						<property>it-autoflight/output/loc-armed</property>
 						<value>1</value>
 					</equals>
 				</or>
 				<equals>
-					<property>/it-autoflight/output/appr-armed</property>
+					<property>it-autoflight/output/appr-armed</property>
 					<value>0</value>
 				</equals>
 				<not-equals>
-					<property>/it-autoflight/output/vert</property>
+					<property>it-autoflight/output/vert</property>
 					<value>2</value>
 				</not-equals>
 			</and>
@@ -1149,7 +1149,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-assign</command>
-				<property>/it-autoflight/input/lat</property>
+				<property>it-autoflight/input/lat</property>
 				<value>2</value>
 			</binding>
 		</action>
@@ -1163,11 +1163,11 @@
 		<condition>
 			<or>
 				<equals>
-					<property>/it-autoflight/output/vert</property>
+					<property>it-autoflight/output/vert</property>
 					<value>2</value>
 				</equals>
 				<equals>
-					<property>/it-autoflight/output/appr-armed</property>
+					<property>it-autoflight/output/appr-armed</property>
 					<value>1</value>
 				</equals>
 			</or>
@@ -1183,7 +1183,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-assign</command>
-				<property>/it-autoflight/input/vert</property>
+				<property>it-autoflight/input/vert</property>
 				<value>2</value>
 			</binding>
 		</action>
@@ -1195,7 +1195,7 @@
 		<type>select</type>
 		<object-name>cmd.l.lt</object-name>
 		<condition>
-			<property>/it-autoflight/output/ap1</property>
+			<property>it-autoflight/output/ap1</property>
 		</condition>
 	</animation>
 	<animation>
@@ -1203,7 +1203,7 @@
 		<type>select</type>
 		<object-name>cmd.c.lt</object-name>
 		<condition>
-			<property>/unused/unused</property>
+			<property>unused/unused</property>
 		</condition>
 	</animation>
 	<animation>
@@ -1211,7 +1211,7 @@
 		<type>select</type>
 		<object-name>cmd.r.lt</object-name>
 		<condition>
-			<property>/it-autoflight/output/ap2</property>
+			<property>it-autoflight/output/ap2</property>
 		</condition>
 	</animation>
 	
@@ -1224,7 +1224,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>/it-autoflight/input/ap1</property>
+				<property>it-autoflight/input/ap1</property>
 			</binding>
 		</action>
 	</animation>
@@ -1250,7 +1250,7 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property>/it-autoflight/input/ap2</property>
+				<property>it-autoflight/input/ap2</property>
 			</binding>
 		</action>
 	</animation>
@@ -1344,12 +1344,12 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-assign</command>
-				<property>/it-autoflight/input/ap1</property>
+				<property>it-autoflight/input/ap1</property>
 				<value>0</value>
 			</binding>
 			<binding>
 				<command>property-assign</command>
-				<property>/it-autoflight/input/ap2</property>
+				<property>it-autoflight/input/ap2</property>
 				<value>0</value>
 			</binding>
 		</action>

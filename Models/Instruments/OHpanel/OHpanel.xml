@@ -1386,7 +1386,7 @@
 		<repeatable>false</repeatable>	
 		<binding>
 			<command>property-adjust</command>
-			<property>/controls/electric/wiperl/switch</property>
+			<property>controls/electric/wiperl/switch</property>
 			<step>1</step>
 			<min>0</min>
 			<max>2</max>
@@ -1402,7 +1402,7 @@
 		<repeatable>false</repeatable>	
 		<binding>
 			<command>property-adjust</command>
-			<property>/controls/electric/wiperl/switch</property>
+			<property>controls/electric/wiperl/switch</property>
 			<step>-1</step>
 			<min>0</min>
 			<max>2</max>
@@ -1413,7 +1413,7 @@
 <animation>
 	<type>rotate</type>
 	<object-name>WiperKnb</object-name>
-	<property>/controls/electric/wiperl/switch</property>
+	<property>controls/electric/wiperl/switch</property>
 	<factor>-45</factor>
 	<center>
 		<x-m>0.002846</x-m>
@@ -1438,12 +1438,12 @@
           <binding>
               <condition>
                 <greater-than>
-                  <property>/controls/lighting/panel-norm</property>
+                  <property>controls/lighting/panel-norm</property>
                   <value>0.0</value>
                 </greater-than>
               </condition>
               <command>property-adjust</command>
-              <property>/controls/lighting/panel-norm</property>
+              <property>controls/lighting/panel-norm</property>
               <step>0.1</step>
               <min>0.01</min>
               <max>1</max>
@@ -1451,12 +1451,12 @@
           <binding>
             <condition>
               <greater-than>
-                <property>/controls/lighting/panel-norm</property>
+                <property>controls/lighting/panel-norm</property>
                 <value>0.0</value>
               </greater-than>
             </condition>
             <command>property-toggle</command>
-            <property>/sim/sound/switch</property>
+            <property>sim/sound/switch</property>
           </binding>
       </action>
 
@@ -1467,12 +1467,12 @@
           <binding>
               <condition>
                 <greater-than>
-                  <property>/controls/lighting/panel-norm</property>
+                  <property>controls/lighting/panel-norm</property>
                   <value>0.0</value>
                 </greater-than>
               </condition>
               <command>property-adjust</command>
-              <property>/controls/lighting/panel-norm</property>
+              <property>controls/lighting/panel-norm</property>
               <step>-0.1</step>
               <min>0.01</min>
               <max>1</max>
@@ -1480,12 +1480,12 @@
           <binding>
             <condition>
               <greater-than>
-                <property>/controls/lighting/panel-norm</property>
+                <property>controls/lighting/panel-norm</property>
                 <value>0.0</value>
               </greater-than>
             </condition>
             <command>property-toggle</command>
-            <property>/sim/sound/switch</property>
+            <property>sim/sound/switch</property>
           </binding>
       </action>
   </animation>
@@ -1496,7 +1496,7 @@
 		<name>dome light rotate</name>
 		<type>rotate</type>
 		<object-name>dome_light</object-name>
-                  <property>/controls/lighting/panel-norm</property>
+                  <property>controls/lighting/panel-norm</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>129</dep></entry>
 			<entry><ind>1</ind><dep>-129</dep></entry>
@@ -1519,7 +1519,7 @@
 		<name>circuit breaker light rotate</name>
 		<type>rotate</type>
 		<object-name>cb_panel_knob</object-name>
-                  <property>/controls/lighting/cb-panel-norm</property>
+                  <property>controls/lighting/cb-panel-norm</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>129</dep></entry>
 			<entry><ind>1</ind><dep>-129</dep></entry>

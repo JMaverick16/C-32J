@@ -68,7 +68,7 @@ it0uchpods
 	<animation>
 		<type>rotate</type>
 		<object-name>epr.1</object-name>
-		<property>/engines/engine[0]/epr-actual</property>
+		<property>engines/engine[0]/epr-actual</property>
 		<interpolation>
 			<entry><ind>1.00</ind><dep>  0</dep></entry>
 			<entry><ind>1.25</ind><dep> 45</dep></entry>
@@ -93,7 +93,7 @@ it0uchpods
 	<animation>
 		<type>rotate</type>
 		<object-name>epr.2</object-name>
-		<property>/engines/engine[1]/epr-actual</property>
+		<property>engines/engine[1]/epr-actual</property>
 		<interpolation>
 			<entry><ind>1.00</ind><dep>  0</dep></entry>
 			<entry><ind>1.25</ind><dep> 45</dep></entry>
@@ -118,7 +118,7 @@ it0uchpods
 	<animation>
 		<type>rotate</type>
 		<object-name>n1.1</object-name>
-		<property>/engines/engine[0]/rpm</property>
+		<property>engines/engine[0]/rpm</property>
 		<interpolation>
 			<entry><ind> 23</ind><dep>  0</dep></entry>
 			<entry><ind>115</ind><dep>215</dep></entry>
@@ -137,7 +137,7 @@ it0uchpods
 	<animation>
 		<type>rotate</type>
 		<object-name>n1.2</object-name>
-		<property>/engines/engine[1]/rpm</property>
+		<property>engines/engine[1]/rpm</property>
 		<interpolation>
 			<entry><ind> 23</ind><dep>  0</dep></entry>
 			<entry><ind>115</ind><dep>215</dep></entry>
@@ -156,7 +156,7 @@ it0uchpods
 	<animation>
 		<type>rotate</type>
 		<object-name>egt.1</object-name>
-		<property>/engines/engine[0]/egt-actual</property>
+		<property>engines/engine[0]/egt-actual</property>
 		<interpolation>
 			<entry><ind>  0</ind><dep>  0</dep></entry>
 			<entry><ind>800</ind><dep>215</dep></entry>
@@ -175,7 +175,7 @@ it0uchpods
 	<animation>
 		<type>rotate</type>
 		<object-name>egt.2</object-name>
-		<property>/engines/engine[1]/egt-actual</property>
+		<property>engines/engine[1]/egt-actual</property>
 		<interpolation>
 			<entry><ind>  0</ind><dep>  0</dep></entry>
 			<entry><ind>800</ind><dep>215</dep></entry>
@@ -253,7 +253,7 @@ it0uchpods
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%1.2f</format>
-		<property>/engines/engine[0]/epr-actual</property>
+		<property>engines/engine[0]/epr-actual</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.012</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -270,7 +270,7 @@ it0uchpods
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%1.2f</format>
-		<property>/engines/engine[1]/epr-actual</property>
+		<property>engines/engine[1]/epr-actual</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.012</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -304,7 +304,7 @@ it0uchpods
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%1.2f</format>
-		<property>/controls/engines/eprlim</property>
+		<property>controls/engines/eprlim</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.010</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -321,7 +321,7 @@ it0uchpods
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%1.2f</format>
-		<property>/controls/engines/eprlim</property>
+		<property>controls/engines/eprlim</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.010</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -338,7 +338,7 @@ it0uchpods
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.1f</format>
-		<property>/engines/engine[0]/rpm</property>
+		<property>engines/engine[0]/rpm</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.012</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -355,7 +355,7 @@ it0uchpods
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.1f</format>
-		<property>/engines/engine[1]/rpm</property>
+		<property>engines/engine[1]/rpm</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.012</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -372,7 +372,7 @@ it0uchpods
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%4.0f</format>
-		<property>/engines/engine[0]/egt-actual</property>
+		<property>engines/engine[0]/egt-actual</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.012</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -389,7 +389,7 @@ it0uchpods
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%4.0f</format>
-		<property>/engines/engine[1]/egt-actual</property>
+		<property>engines/engine[1]/egt-actual</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.012</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>

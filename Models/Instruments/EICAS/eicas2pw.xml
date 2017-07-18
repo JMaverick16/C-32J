@@ -39,7 +39,7 @@ it0uchpods
 	<animation>
 		<type>rotate</type>
 		<object-name>n2.1</object-name>
-		<property>/engines/engine[0]/n2-ind</property>
+		<property>engines/engine[0]/n2-ind</property>
 		<interpolation>
 			<entry><ind> 23</ind><dep>  0</dep></entry>
 			<entry><ind>115</ind><dep>215</dep></entry>
@@ -58,7 +58,7 @@ it0uchpods
 	<animation>
 		<type>rotate</type>
 		<object-name>n2.2</object-name>
-		<property>/engines/engine[1]/n2-ind</property>
+		<property>engines/engine[1]/n2-ind</property>
 		<interpolation>
 			<entry><ind> 23</ind><dep>  0</dep></entry>
 			<entry><ind>115</ind><dep>215</dep></entry>
@@ -77,7 +77,7 @@ it0uchpods
 	<animation>
 		<type>rotate</type>
 		<object-name>ff.1</object-name>
-		<property>/engines/engine[0]/fuel-flow-actual</property>
+		<property>engines/engine[0]/fuel-flow-actual</property>
 		<interpolation>
 			<entry><ind> 0</ind><dep>  0</dep></entry>
 			<entry><ind>12</ind><dep>215</dep></entry>
@@ -96,7 +96,7 @@ it0uchpods
 	<animation>
 		<type>rotate</type>
 		<object-name>ff.2</object-name>
-		<property>/engines/engine[1]/fuel-flow-actual</property>
+		<property>engines/engine[1]/fuel-flow-actual</property>
 		<interpolation>
 			<entry><ind> 0</ind><dep>  0</dep></entry>
 			<entry><ind>12</ind><dep>215</dep></entry>
@@ -157,7 +157,7 @@ it0uchpods
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.1f</format>
-		<property>/engines/engine[0]/n2-ind</property>
+		<property>engines/engine[0]/n2-ind</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.012</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -174,7 +174,7 @@ it0uchpods
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%3.1f</format>
-		<property>/engines/engine[1]/n2-ind</property>
+		<property>engines/engine[1]/n2-ind</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.012</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -191,7 +191,7 @@ it0uchpods
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%2.1f</format>
-		<property>/engines/engine[0]/fuel-flow-actual</property>
+		<property>engines/engine[0]/fuel-flow-actual</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.012</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
@@ -208,7 +208,7 @@ it0uchpods
 		<axis-alignment>yz-plane</axis-alignment>
 		<type type="string">number-value</type>
 		<format type="string">%2.1f</format>
-		<property>/engines/engine[1]/fuel-flow-actual</property>
+		<property>engines/engine[1]/fuel-flow-actual</property>
 		<font>helvetica_bold.txf</font>
 		<character-size>0.012</character-size>
 		<character-aspect-ratio type="double">1.2</character-aspect-ratio>

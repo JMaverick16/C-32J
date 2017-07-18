@@ -1905,7 +1905,7 @@
 			  <value>220</value>
 			</less-than>
 			<not>
-			  <property>/sim/rendering/rembrandt/enabled</property> 
+			  <property>sim/rendering/rembrandt/enabled</property> 
 		    	</not>
 		    </and>
 		</condition>
@@ -1921,7 +1921,7 @@
 			  <value>220</value>
 			</less-than>
 			<not>
-			  <property>/sim/rendering/rembrandt/enabled</property> 
+			  <property>sim/rendering/rembrandt/enabled</property> 
 		    	</not>
 		    </and>
 		</condition>
@@ -1937,7 +1937,7 @@
 			  <value>220</value>
 			</less-than>
 			<not>
-			  <property>/sim/rendering/rembrandt/enabled</property> 
+			  <property>sim/rendering/rembrandt/enabled</property> 
 		    	</not>
 		    </and>
 		</condition>

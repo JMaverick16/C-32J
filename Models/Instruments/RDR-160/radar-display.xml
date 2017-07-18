@@ -20,7 +20,7 @@
             </condition>
             <name>background</name>
             <texture>
-                <path>Aircraft/MD-88/Models/Instruments/RDR-160/bkgrd.png</path>
+                <path>Aircraft/C-32J/Models/Instruments/RDR-160/bkgrd.png</path>
                 <x1>0.07</x1>
                 <y1>0.05</y1>
                 <x2>0.930</x2>
@@ -38,7 +38,7 @@
             </condition>
             <name>radar data</name>
             <texture>
-                <path>Aircraft/MD-88/Models/Instruments/RDR-160/od_wxradar.png</path>
+                <path>Aircraft/C-32J/Models/Instruments/RDR-160/od_wxradar.png</path>
                 <x1>0.0</x1>
                 <y1>0.0</y1>
                 <x2>1.0</x2>
