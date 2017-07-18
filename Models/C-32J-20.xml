@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+﻿8<?xml version="1.0" encoding="UTF-8" ?>
 
 <PropertyList>
 
@@ -21,7 +21,7 @@
 	<!-- Winglets -->
 	<model>
 		<name>winglets</name>
-		<path>Aircraft/C-32J/Models/winglets.ac</path>
+		<path>Aircraft/C-32J/Models/winglets20.ac</path>
 	</model>
 
 	<!-- 3d cockpit -->
@@ -49,7 +49,7 @@
 	
 	<!-- Antennas -->
 	<model>
-		<path>Aircraft/C-32J/Models/C-32_antennas.xml</path>
+		<path>Aircraft/C-32J/Models/C-32_antennas20.xml</path>
 	</model>
 
 	<!-- Pushback -->

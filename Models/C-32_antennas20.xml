@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+
+	<path>C-32_antennas20.ac</path>
+
+	<effect>
+		<name>Landing/Logo Lightmap</name>
+		<inherits-from>Aircraft/C-32J/Models/Effects/lightmap-200</inherits-from>
+		<object-name>C32antennas</object-name>
+	</effect>
+
+</PropertyList>
