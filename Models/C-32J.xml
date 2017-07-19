@@ -2371,8 +2371,6 @@
     		<object-name>VHFantenna.fwd</object-name>
 		<object-name>WingletL</object-name>
 		<object-name>WingletR</object-name>
-		<object-name>SharkletL</object-name>
-		<object-name>SharkletR</object-name>
 		<object-name>C32antennas</object-name>
 		<property-base>sim/model/livery</property-base>
 		<texture-prop>texture</texture-prop>
@@ -2823,8 +2821,6 @@
     		<object-name>Slat4</object-name>
     		<object-name>WingletL</object-name>
     		<object-name>WingletR</object-name>
-    		<object-name>SharkletL</object-name>
-    		<object-name>SharkletR</object-name>
     		<object-name>Aileron1</object-name>
     		<object-name>Aileron2</object-name>
     		<object-name>Flap1</object-name>
