@@ -671,7 +671,40 @@
 	</condition>
     </apu>
 
+    <avionics>
+        <path>Aircraft/C-32J/Sounds/avhum.wav</path>
+        <mode>looped</mode>
+        <type>avionics</type>
+        <property>systems/electrical/outputs/efis</property>
+        <volume>
+            <property>/sim/current-view/internal</property>
+            <factor>0.068</factor>
+        </volume>
+    </avionics>
 
+    <rain>
+      <name>rain</name>
+      <mode>looped</mode>
+      <path>Aircraft/C-32J/Sounds/rain.wav</path>
+      <condition>
+        <greater-than>
+          <property>/environment/metar/rain-norm</property>
+          <value>0.2</value>
+        </greater-than>
+      </condition>
+      <volume>
+        <property>/environment/metar/rain-norm</property>
+        <factor>1.00</factor>
+        <offset>0.00</offset>
+        <min>0.6</min>
+        <max>1.2</max>
+      </volume>
+      <pitch>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.001</factor>
+        <offset>1.0</offset>
+      </pitch>
+    </rain>
 
 </fx>
 
