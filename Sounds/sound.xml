@@ -678,7 +678,7 @@
         <property>systems/electrical/outputs/efis</property>
         <volume>
             <property>/sim/current-view/internal</property>
-            <factor>0.068</factor>
+            <factor>0.069</factor>
         </volume>
     </avionics>
 
@@ -705,6 +705,18 @@
         <offset>1.0</offset>
       </pitch>
     </rain>
+
+    <!--classified>
+        <path>Aircraft/C-32J/Sounds/classified.wav</path>
+        <mode>once</mode>
+        <condition>
+        <equals>
+        <property>modes/stby/powah</property>
+            <value>0</value>
+        </equals>
+        </condition>
+    </classified-->
+
 
 </fx>
 
