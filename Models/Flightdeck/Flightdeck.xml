@@ -50,7 +50,7 @@
 <object-name>bezel</object-name>
 <object-name>Chrono.bezel</object-name>
 <object-name>Casing</object-name>
-<object-name>EFB</object-name>
+<!--object-name>EFB</object-name-->
 <object-name>Border</object-name>
 <object-name>Cube.003</object-name>
 <object-name>Cylinder.052</object-name>
@@ -574,7 +574,7 @@
 		<offsets>
 			<x-m>1.69</x-m>
 			<y-m>-1.172</y-m>
-			<z-m>0.8324</z-m>
+			<z-m>0.8328</z-m>
 			<pitch-deg>-71</pitch-deg>
       <heading-deg>75</heading-deg>
       <roll-deg>0</roll-deg>
@@ -590,7 +590,7 @@
 		<offsets>
 			<x-m>1.69</x-m>
 			<y-m>1.172</y-m>
-			<z-m>0.8324</z-m>
+			<z-m>0.8328</z-m>
 			<pitch-deg>-71</pitch-deg>
       <heading-deg>-75</heading-deg>
       <roll-deg>0</roll-deg>

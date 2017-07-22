@@ -713,6 +713,9 @@
 			<!--file>Aircraft/Instruments-3d/cdu/boeing.nas</file-->
 			<file>Aircraft/C-32J/Nasal/boeing_cdu.nas</file>
 		</cdu>
+		<efb>
+			<file>Aircraft/C-32J/Nasal/efb.nas</file>
+		</efb>
 		<v-speeds>
 			<file>Aircraft/C-32J/Nasal/v-speeds.nas</file>
 		</v-speeds>

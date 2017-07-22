@@ -157,7 +157,7 @@
 	<!-- Right wing fuel tank -->
 	<tank x="-24.3" y="-8.25" z="0.8" jet="true" capacity="16680" />
 	<!-- Center fuel tank -->
-	<tank x="-22.0" y="0.0" z="-0.75" jet="true" capacity="54590" />
+	<tank x="-22.0" y="0.0" z="-0.75" jet="true" capacity="54600" />
 	<!-- Aux fuel tanks -->
 	<!-- Step up to 8610, was 8310 -->
 	<tank x="-20.0" y="0.0" z="-0.75" jet="true" capacity="8610" />
