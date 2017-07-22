@@ -545,6 +545,7 @@
                 	    <source>/instrumentation/nav[1]/frequencies/selected-mhz</source>
             		</frequencies>
         	</dme>
+		<efb include="Models/Instruments/EFB/TimeZones.xml"/>
 		<fmc>
 			<to-flap type="double">5</to-flap>
 			<vspeeds>
