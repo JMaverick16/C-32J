@@ -54,7 +54,7 @@
         <repeat>true</repeat>
         <delay>0.50</delay>
         <count>150</count>        <!-- -1 to have 'em all -->
-        <x-offset>14.3578</x-offset><!-- in feet -->
+        <x-offset>18.3578</x-offset><!-- in feet -->
         <y-offset>8.56</y-offset>
         <z-offset>-1.619</z-offset>
         <yaw-offset>90.0</yaw-offset>
@@ -76,7 +76,7 @@
         <repeat>true</repeat>
         <delay>0.50</delay>
         <count>150</count>        <!-- -1 to have 'em all -->
-        <x-offset>14.3578</x-offset><!-- in feet -->
+        <x-offset>18.3578</x-offset><!-- in feet -->
         <y-offset>-8.56</y-offset>
         <z-offset>-1.619</z-offset>
         <yaw-offset>-90.0</yaw-offset>
