@@ -323,6 +323,10 @@
 				<name>w</name>
 				<desc>walk forward toward view direction</desc>
 			</key>
+			<key>
+				<name>f</name>
+				<desc>release flare/chaff countermeasures</desc>
+			</key>
 			<line>Autobrake help:</line>
 			<line>-------------------------</line>
 			<line>RTO........activate emergency brake if throttles are idle during takeoff</line>
@@ -376,6 +380,11 @@
 				<path>Aircraft/C-32J/Systems/757-flt-ctrls.xml</path>
 			</autopilot>
 		</systems>
+
+		<submodels>
+            <serviceable type="bool">1</serviceable>
+            <path>Aircraft/C-32J/Systems/submodels.xml</path>
+        </submodels>
 		
 	</sim>
 
@@ -555,7 +564,6 @@
 			</vspeeds>
 		</fmc>
 
-
 		<mk-viii>  <!-- mk-viii configuration, see: http://wiki.flightgear.org/index.php/GPWS -->
 	            <serviceable>true</serviceable>     <!-- EGPWS_ENABLE -->
 	            <configuration-module>
@@ -677,6 +685,22 @@
 					<value>5</value> <!-- MAX -->
 				</binding>
 			</key>
+			<key n="102">
+            	<name>f</name>
+            	<desc>Release Flare / Chaff</desc>
+            	<binding>
+                	<command>property-assign</command>
+                	<property>ai/submodels/submodel[0]/flare-release</property>
+               		<value>true</value>
+            	</binding>
+            	<mod-up>
+                <binding>
+                    <command>property-assign</command>
+                    <property>ai/submodels/submodel[0]/flare-release</property>
+                    <value>false</value>
+                </binding>
+            	</mod-up>
+        	</key>
 
 			<!-- Radio Stack override -->
 			<key n="268">
