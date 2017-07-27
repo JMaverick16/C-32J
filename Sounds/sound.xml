@@ -678,7 +678,7 @@
         <property>systems/electrical/outputs/efis</property>
         <volume>
             <property>/sim/current-view/internal</property>
-            <factor>0.069</factor>
+            <factor>0.0695</factor>
         </volume>
     </avionics>
 
@@ -705,6 +705,24 @@
         <offset>1.0</offset>
       </pitch>
     </rain>
+
+  <sonicboom>
+   <name>Sonic Boom</name>
+    <mode>once</mode>
+   <path>Aircraft/C-32J/Sounds/sonicboom.wav</path>
+   <condition>
+   <and>
+        <greater-than>
+            <property>velocities/mach</property>
+            <value>1.0</value>
+        </greater-than>
+        <equals>
+            <property>/sim/current-view/internal</property>
+            <value>false</value>
+        </equals>
+    </and>
+   </condition>
+  </sonicboom>
 
     <!--classified>
         <path>Aircraft/C-32J/Sounds/classified.wav</path>
