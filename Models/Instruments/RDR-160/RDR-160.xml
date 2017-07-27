@@ -16,7 +16,7 @@ Syd Adams
 
     <panel>
         <name>Radar</name>
-        <path>Aircraft/MD-88/Models/Instruments/RDR-160/radar.xml</path>
+        <path>Aircraft/C-32J/Models/Instruments/RDR-160/radar.xml</path>
         <bottom-left>
             <x-m>0.003</x-m>
             <y-m>-0.050</y-m>

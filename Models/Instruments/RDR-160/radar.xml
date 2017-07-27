@@ -2,7 +2,7 @@
 <PropertyList>
 
 <name>Radar Panel</name>
-<background>Aircraft/MD-88/Models/Instruments/RDR-160/transparent-bg.png</background>
+<background>Aircraft/C-32J/Models/Instruments/RDR-160/transparent-bg.png</background>
 <w>330</w>
 <h>256</h>
 
