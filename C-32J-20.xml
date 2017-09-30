@@ -151,13 +151,13 @@
 	</gear>
 
 	<!-- FUEL AND PAYLOAD -->
-	<!-- Total fuel capacity: 101,470 pounds (This is an extended range plane) -->
+	<!-- Total fuel capacity: 101,480 pounds (This is an extended range plane) -->
 	<!-- Left wing fuel tank -->
 	<tank x="-24.3" y="8.25" z="0.8" jet="true" capacity="15880" />
 	<!-- Right wing fuel tank -->
 	<tank x="-24.3" y="-8.25" z="0.8" jet="true" capacity="15880" />
 	<!-- Center fuel tank -->
-	<tank x="-22.0" y="0.0" z="-0.75" jet="true" capacity="52690" />
+	<tank x="-22.0" y="0.0" z="-0.75" jet="true" capacity="52700" />
 	<!-- Aux fuel tanks -->
 	<!-- Step up to 8510, was 8310 -->
 	<tank x="-20.0" y="0.0" z="-0.75" jet="true" capacity="8510" />

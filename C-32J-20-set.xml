@@ -16,7 +16,7 @@
 		<aero>C-32J-20</aero>
 
 		<startup>
-			<splash-texture>Aircraft/C-32J/splash2.png</splash-texture>
+			<splash-texture>Aircraft/C-32J/splash20.png</splash-texture>
 		</startup>
 
 		<instrumentation>

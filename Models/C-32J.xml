@@ -83,6 +83,8 @@
     <animation>
 		<type>pick</type>
 		<object-name>seat1</object-name>
+		<object-name>Headrest.1</object-name>
+		<object-name>Headmount.1</object-name>
 		<action>
 			<button>0</button>
 			<repeatable type="bool">false</repeatable>
@@ -99,6 +101,8 @@
 		<name>1st seat</name>
 		<type>translate</type>
 		<object-name>seat1</object-name>
+		<object-name>Headrest.1</object-name>
+		<object-name>Headmount.1</object-name>
 		<property>sim/model/door-positions/seat1/position-norm</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
@@ -115,6 +119,8 @@
 		<name>1st seat</name>
 		<type>translate</type>
 		<object-name>seat1</object-name>
+		<object-name>Headrest.1</object-name>
+		<object-name>Headmount.1</object-name>
 		<property>sim/model/door-positions/seat1/position-norm</property>
 		<interpolation>
 			<entry><ind>0.5</ind><dep>0</dep></entry>
@@ -130,6 +136,8 @@
 	    <animation>
 		<type>pick</type>
 		<object-name>seat2</object-name>
+		<object-name>Headrest.2</object-name>
+		<object-name>Headmount.2</object-name>
 		<action>
 			<button>0</button>
 			<repeatable type="bool">false</repeatable>
@@ -146,6 +154,8 @@
 		<name>2nd seat</name>
 		<type>translate</type>
 		<object-name>seat2</object-name>
+		<object-name>Headrest.2</object-name>
+		<object-name>Headmount.2</object-name>
 		<property>sim/model/door-positions/seat2/position-norm</property>
 		<interpolation>
 			<entry><ind>0</ind><dep>0</dep></entry>
@@ -162,6 +172,8 @@
 		<name>2nd seat</name>
 		<type>translate</type>
 		<object-name>seat2</object-name>
+		<object-name>Headrest.2</object-name>
+		<object-name>Headmount.2</object-name>
 		<property>sim/model/door-positions/seat2/position-norm</property>
 		<interpolation>
 			<entry><ind>0.5</ind><dep>0</dep></entry>
