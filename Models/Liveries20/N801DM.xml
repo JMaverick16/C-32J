@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name>N801DM</name>
+				<texture>Liveries20/N801DM.png</texture>
+				<winglets type="bool">true</winglets>
+			</livery>
+		</model>
+	</sim>
+</PropertyList>
