@@ -22,10 +22,6 @@
 					<equals>
 						<property>/it-autoflight/output/thr-mode</property>
 						<value>0</value>
-					</equals>
-					<equals>
-						<property>/it-autoflight/output/retard</property>
-						<value>0</value>
 					</equals>					
 					<equals>
 						<property>/it-autoflight/output/athr</property>
@@ -76,10 +72,6 @@
 						<value>0</value>
 					</equals>
 					<equals>
-						<property>/it-autoflight/output/retard</property>
-						<value>0</value>
-					</equals>
-					<equals>
 						<property>/it-autoflight/output/athr</property>
 						<value>1</value>
 					</equals>
@@ -120,16 +112,10 @@
 		<enable>
 			<condition>
 				<and>
-					<or>
-						<equals>
-							<property>/it-autoflight/output/thr-mode</property>
-							<value>1</value>
-						</equals>
-						<equals>
-							<property>/it-autoflight/output/retard</property>
-							<value>1</value>
-						</equals>
-					</or>
+					<equals>
+						<property>/it-autoflight/output/thr-mode</property>
+						<value>1</value>
+					</equals>
 					<equals>
 						<property>/it-autoflight/output/athr</property>
 						<value>1</value>
@@ -155,18 +141,18 @@
 			<Td>0.00001</Td>    
 			<u_min>
 				<condition>
-					<equals>
-						<property>/it-autoflight/output/retard</property>
-						<value>0</value>
-					</equals>
+					<not-equals>
+						<property>/it-autoflight/mode/thr</property>
+						<value>RETARD</value>
+					</not-equals>
 				</condition>
 				<value>104</value>
 			</u_min>  
 			<u_min>
 				<condition>
 					<equals>
-						<property>/it-autoflight/output/retard</property>
-						<value>1</value>
+						<property>/it-autoflight/mode/thr</property>
+						<value>RETARD</value>
 					</equals>
 				</condition>
 				<value>80</value>
@@ -187,10 +173,6 @@
 					<equals>
 						<property>/it-autoflight/output/thr-mode</property>
 						<value>2</value>
-					</equals>
-					<equals>
-						<property>/it-autoflight/output/retard</property>
-						<value>0</value>
 					</equals>
 					<equals>
 						<property>/it-autoflight/output/athr</property>
@@ -269,10 +251,10 @@
 						<property>/it-autoflight/output/thr-mode</property>
 						<value>0</value>
 					</equals>
-					<equals>
-						<property>/it-autoflight/output/retard</property>
-						<value>0</value>
-					</equals>
+					<not-equals>
+						<property>/it-autoflight/mode/thr</property>
+						<value>RETARD</value>
+					</not-equals>
 				</and>
 			</condition>
 			<property>/controls/engines/epr-roc-thr</property>
@@ -288,10 +270,10 @@
 						<property>/it-autoflight/output/thr-mode</property>
 						<value>0</value>
 					</not-equals>
-					<equals>
-						<property>/it-autoflight/output/retard</property>
-						<value>0</value>
-					</equals>
+					<not-equals>
+						<property>/it-autoflight/mode/thr</property>
+						<value>RETARD</value>
+					</not-equals>
 				</and>
 			</condition>
 			<property>/controls/engines/epr-roc-pitch</property>
@@ -304,8 +286,8 @@
 						<value>1</value>
 					</equals>
 					<equals>
-						<property>/it-autoflight/output/retard</property>
-						<value>1</value>
+						<property>/it-autoflight/mode/thr</property>
+						<value>RETARD</value>
 					</equals>
 				</and>
 			</condition>
@@ -359,10 +341,10 @@
 						<property>/it-autoflight/output/thr-mode</property>
 						<value>0</value>
 					</equals>
-					<equals>
-						<property>/it-autoflight/output/retard</property>
-						<value>0</value>
-					</equals>
+					<not-equals>
+						<property>/it-autoflight/mode/thr</property>
+						<value>RETARD</value>
+					</not-equals>
 				</and>
 			</condition>
 			<property>/controls/engines/epr-roc-thr</property>
@@ -378,10 +360,10 @@
 						<property>/it-autoflight/output/thr-mode</property>
 						<value>0</value>
 					</not-equals>
-					<equals>
-						<property>/it-autoflight/output/retard</property>
-						<value>0</value>
-					</equals>
+					<not-equals>
+						<property>/it-autoflight/mode/thr</property>
+						<value>RETARD</value>
+					</not-equals>
 				</and>
 			</condition>
 			<property>/controls/engines/epr-roc-pitch</property>
@@ -394,8 +376,8 @@
 						<value>1</value>
 					</equals>
 					<equals>
-						<property>/it-autoflight/output/retard</property>
-						<value>1</value>
+						<property>/it-autoflight/mode/thr</property>
+						<value>RETARD</value>
 					</equals>
 				</and>
 			</condition>
