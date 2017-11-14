@@ -346,8 +346,8 @@ var vertical = func {
 # Helpers
 var ap_various = func {
 	# Calculate Roll and Pitch Kp
-	rollKp = getprop("/it-autoflight/config/roll/kp-low") + (getprop("/velocities/mach") - 0.2) * ((getprop("/it-autoflight/config/roll/kp-high") - getprop("/it-autoflight/config/roll/kp-low")) / (0.9-0.2));
-	pitchKp = getprop("/it-autoflight/config/pitch/kp-low") + (getprop("/velocities/mach") - 0.2) * ((getprop("/it-autoflight/config/pitch/kp-high") - getprop("/it-autoflight/config/pitch/kp-low")) / (0.9-0.2));
+	rollKp = getprop("/it-autoflight/config/roll/kp-low") + (getprop("/velocities/mach") - 0.2) * ((getprop("/it-autoflight/config/roll/kp-high") - getprop("/it-autoflight/config/roll/kp-low")) / (0.9 - 0.2));
+	pitchKp = getprop("/it-autoflight/config/pitch/kp-low") + (getprop("/velocities/mach") - 0.2) * ((getprop("/it-autoflight/config/pitch/kp-high") - getprop("/it-autoflight/config/pitch/kp-low")) / (0.9 - 0.2));
 	
 	if (getprop("/it-autoflight/config/roll/kp-low") > getprop("/it-autoflight/config/roll/kp-high")) {
 		rollKp = math.clamp(rollKp, getprop("/it-autoflight/config/roll/kp-high"), getprop("/it-autoflight/config/roll/kp-low"));
