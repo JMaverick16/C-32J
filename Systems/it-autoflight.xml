@@ -1688,7 +1688,7 @@
 					</equals>
 				</or>
 			</condition>
-			<value>0.25</value>
+			<property>/it-autoflight/config/rollout/defl-pitch</property>
 		</input>
 		<output>/controls/flight/elevator</output>
 		<type>noise-spike</type>

@@ -408,6 +408,7 @@
 			<kp-rudder>-0.05</kp-rudder>
 		</autoland>
 		<rollout>
+			<defl-pitch>0.15</defl-pitch>
 			<kp-rudder>-0.02</kp-rudder>
 		</rollout>
 	</config>
