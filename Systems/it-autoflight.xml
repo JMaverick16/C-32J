@@ -1688,7 +1688,10 @@
 					</equals>
 				</or>
 			</condition>
-			<property>/it-autoflight/config/rollout/defl-pitch</property>
+			<value>1</value>
+			<scale>
+				<property>/it-autoflight/config/rollout/defl-pitch</property>
+			</scale>
 		</input>
 		<output>/controls/flight/elevator</output>
 		<type>noise-spike</type>
