@@ -232,7 +232,7 @@
     <filter>
         <name>IAS SYNC</name>
         <type>gain</type>
-        <gain>1</gain>
+        <gain>1.0</gain>
 		<enable>
 			<condition>
 				<equals>
@@ -249,7 +249,7 @@
     <filter>
         <name>MACH SYNC</name>
         <type>gain</type>
-        <gain>1</gain>
+        <gain>1.0</gain>
 		<enable>
 			<condition>
 				<equals>
@@ -317,6 +317,7 @@
 		<name>HEADING ERROR DEG</name>
 		<debug>false</debug>
 		<type>gain</type>
+		<gain>1.0</gain>
 		<input>
 			<condition>
 				<and>
@@ -362,11 +363,19 @@
 					<value>1</value>
 				</equals>
 			</condition>
-			<property>/autopilot/settings/true-heading-deg</property>
-			<offset>
-				<property>/orientation/heading-deg</property>
-				<scale>-1.0</scale>
-			</offset>
+			<expression>
+				<sum>
+					<property>/autopilot/route-manager/wp[0]/true-bearing-deg</property>
+					<product>
+						<property>/autopilot/internal/drift-angle-deg</property>
+						<value>-1</value>
+					</product>
+					<product>
+						<property>/orientation/heading-deg</property>
+						<value>-1</value>
+					</product>
+				</sum>
+			</expression>
 		</input>
 		<input>
 			<condition>
@@ -388,7 +397,6 @@
 			<min>-180</min>
 			<max>180</max>
 		</period>
-		<gain>1.0</gain>
 	</filter>
 	
 	<filter>
@@ -460,6 +468,7 @@
 		<name>NAV ERROR DEG</name>
 		<debug>false</debug>
 		<type>gain</type>
+		<gain>1.0</gain>
 		<input>
 			<condition>
 				<equals>
@@ -491,22 +500,22 @@
 			<min>-180</min>
 			<max>180</max>
 		</period>
-		<gain>1.0</gain>
 	</filter>
 
 	<filter>
 		<name>INTERNAL VERTICAL SPEED COMPUTER</name>
 		<debug>false</debug>
 		<type>gain</type>
+		<gain>55.5</gain>
 		<input>/velocities/vertical-speed-fps</input>
 		<output>/it-autoflight/internal/vert-speed-fpm</output>
-		<gain>55.5</gain>
 	</filter>
 	
 	<filter>
 		<name>INTERNAL VERTICAL SPEED COMPUTER SYNC 4</name>
 		<debug>false</debug>
 		<type>gain</type>
+		<gain>55.5</gain>
 		<enable>
 			<condition>
 				<and>
@@ -523,13 +532,13 @@
 		</enable>
 		<input>/velocities/vertical-speed-fps</input>
 		<output>/it-autoflight/internal/target-fpm-b</output>
-		<gain>55.5</gain>
 	</filter>
 	
 	<filter>
 		<name>INTERNAL VERTICAL SPEED COMPUTER SYNC 5</name>
 		<debug>false</debug>
 		<type>gain</type>
+		<gain>55.5</gain>
 		<enable>
 			<condition>
 				<not-equals>
@@ -540,16 +549,15 @@
 		</enable>
 		<input>/velocities/vertical-speed-fps</input>
 		<output>/it-autoflight/internal/target-fpm-d</output>
-		<gain>55.5</gain>
 	</filter>
 	
 	<filter>
 		<name>NAV1 G/S FPM Calc</name>
 		<debug>false</debug>
 		<type>gain</type>
+		<gain>1.0</gain>
 		<input>/instrumentation/nav[0]/gs-rate-of-climb-fpm</input>
 		<output>/it-autoflight/internal/nav1-rate-of-climb-fpm</output>
-		<gain>1.0</gain>
 		<min>-1500</min>
 		<max>0</max>
 	</filter>
@@ -558,9 +566,9 @@
 		<name>NAV2 G/S FPM Calc</name>
 		<debug>false</debug>
 		<type>gain</type>
+		<gain>1.0</gain>
 		<input>/instrumentation/nav[1]/gs-rate-of-climb-fpm</input>
 		<output>/it-autoflight/internal/nav2-rate-of-climb-fpm</output>
-		<gain>1.0</gain>
 		<min>-1500</min>
 		<max>0</max>
 	</filter>
@@ -692,7 +700,7 @@
 		<name>ROLL DEG SYNC</name>
 		<debug>false</debug>
 		<type>gain</type>
-		<gain>1</gain>
+		<gain>1.0</gain>
 		<enable>
 			<condition>
 				<and>
@@ -801,7 +809,7 @@
 	<filter>
 		<name>IT-CONTROLLER: ROLL RATE CMD</name>
 		<type>gain</type>
-		<gain>1</gain>
+		<gain>1.0</gain>
 		<enable>
 			<condition>
 				<not-equals>
@@ -880,7 +888,7 @@
 	<filter>
 		<name>IT-CONTROLLER: RUDDER NORMALIZER</name>
 		<type>gain</type>
-		<gain>1</gain>
+		<gain>1.0</gain>
 		<enable>
 			<condition>
 				<or>
@@ -1080,7 +1088,7 @@
 				</equals>
 			</condition>
 			<property>/it-autoflight/internal/lookahead-15-sec-mach</property>
-			<scale>500.0</scale>
+			<scale>1000.0</scale>
 		</input>
 		<reference>
 			<condition>
@@ -1099,7 +1107,7 @@
 				</equals>
 			</condition>
 			<property>/it-autoflight/internal/flch-mach</property>
-			<scale>500.0</scale>
+			<scale>1000.0</scale>
 		</reference>
 		<output>
 			<property>/it-autoflight/internal/target-fpm-b</property>
@@ -1112,7 +1120,7 @@
 						<value>4</value>
 					</equals>
 				</condition>
-				<value>-50</value>
+				<value>-55</value>
 			</Kp>
 			<Kp>
 				<condition>
@@ -1231,7 +1239,7 @@
     <filter>
         <name>AUTOLAND FPM</name>
         <type>gain</type>
-        <gain>1</gain>
+        <gain>1.0</gain>
         <update-interval-secs type="double">0.05</update-interval-secs>
         <input> 
             <expression>
@@ -1254,7 +1262,7 @@
 		<name>TARGET FPM</name>
 		<debug>false</debug>
 		<type>gain</type>
-		<gain>1</gain>
+		<gain>1.0</gain>
 		<input>
 			<condition>
 				<equals>
@@ -1559,7 +1567,7 @@
 		<name>PITCH DEG SYNC</name>
 		<debug>false</debug>
 		<type>gain</type>
-		<gain>1</gain>
+		<gain>1.0</gain>
 		<enable>
 			<condition>
 				<and>
@@ -1615,7 +1623,7 @@
 	<filter>
 		<name>IT-CONTROLLER: PITCH RATE CMD</name>
 		<type>gain</type>
-		<gain>1</gain>
+		<gain>1.0</gain>
 		<enable>
 			<condition>
 				<not-equals>
