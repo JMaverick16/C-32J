@@ -1727,6 +1727,68 @@
 		<max-rate-of-change>0.4</max-rate-of-change>
 	</filter>
 	
+	<filter>
+		<name>IT-CONTROLLER: PITCH TRIM</name>
+		<debug>false</debug>
+		<feedback-if-disabled>true</feedback-if-disabled>
+		<initialize-to>output</initialize-to>
+		<enable>
+			<condition>
+				<and>
+					<equals>
+						<property>/gear/gear[1]/wow</property>
+						<value>0</value>
+					</equals>
+					<equals>
+						<property>/gear/gear[2]/wow</property>
+						<value>0</value>
+					</equals>
+					<or>
+						<equals>
+							<property>/it-autoflight/output/ap1</property>
+							<value>1</value>
+						</equals>
+						<equals>
+							<property>/it-autoflight/output/ap2</property>
+							<value>1</value>
+						</equals>
+					</or>
+					<or>
+						<greater-than>
+							<property>/it-autoflight/internal/elevator-cmd</property>
+							<value>0.01</value>
+						</greater-than>
+						<less-than>
+							<property>/it-autoflight/internal/elevator-cmd</property>
+							<value>-0.01</value>
+						</less-than>
+					</or>
+				</and>
+			</condition>
+		</enable>
+		<input>
+			<condition>
+				<greater-than>
+					<property>/it-autoflight/internal/elevator-cmd</property>
+					<value>0.01</value>
+				</greater-than>
+			</condition>
+			<value>1</value>
+		</input>
+		<input>
+			<condition>
+				<less-than>
+					<property>/it-autoflight/internal/elevator-cmd</property>
+					<value>-0.01</value>
+				</less-than>
+			</condition>
+			<value>-1</value>
+		</input>
+		<output>/controls/flight/elevator-trim</output>
+		<type>noise-spike</type>
+		<max-rate-of-change>0.01</max-rate-of-change>
+	</filter>
+	
  <!-- =============================================================== -->
  <!-- Rudder Control                                                  -->
  <!-- =============================================================== -->
@@ -1826,68 +1888,6 @@
 		<output>/controls/flight/rudder</output>
 		<type>noise-spike</type>
 		<max-rate-of-change>0.20</max-rate-of-change>
-	</filter>
-	
-	<filter>
-		<name>IT-CONTROLLER: PITCH TRIM</name>
-		<debug>false</debug>
-		<feedback-if-disabled>true</feedback-if-disabled>
-		<initialize-to>output</initialize-to>
-		<enable>
-			<condition>
-				<and>
-					<equals>
-						<property>/gear/gear[1]/wow</property>
-						<value>0</value>
-					</equals>
-					<equals>
-						<property>/gear/gear[2]/wow</property>
-						<value>0</value>
-					</equals>
-					<or>
-						<equals>
-							<property>/it-autoflight/output/ap1</property>
-							<value>1</value>
-						</equals>
-						<equals>
-							<property>/it-autoflight/output/ap2</property>
-							<value>1</value>
-						</equals>
-					</or>
-					<or>
-						<greater-than>
-							<property>/it-autoflight/internal/elevator-cmd</property>
-							<value>0.01</value>
-						</greater-than>
-						<less-than>
-							<property>/it-autoflight/internal/elevator-cmd</property>
-							<value>-0.01</value>
-						</less-than>
-					</or>
-				</and>
-			</condition>
-		</enable>
-		<input>
-			<condition>
-				<greater-than>
-					<property>/it-autoflight/internal/elevator-cmd</property>
-					<value>0.01</value>
-				</greater-than>
-			</condition>
-			<value>1</value>
-		</input>
-		<input>
-			<condition>
-				<less-than>
-					<property>/it-autoflight/internal/elevator-cmd</property>
-					<value>-0.01</value>
-				</less-than>
-			</condition>
-			<value>-1</value>
-		</input>
-		<output>/controls/flight/elevator-trim</output>
-		<type>noise-spike</type>
-		<max-rate-of-change>0.01</max-rate-of-change>
 	</filter>
 	
  <!-- =============================================================== -->
