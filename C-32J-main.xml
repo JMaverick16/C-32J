@@ -398,13 +398,12 @@
 			<td>0.001</td>
 		</pitch>
 		<cmd>
-			<roll-kp>-0.9</roll-kp>
-			<roll-scale>1.4</roll-scale>
+			<roll-kp>-1.3</roll-kp>
 			<vorloc>-2.5</vorloc>
-			<vs>0.01</vs>
+			<vs>0.0017</vs>
 		</cmd>
-		<autoland>
-			<kp-pitch>0.06</kp-pitch>
+		<autoland> 
+			<kp-pitch>0.01</kp-pitch>
 			<kp-rudder>-0.05</kp-rudder>
 		</autoland>
 		<rollout>
@@ -414,6 +413,7 @@
 	</config>
 	<settings>
 		<auto-bank-max-deg>25</auto-bank-max-deg> <!-- Maximum Auto Bank Limit -->
+		<disable-final>0</disable-final> <!-- Disable the Final Controllers -->
 		<land-enable>1</land-enable> <!-- Enable/Disable Autoland -->
 		<land-flap>0.667</land-flap> <!-- Minimum Flap used for Landing -->
 		<retard-ft>20</retard-ft> <!-- Enable Thrust Retard -->
