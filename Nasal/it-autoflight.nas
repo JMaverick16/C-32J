@@ -178,7 +178,7 @@ var lateral = func {
 		setprop("/it-autoflight/mode/lat", "HDG");
 		setprop("/it-autoflight/mode/arm", " ");
 	} else if (latset == 1) {
-		if (getprop("/autopilot/route-manager/route/num") > 0 and getprop("/autopilot/route-manager/active") == 1 and getprop("/position/gear-agl-ft") >= 30) {
+		if (getprop("/autopilot/route-manager/route/num") > 0 and getprop("/autopilot/route-manager/active") == 1 and getprop("/position/gear-agl-ft") >= getprop("/it-autoflight/settings/lat-agl-ft")) {
 			make_lnav_active();
 		} else {
 			if (getprop("/it-autoflight/output/lat") != 1) {
@@ -802,7 +802,7 @@ var check_arms = func {
 }
 
 var update_arms = func {
-	if (getprop("/it-autoflight/input/lat-arm") == 1 and getprop("/autopilot/route-manager/route/num") > 0 and getprop("/autopilot/route-manager/active") == 1 and getprop("/position/gear-agl-ft") >= 30) {
+	if (getprop("/it-autoflight/input/lat-arm") == 1 and getprop("/autopilot/route-manager/route/num") > 0 and getprop("/autopilot/route-manager/active") == 1 and getprop("/position/gear-agl-ft") >= getprop("/it-autoflight/settings/lat-agl-ft")) {
 		make_lnav_active();
 	}
 	if (getprop("/instrumentation/nav[0]/in-range") == 1 and getprop("/it-autoflight/settings/use-nav2-radio") == 0) {
