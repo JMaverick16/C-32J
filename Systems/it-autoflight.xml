@@ -1776,6 +1776,10 @@
 							<value>-0.01</value>
 						</less-than>
 					</or>
+					<not-equals>
+						<property>/it-autoflight/settings/disable-final</property>
+						<value>1</value>
+					</not-equals>
 				</and>
 			</condition>
 		</enable>
