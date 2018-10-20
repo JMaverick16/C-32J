@@ -1946,8 +1946,6 @@
 		<name>IT-CONTROLLER: RUDDER CMD</name>
 		<debug>false</debug>
 		<type>noise-spike</type>
-		<feedback-if-disabled>true</feedback-if-disabled>
-		<initialize-to>output</initialize-to>
 		<enable>
 			<condition>
 				<and>
