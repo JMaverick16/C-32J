@@ -386,13 +386,13 @@
 	<it-autoflight>
 		<config>
 			<roll>
-				<kp-low>0.14</kp-low>
+				<kp-low>0.13</kp-low>
 				<kp-high>0.07</kp-high>
 				<ti>1.0</ti>
 				<td>0.0001</td>
 			</roll>
 			<pitch>
-				<kp-low>-0.18</kp-low>
+				<kp-low>-0.15</kp-low>
 				<kp-high>-0.07</kp-high>
 				<ti>0.5</ti>
 				<td>0.001</td>
@@ -409,7 +409,7 @@
 				<kp-rudder>-0.05</kp-rudder>
 			</autoland>
 			<rollout>
-				<defl-pitch>0.15</defl-pitch>
+				<defl-pitch>0.1</defl-pitch>
 				<kp-rudder>-0.02</kp-rudder>
 			</rollout>
 		</config>
