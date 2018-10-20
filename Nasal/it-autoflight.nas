@@ -1,4 +1,4 @@
-# IT AUTOFLIGHT System Controller V3.2.0
+# IT AUTOFLIGHT System Controller V3.2.1
 # Copyright (c) 2017-2018 Joshua Davidson (it0uchpods)
 # This program is 100% GPL!
 

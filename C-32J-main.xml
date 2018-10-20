@@ -405,12 +405,13 @@
 				<vs-high>0.0010</vs-high> <!-- Kp at high speed -->
 			</cmd>
 			<autoland> 
-				<kp-pitch>0.01</kp-pitch>
-				<kp-rudder>-0.05</kp-rudder>
+				<pitch-kp>0.01</pitch-kp>
+				<yaw-kp>-0.05</yaw-kp>
 			</autoland>
 			<rollout>
-				<defl-pitch>0.1</defl-pitch>
-				<kp-rudder>-0.02</kp-rudder>
+				<roll-kp>-0.1</roll-kp>
+				<pitch-defl>0.1</pitch-defl>
+				<yaw-kp>-0.02</yaw-kp>
 			</rollout>
 		</config>
 		<settings>

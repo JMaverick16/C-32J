@@ -947,9 +947,9 @@
 	</pid-controller>
 	
 	<filter>
-		<name>IT-CONTROLLER: RUDDER NORMALIZER</name>
+		<name>IT-CONTROLLER: AILERON ROLLOUT</name>
 		<type>gain</type>
-		<gain>1.0</gain>
+		<gain>/it-autoflight/config/rollout/roll-kp</gain>
 		<enable>
 			<condition>
 				<or>
@@ -964,7 +964,8 @@
 				</or>
 			</condition>
 		</enable>
-		<input>/controls/flight/rudder</input>
+		<input>/orientation/roll-deg</input>
+		<reference>0</reference>
 		<output>/it-autoflight/internal/aileron-rollout</output>
 	</filter>
 	
@@ -1009,22 +1010,7 @@
 			</condition>
 			<property>/it-autoflight/internal/aileron-cmd</property>
 		</input>
-		<input>
-			<condition>
-				<or>
-					<equals>
-						<property>/gear/gear[1]/wow</property>
-						<value>1</value>
-					</equals>
-					<equals>
-						<property>/gear/gear[2]/wow</property>
-						<value>1</value>
-					</equals>
-				</or>
-			</condition>
-			<property>/it-autoflight/internal/aileron-rollout</property>
-			<scale>-1.0</scale>
-		</input>
+		<input>/it-autoflight/internal/aileron-rollout</input>
 		<output>/controls/flight/aileron</output>
 		<max-rate-of-change>1.2</max-rate-of-change>
 	</filter>
@@ -1577,7 +1563,7 @@
 						<value>6</value>
 					</equals>
 				</condition>
-				<property>/it-autoflight/config/autoland/kp-pitch</property>
+				<property>/it-autoflight/config/autoland/pitch-kp</property>
 			</Kp>
 			<Ti>2.5</Ti>
 			<Td>0.0001</Td>
@@ -1810,13 +1796,13 @@
 			</condition>
 			<value>1</value>
 			<scale>
-				<property>/it-autoflight/config/rollout/defl-pitch</property>
+				<property>/it-autoflight/config/rollout/pitch-defl</property>
 			</scale>
 		</input>
 		<input>
 			<value>0.5</value>
 			<scale>
-				<property>/it-autoflight/config/rollout/defl-pitch</property>
+				<property>/it-autoflight/config/rollout/pitch-defl</property>
 			</scale>
 		</input>
 		<output>/controls/flight/elevator</output>
@@ -1933,7 +1919,7 @@
 						</equals>
 					</and>
 				</condition>
-				<property>/it-autoflight/config/autoland/kp-rudder</property>
+				<property>/it-autoflight/config/autoland/yaw-kp</property>
 			</Kp>
 			<Kp>
 				<condition>
@@ -1948,7 +1934,7 @@
 						</equals>
 					</or>
 				</condition>
-				<property>/it-autoflight/config/rollout/kp-rudder</property>
+				<property>/it-autoflight/config/rollout/yaw-kp</property>
 			</Kp>
 			<Ki>0</Ki>
 		</config>
