@@ -316,7 +316,6 @@ setlistener("sim/signals/fdm-initialized", func {
 	props.globals.initNode("engines/engine[0]/n2-ind",0,"DOUBLE");
 	props.globals.initNode("engines/engine[1]/n2-ind",0,"DOUBLE");
 	itaf.ap_init();			
-	var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/C-32J/Systems/autopilot-dlg.xml");
 	settimer(func {
 #	    engineLoop(0);
 #	    engineLoop(1);
