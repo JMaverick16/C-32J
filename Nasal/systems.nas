@@ -635,6 +635,8 @@ setlistener("instrumentation/transponder/inputs/knob-pos", func {
 	transponder.update();
 },0,0);
 
+	setprop("sim/multiplay/visibility-range-nm", 150);
+
 ## INSTRUMENTS
 ##############
 
