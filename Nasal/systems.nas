@@ -314,8 +314,7 @@ var update_systems = func {
 # start the loop 2 seconds after the FDM initializes
 setlistener("sim/signals/fdm-initialized", func {
 	props.globals.initNode("engines/engine[0]/n2-ind",0,"DOUBLE");
-	props.globals.initNode("engines/engine[1]/n2-ind",0,"DOUBLE");
-	itaf.ap_init();			
+	props.globals.initNode("engines/engine[1]/n2-ind",0,"DOUBLE");	
 	settimer(func {
 #	    engineLoop(0);
 #	    engineLoop(1);
