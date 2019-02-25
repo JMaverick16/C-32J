@@ -21,7 +21,7 @@ var nd_display = {};
 
       var myCockpit_switches = {
     # symbolic alias : relative property (as used in bindings), initial value, type
-    'toggle_range':         {path: '/inputs/range', value:10, type:'INT'},
+    'toggle_range':         {path: '/inputs/range', value:60, type:'INT'},
     'toggle_weather':       {path: '/inputs/wxr', value:0, type:'BOOL'},
     'toggle_airports':      {path: '/inputs/arpt', value:0, type:'BOOL'},
     'toggle_stations':      {path: '/inputs/sta', value:0, type:'BOOL'},
@@ -29,7 +29,7 @@ var nd_display = {};
     'toggle_position':      {path: '/inputs/pos', value:0, type:'BOOL'},
     'toggle_data':          {path: '/inputs/data',value:0, type:'BOOL'},
     'toggle_terrain':       {path: '/inputs/terr',value:0, type:'BOOL'},
-    'toggle_traffic':       {path: '/inputs/tfc',value:0, type:'BOOL'},
+    'toggle_traffic':       {path: '/inputs/tfc',value:1, type:'BOOL'},
     'toggle_centered':      {path: '/inputs/nd-centered',value:0, type:'BOOL'},
     'toggle_lh_vor_adf':    {path: '/inputs/lh-vor-adf',value:1, type:'INT'},
     'toggle_rh_vor_adf':    {path: '/inputs/rh-vor-adf',value:1, type:'INT'},
