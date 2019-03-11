@@ -478,12 +478,7 @@ var ITAF = {
 			}
 		} else {
 			Output.ap1.setBoolValue(0);
-			if (!Setting.disableFinal.getBoolValue()) {
-				Control.aileron.setValue(0);
-				Control.elevator.setValue(0);
-				Control.rudder.setValue(0);
-			}
-			me.apOffSound();
+			me.apOffFunction();
 		}
 		Output.ap1Temp = Output.ap1.getBoolValue();
 		if (Input.ap1.getBoolValue() != Output.ap1Temp) {
@@ -500,21 +495,23 @@ var ITAF = {
 			}
 		} else {
 			Output.ap2.setBoolValue(0);
-			if (!Setting.disableFinal.getBoolValue()) {
-				Control.aileron.setValue(0);
-				Control.elevator.setValue(0);
-				Control.rudder.setValue(0);
-			}
-			me.apOffSound();
+			me.apOffFunction();
 		}
 		Output.ap2Temp = Output.ap2.getBoolValue();
 		if (Input.ap2.getBoolValue() != Output.ap2Temp) {
 			Input.ap2.setBoolValue(Output.ap2Temp);
 		}
 	},
-	apOffSound: func() {
-		if (!Output.ap1.getBoolValue() and !Output.ap2.getBoolValue() and Sound.enableApOff) { # Only play sound if both are off
-			Sound.apOff.setBoolValue(1);
+	apOffFunction: func() {
+		if (!Output.ap1.getBoolValue() and !Output.ap2.getBoolValue()) { # Only do if both APs are off
+			if (!Setting.disableFinal.getBoolValue()) {
+				Control.aileron.setValue(0);
+				Control.elevator.setValue(0);
+				Control.rudder.setValue(0);
+			}
+			if (Sound.enableApOff) {
+				Sound.apOff.setBoolValue(1);
+			}
 		}
 	},
 	athrMaster: func(s) {
