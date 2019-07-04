@@ -609,7 +609,7 @@
         <condition>
             <greater-than>
                 <property>velocities/airspeed-kt</property>
-                <value>350</value>
+                <value>360</value>
             </greater-than>
         </condition>
         <volume>
