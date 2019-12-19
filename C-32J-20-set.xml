@@ -8,7 +8,7 @@
    			The Boeing C-32J-20 is the public use version of J Maverick 16's C-32J personal private aircraft. Known also as the "Mav Force Two", it is fitted with the most up to date Pratt and Whitney PW2040 engines and features reduced performance with specs similar to the base model.
   		</long-description>
 		<status>development</status>
-		<author>J Maverick 16, Joshua Davidson (it0uchpods), Tikibar</author>
+		<author>J Maverick 16, Joshua Davidson (Octal450), Tikibar</author>
 		<rating>
 		      	<FDM type="int">4</FDM>
       			<systems type="int">4</systems>
@@ -21,6 +21,8 @@
 		<startup>
 			<splash-texture>Aircraft/C-32J/splash20.png</splash-texture>
 		</startup>
+		<variant-of>C-32J</variant-of>
+		<minimum-fg-version>2018.3</minimum-fg-version>
 
 		<instrumentation>
  			<path>Aircraft/C-32J/Systems/instrumentation-C32.xml</path>
