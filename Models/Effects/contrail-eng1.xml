@@ -18,12 +18,12 @@
              <value>50</value>
            </greater-than>
            <greater-than>
-             <property>position/altitude-ft</property>
-             <value>19000</value>
+             <property>environment/relative-humidity</property>
+             <value>70</value>
            </greater-than>
            <less-than>
              <property>environment/temperature-degc</property>
-             <value>-30</value>
+             <value>-38</value>
            </less-than>
            <property>engines/engine[0]/running</property>
          </and>
@@ -59,7 +59,7 @@
 
        <counter>
          <particles-per-sec>
-           <value>200</value>
+           <value>180</value>
            <spread>100</spread>
          </particles-per-sec>
        </counter>
@@ -75,7 +75,7 @@
              <alpha><value> 0.08 </value></alpha>
            </color>
            <size>
-             <value>2.0</value>
+             <value>1.5</value>
            </size>
          </start>
 
@@ -87,7 +87,7 @@
              <alpha><value> 0.0 </value></alpha>
            </color>
            <size>
-             <value>10.0</value>
+             <value>15.0</value>
            </size>
          </end>
 
