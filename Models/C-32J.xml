@@ -190,7 +190,7 @@
 	<model>
 		<path>Aircraft/C-32J/Models/Effects/contrail-eng1.xml</path>
 		<offsets>
-			<x-m>22.038</x-m>
+			<x-m>14.038</x-m>
 			<y-m>-6.406</y-m>
 			<z-m>-0.801</z-m>
 		</offsets>
@@ -198,7 +198,7 @@
 	<model>
 		<path>Aircraft/C-32J/Models/Effects/contrail-eng2.xml</path>
 		<offsets>
-			<x-m>22.038</x-m>
+			<x-m>14.038</x-m>
 			<y-m>6.406</y-m>
 			<z-m>-0.801</z-m>
 		</offsets>
