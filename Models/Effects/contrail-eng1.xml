@@ -81,7 +81,7 @@
                         <expression>
                             <product>
                                 <value>0.7</value>
-                                <property>/rendering/scene/diffuse/green</property>
+                                <property>/rendering/scene/diffuse/red</property>
                             </product>
                         </expression>
                     </green>
@@ -89,7 +89,7 @@
                         <expression>
                             <product>
                                 <value>0.7</value>
-                                <property>/rendering/scene/diffuse/blue</property>
+                                <property>/rendering/scene/diffuse/red</property>
                             </product>
                         </expression>
                     </blue>
@@ -116,7 +116,7 @@
                         <expression>
                             <product>
                                 <value>1.0</value>
-                                <property>/rendering/scene/diffuse/green</property>
+                                <property>/rendering/scene/diffuse/red</property>
                             </product>
                         </expression>
                     </green>
@@ -124,25 +124,25 @@
                         <expression>
                             <product>
                                 <value>1.0</value>
-                                <property>/rendering/scene/diffuse/blue</property>
+                                <property>/rendering/scene/diffuse/red</property>
                             </product>
                         </expression>
                     </blue>
                     <alpha>
-                        <value> 0.02 </value>
+                        <value> 0.005 </value>
                     </alpha>
                 </color>
                 <size>
-                    <value>30</value>
+                    <value>20</value>
                 </size>
             </end>
 
          <life-sec>
-           <value>45</value>
+           <value>30</value>
          </life-sec>
            
-         <mass-kg>  0.01 </mass-kg>
-         <radius-m> 50.0 </radius-m>
+         <mass-kg>  0.05 </mass-kg>
+         <radius-m> 40.0 </radius-m>
        </particle>
 
        <program>
