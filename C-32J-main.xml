@@ -86,7 +86,9 @@
           	    <visibility-range-nm type="int">150</visibility-range-nm>
         	</multiplay>
  
-		<flight-recorder include="Systems/flight-recorder.xml"/> 
+		<flight-recorder include="Systems/flight-recorder.xml"/>
+
+		<gui n="0" include="gui/it-gui.xml"/>
 
 		<startup>
 			<splash-texture>Aircraft/C-32J/splash.png</splash-texture>
