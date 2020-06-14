@@ -715,6 +715,15 @@
 		</keyboard>
 	</input>
 
+	<b757>
+		<sound>
+			<thunder1 type="bool">false</thunder1>
+			<thunder2 type="bool">false</thunder2>
+			<thunder3 type="bool">false</thunder3>
+			<thunder4 type="bool">false</thunder4>
+		</sound>
+	</b757>
+
 	<nasal>
 		<Boeing757>
 			<file>Aircraft/C-32J/Nasal/wipers.nas</file>
@@ -769,6 +778,9 @@
 		<aar>
 	        <file>Aircraft/Generic/aar.nas</file>
 		</aar>
+		<thunder-effects>
+			<file>Aircraft/C-32J/Nasal/thunder-effects.nas</file>
+		</thunder-effects>
 	</nasal>
 
 	<aircraft>
