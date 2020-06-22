@@ -8,15 +8,19 @@
 			<path>/sim/model/cabin-visible</path>
 		</aircraft-data>
 		<tags>
-          	    <tag>transport</tag>
-      		    <tag>boeing</tag>
-      		    <tag>jet</tag>
-      		    <tag>twin-engine</tag>
-      		    <tag>retractable-gear</tag>
-      		    <tag>etops</tag>
-      		    <tag>glass-cockpit</tag>
-      		    <tag>ifr</tag>
-      		</tags>
+			<tag>transport</tag>
+			<tag>boeing</tag>
+			<tag>jet</tag>
+			<tag>retractable-gear</tag>
+			<tag>glass-cockpit</tag>
+			<tag>ifr</tag>
+			<tag>2010s</tag>
+			<tag>2000s</tag>
+			<tag>1990s</tag>
+			<tag>1980s</tag>
+			<tag>etops</tag>
+			<tag>twin-engine</tag>
+		</tags>
         	<instrument-options>
         	    <canvas-popup-enable type="bool">true</canvas-popup-enable>
         	</instrument-options>
@@ -434,7 +438,7 @@
 	</it-autoflight>
 
 <speeds>
-	<vmo>340</vmo>
+	<vmo>360</vmo>
 </speeds>
  
 	<modes>
@@ -715,6 +719,15 @@
 		</keyboard>
 	</input>
 
+	<b757>
+		<sound>
+			<thunder1 type="bool">false</thunder1>
+			<thunder2 type="bool">false</thunder2>
+			<thunder3 type="bool">false</thunder3>
+			<thunder4 type="bool">false</thunder4>
+		</sound>
+	</b757>
+
 	<nasal>
 		<Boeing757>
 			<file>Aircraft/C-32J/Nasal/wipers.nas</file>
@@ -769,6 +782,9 @@
 		<aar>
 	        <file>Aircraft/Generic/aar.nas</file>
 		</aar>
+		<thunder-effects>
+			<file>Aircraft/C-32J/Nasal/thunder-effects.nas</file>
+		</thunder-effects>
 	</nasal>
 
 	<aircraft>
@@ -833,7 +849,7 @@
         <max-gear-extension-speed>270</max-gear-extension-speed>
         <vne>600</vne>
         <max-positive-g>2.5</max-positive-g>
-        <max-negative-g>-1.76</max-negative-g>
+        <max-negative-g>-1.8</max-negative-g>
     </limits>
 
 </PropertyList>

@@ -8,7 +8,7 @@
    			The Boeing C-32J "Mav Force One" is J Maverick 16's personal private aircraft derived from the C-32A military passenger transportation version of the Boeing 757-200 twin-engine jet airliner used by the United States Air Force. It is fitted with the most up to date Rolls Royce RB211 engines and features unique airframe tunings, cockpit improvements, air to air refueling and a number of other particular modifications.
   		</long-description>
 		<status>development</status>
-		<author>J Maverick 16, Joshua Davidson (Octal450), Tikibar</author>
+		<author>J Maverick 16, Josh Davidson (Octal450), John Williams (Tikibar), Juuso Tapaninen</author>
 		<rating>
 		      	<FDM type="int">4</FDM>
       			<systems type="int">4</systems>
@@ -17,6 +17,21 @@
 		</rating>
 		<flight-model>yasim</flight-model>
 		<aero>C-32J</aero>
+
+		<tags>
+			<tag>transport</tag>
+			<tag>boeing</tag>
+			<tag>jet</tag>
+			<tag>retractable-gear</tag>
+			<tag>glass-cockpit</tag>
+			<tag>ifr</tag>
+			<tag>2010s</tag>
+			<tag>2000s</tag>
+			<tag>1990s</tag>
+			<tag>1980s</tag>
+			<tag>etops</tag>
+			<tag>twin-engine</tag>
+		</tags>
 
 		<startup>
 			<splash-texture>Aircraft/C-32J/splash.png</splash-texture>

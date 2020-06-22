@@ -702,7 +702,7 @@
         <rain>
             <name>RainOutside</name>
             <mode>looped</mode>
-            <path>Aircraft/C-32J/Sounds/rain.wav</path>
+            <path>Aircraft/C-32J/Sounds/Effects/rain.wav</path>
             <condition>
                 <not>
                     <property>sim/current-view/internal</property>
@@ -721,7 +721,7 @@
         <rain>
             <name>RainInside</name>
             <mode>looped</mode>
-            <path>Aircraft/C-32J/Sounds/rain.wav</path>
+            <path>Aircraft/C-32J/Sounds/Effects/rain.wav</path>
             <condition>
                 <property>sim/current-view/internal</property>
                 <greater-than>
@@ -738,7 +738,7 @@
         <rain-windshield>
             <name>RainWindshieldInside</name>
             <mode>looped</mode>
-            <path>Aircraft/C-32J/Sounds/rain-windshield.wav</path>
+            <path>Aircraft/C-32J/Sounds/Effects/rain-windshield.wav</path>
             <condition>
                 <property>sim/current-view/internal</property>
                 <greater-than>
@@ -757,7 +757,7 @@
         <ambience>
             <name>AmbienceOutside</name>
             <mode>looped</mode>
-            <path>Aircraft/C-32J/Sounds/ambience_outside.wav</path>
+            <path>Aircraft/C-32J/Sounds/Effects/ambience_outside.wav</path>
             <condition>
                 <not>
                     <property>sim/current-view/internal</property>
@@ -778,7 +778,7 @@
         <pushback>
             <name>Pushback_outside</name>
             <mode>looped</mode>
-            <path>Aircraft/C-32J/Sounds/pushback.wav</path>
+            <path>Aircraft/C-32J/Sounds/Effects/pushback.wav</path>
             <condition>
                 <and>
                     <or>
@@ -805,7 +805,7 @@
         <pushback>
             <name>Pushback_inside</name>
             <mode>looped</mode>
-            <path>Aircraft/C-32J/Sounds/pushback.wav</path>
+            <path>Aircraft/C-32J/Sounds/Effects/pushback.wav</path>
             <condition>
                 <and>
                     <or>
@@ -828,7 +828,7 @@
         <roll>
             <name>GroundRoll</name>
             <mode>looped</mode>
-            <path>Aircraft/C-32J/Sounds/roll.wav</path>
+            <path>Aircraft/C-32J/Sounds/Effects/roll.wav</path>
             <condition>
                 <property>sim/current-view/internal</property>
                 <or>
@@ -841,6 +841,96 @@
                 <factor>0.016</factor>
             </volume>
         </roll>
+
+        <thunder1>
+            <name>thunder1</name>
+            <mode>once</mode>
+            <path>Aircraft/C-32J/Sounds/Effects/thunder1.wav</path>
+            <type>avionics</type>
+            <property>b757/sound/thunder1</property>
+            <pitch>
+                <property>b757/sound/dist-thunder1</property>
+                <factor>2</factor>
+                <offset>0.50</offset>
+                <min>1.00</min>
+                <max>2.00</max>
+            </pitch>
+            <volume>
+                <property>b757/sound/dist-thunder1</property>
+            </volume>
+        </thunder1>
+
+        <thunder2>
+            <name>thunder2</name>
+            <mode>once</mode>
+            <path>Aircraft/C-32J/Sounds/Effects/thunder2.wav</path>
+            <type>avionics</type>
+            <property>b757/sound/thunder2</property>
+            <pitch>
+                <property>b757/sound/dist-thunder2</property>
+                <factor>2</factor>
+                <offset>0.50</offset>
+                <min>1.00</min>
+                <max>2.00</max>
+            </pitch>
+            <volume>
+                <property>b757/sound/dist-thunder2</property>
+            </volume>
+        </thunder2>
+
+        <thunder3>
+            <name>thunder3</name>
+            <mode>once</mode>
+            <path>Aircraft/C-32J/Sounds/Effects/thunder3.wav</path>
+            <type>avionics</type>
+            <property>b757/sound/thunder3</property>
+            <pitch>
+                <property>b757/sound/dist-thunder3</property>
+                <factor>1</factor>
+                <offset>0.50</offset>
+                <min>1.00</min>
+                <max>2.00</max>
+            </pitch>
+            <volume>
+                <property>b757/sound/dist-thunder3</property>
+            </volume>
+        </thunder3>
+
+        <thunder4>
+            <name>thunder4</name>
+            <mode>once</mode>
+            <path>Aircraft/C-32J/Sounds/Effects/thunder4.wav</path>
+            <type>avionics</type>
+            <property>b757/sound/thunder4</property>
+            <pitch>
+                <property>b757/sound/dist-thunder4</property>
+                <factor>1</factor>
+                <offset>0.50</offset>
+                <min>1.00</min>
+                <max>2.00</max>
+            </pitch>
+            <volume>
+                <property>b757/sound/dist-thunder4</property>
+            </volume>
+        </thunder4>
+
+        <thunder5>
+            <name>thunder5</name>
+            <mode>once</mode>
+            <path>Aircraft/C-32J/Sounds/Effects/thunder5.wav</path>
+            <type>avionics</type>
+            <property>b757/sound/thunder5</property>
+            <pitch>
+                <property>b757/sound/dist-thunder5</property>
+                <factor>1</factor>
+                <offset>0.50</offset>
+                <min>1.00</min>
+                <max>2.00</max>
+            </pitch>
+            <volume>
+                <property>b757/sound/dist-thunder5</property>
+            </volume>
+        </thunder5>
 </fx>
 
 </PropertyList>
