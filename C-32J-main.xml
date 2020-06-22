@@ -350,13 +350,12 @@
 		</airport>
 		
 		<systems>
-			<autopilot n="1">
+			<autopilot n="0">
 				<name>IT-AUTOFLIGHT</name>
 				<path>Aircraft/C-32J/Systems/it-autoflight.xml</path>
 			</autopilot>
-			<!-- Uses a custom EPR based autothrottle -->
-			<autopilot n="2">
-				<path>Aircraft/C-32J/Systems/custom-autothrust.xml</path>
+			<autopilot n="1">
+				<path>Aircraft/C-32J/Systems/it-autothrust.xml</path>
 			</autopilot>
 			<autopilot n="4">
 				<name>Autobrake</name>
@@ -410,7 +409,8 @@
 			</autoland>
 			<rollout>
 				<roll-kp>-0.1</roll-kp>
-				<pitch-defl>0.1</pitch-defl>
+				<pitch-nose>0.15</pitch-nose>
+				<pitch-rate>-1.5</pitch-rate>
 				<yaw-kp>-0.02</yaw-kp>
 			</rollout>
 		</config>
@@ -421,7 +421,7 @@
 			<disable-final>0</disable-final> <!-- Disable the Final Controllers, for custom FCS integration -->
 			<land-enable>1</land-enable> <!-- Enable/Disable Autoland -->
 			<land-flap>0.667</land-flap> <!-- Minimum Flap used for Landing -->
-			<retard-ft>20</retard-ft> <!-- Enable Thrust Retard -->
+			<retard-ft>50</retard-ft> <!-- Enable Thrust Retard -->
 			<retard-enable>1</retard-enable> <!-- AGL to Thrust Retard -->
 			<togaspd>160</togaspd> <!-- V2 + 10kts -->
 			<lat-agl-ft>50</lat-agl-ft> <!-- AGL when LNAV becomes active if armed -->

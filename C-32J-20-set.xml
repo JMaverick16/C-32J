@@ -115,11 +115,5 @@
 		    <maximum-landing-mass-lbs>210000</maximum-landing-mass-lbs>
 		</mass-and-balance>
 	</limits>
-	
-	<nasal>
-		<thrust>
-			<file>Aircraft/C-32J/Nasal/thrustPW.nas</file>
-		</thrust>
-	</nasal>
 
 </PropertyList>

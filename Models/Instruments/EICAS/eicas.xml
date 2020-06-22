@@ -294,40 +294,6 @@ it0uchpods
 	</text>
 	
 	<text>
-		<name>epr1lim</name>
-		<offsets>
-			<x-m>-0.0045</x-m>
-			<y-m> 0.0270</y-m>
-			<z-m> 0.0885</z-m>
-		</offsets>
-		<alignment>right-center</alignment>
-		<axis-alignment>yz-plane</axis-alignment>
-		<type type="string">number-value</type>
-		<format type="string">%1.2f</format>
-		<property>controls/engines/eprlim</property>
-		<font>helvetica_bold.txf</font>
-		<character-size>0.010</character-size>
-		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
-	</text>
-	
-	<text>
-		<name>epr2lim</name>
-		<offsets>
-			<x-m>-0.0045</x-m>
-			<y-m> 0.0934</y-m>
-			<z-m> 0.0885</z-m>
-		</offsets>
-		<alignment>right-center</alignment>
-		<axis-alignment>yz-plane</axis-alignment>
-		<type type="string">number-value</type>
-		<format type="string">%1.2f</format>
-		<property>controls/engines/eprlim</property>
-		<font>helvetica_bold.txf</font>
-		<character-size>0.010</character-size>
-		<character-aspect-ratio type="double">1.2</character-aspect-ratio>
-	</text>
-	
-	<text>
 		<name>n11</name>
 		<offsets>
 			<x-m>-0.0045</x-m>
