@@ -354,11 +354,12 @@
 		</airport>
 		
 		<systems>
-			<autopilot n="0">
+			<autopilot n="1">
 				<name>IT-AUTOFLIGHT</name>
 				<path>Aircraft/C-32J/Systems/it-autoflight.xml</path>
 			</autopilot>
-			<autopilot n="1">
+			<autopilot n="2">
+				<name>IT-AUTOTHRUST</name>
 				<path>Aircraft/C-32J/Systems/it-autothrust.xml</path>
 			</autopilot>
 			<autopilot n="4">
