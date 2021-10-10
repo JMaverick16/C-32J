@@ -528,7 +528,7 @@
 		<path>/Aircraft/C-32J/Sounds/apoff.wav</path>
         <mode>once</mode>
         <condition>
-			<property>/it-autoflight/sound/apoffsound</property>
+			<property>/it-autoflight/sound/apoff</property>
         </condition>
         <volume>
             <property>sim/sound/effects/volume</property>
