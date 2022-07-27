@@ -6,6 +6,15 @@
         	<fuel-fraction>0.28</fuel-fraction>
 		<aircraft-data>
 			<path>/sim/model/cabin-visible</path>
+			<path>/instrumentation/transponder/inputs/digit[0]</path>
+            <path>/instrumentation/transponder/inputs/digit[1]</path>
+            <path>/instrumentation/transponder/inputs/digit[2]</path>
+            <path>/instrumentation/transponder/inputs/digit[3]</path>
+            <path>/instrumentation/tacan/frequencies/selected-channel[1]</path>
+            <path>/instrumentation/tacan/frequencies/selected-channel[2]</path>
+            <path>/instrumentation/tacan/frequencies/selected-channel[3]</path>
+            <path>/instrumentation/tacan/frequencies/selected-channel[4]</path>
+            <path>/environment/season</path>
 		</aircraft-data>
 		<tags>
 			<tag>transport</tag>
@@ -20,6 +29,7 @@
 			<tag>1980s</tag>
 			<tag>etops</tag>
 			<tag>twin-engine</tag>
+			<tag>hud</tag>
 		</tags>
         	<instrument-options>
         	    <canvas-popup-enable type="bool">true</canvas-popup-enable>
