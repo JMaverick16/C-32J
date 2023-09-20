@@ -316,7 +316,7 @@ var ITAF = {
 		Settings.autolandWithoutApTemp = Settings.autolandWithoutAp.getBoolValue();
 		
 		# Kill Autoland if the system should not autoland without AP, and AP is off
-		if (Settings.autolandWithoutApTemp) { # Only evaluate the rest if this setting is on
+		if (!Settings.autolandWithoutApTemp) { # Only evaluate the rest if this setting is on
 			if (!Output.ap1Temp and !Output.ap2Temp) {
 				if (Output.latTemp == 4) {
 					me.activateLoc();
@@ -448,6 +448,10 @@ var ITAF = {
 		me.bankLimit();
 	},
 	slowLoop: func() {
+		FPLN.activeTemp = FPLN.active.getValue();
+		FPLN.currentWpTemp = FPLN.currentWp.getValue();
+		FPLN.numTemp = FPLN.num.getValue();
+		
 		# If in LNAV mode and route is not longer active, switch to HDG HLD
 		if (Output.lat.getValue() == 1) { # Only evaulate the rest of the condition if we are in LNAV mode
 			if (FPLN.num.getValue() == 0 or !FPLN.active.getBoolValue()) {
@@ -455,47 +459,7 @@ var ITAF = {
 			}
 		}
 		
-		# Reset system once flight complete
-		if (!Output.ap1.getBoolValue() and !Output.ap2.getBoolValue() and Gear.wow0.getBoolValue() and Velocities.groundspeedKt.getValue() < 60 and Output.vert.getValue() != 7) { # Not in T/O or G/A
-			me.init(1);
-		}
-		
-		# Calculate Roll and Pitch Rate Kp
-		if (!Settings.disableFinal.getBoolValue()) {
-			Gain.rollKpLowTemp = Gain.rollKpLow.getValue();
-			Gain.rollKpHighTemp = Gain.rollKpHigh.getValue();
-			Gain.pitchKpLowTemp = Gain.pitchKpLow.getValue();
-			Gain.pitchKpHighTemp = Gain.pitchKpHigh.getValue();
-			
-			Gain.rollKpCalc = Gain.rollKpLowTemp + (Velocities.airspeedKt.getValue() - 140) * ((Gain.rollKpHighTemp - Gain.rollKpLowTemp) / (360 - 140));
-			Gain.pitchKpCalc = Gain.pitchKpLowTemp + (Velocities.airspeedKt.getValue() - 140) * ((Gain.pitchKpHighTemp - Gain.pitchKpLowTemp) / (360 - 140));
-			
-			if (Gain.rollKpLowTemp > Gain.rollKpHighTemp) {
-				Gain.rollKpCalc = math.clamp(Gain.rollKpCalc, Gain.rollKpHighTemp, Gain.rollKpLowTemp);
-			} else if (Gain.rollKpLowTemp < Gain.rollKpHighTemp) {
-				Gain.rollKpCalc = math.clamp(Gain.rollKpCalc, Gain.rollKpLowTemp, Gain.rollKpHighTemp);
-			}
-			if (Gain.pitchKpLowTemp > Gain.pitchKpHighTemp) {
-				Gain.pitchKpCalc = math.clamp(Gain.pitchKpCalc, Gain.pitchKpHighTemp, Gain.pitchKpLowTemp);
-			} else if (Gain.pitchKpLowTemp < Gain.pitchKpHighTemp) {
-				Gain.pitchKpCalc = math.clamp(Gain.pitchKpCalc, Gain.pitchKpLowTemp, Gain.pitchKpHighTemp);
-			}
-			
-			Gain.rollKp.setValue(Gain.rollKpCalc);
-			Gain.pitchKp.setValue(Gain.pitchKpCalc);
-		}
-		
-		# Calculate Roll Command Kp
-		Gain.rollCmdKpCalc = Gain.hdgGain.getValue() + (Velocities.airspeedKt.getValue() - 140) * ((Gain.hdgGain.getValue() + 1.0 - Gain.hdgGain.getValue()) / (360 - 140));
-		Gain.rollCmdKpCalc = math.clamp(Gain.rollCmdKpCalc, Gain.hdgGain.getValue(), Gain.hdgGain.getValue() + 1.0);
-		
-		Gain.rollCmdKp.setValue(Gain.rollCmdKpCalc);
-		
 		# Waypoint Advance Logic
-		FPLN.activeTemp = FPLN.active.getValue();
-		FPLN.currentWpTemp = FPLN.currentWp.getValue();
-		FPLN.numTemp = FPLN.num.getValue();
-		
 		if (FPLN.numTemp > 0 and FPLN.activeTemp == 1) {
 			if ((FPLN.currentWpTemp + 1) < FPLN.numTemp) {
 				Velocities.groundspeedMps = Velocities.groundspeedKt.getValue() * 0.5144444444444;
@@ -534,6 +498,42 @@ var ITAF = {
 				}
 			}
 		}
+		
+		# Reset system once flight complete
+		if (!Output.ap1.getBoolValue() and !Output.ap2.getBoolValue() and Gear.wow0.getBoolValue() and Velocities.groundspeedKt.getValue() < 60 and Output.vert.getValue() != 7) { # Not in T/O or G/A
+			me.init(1);
+		}
+		
+		# Calculate Roll and Pitch Rate Kp
+		if (!Settings.disableFinal.getBoolValue()) {
+			Gain.rollKpLowTemp = Gain.rollKpLow.getValue();
+			Gain.rollKpHighTemp = Gain.rollKpHigh.getValue();
+			Gain.pitchKpLowTemp = Gain.pitchKpLow.getValue();
+			Gain.pitchKpHighTemp = Gain.pitchKpHigh.getValue();
+			
+			Gain.rollKpCalc = Gain.rollKpLowTemp + (Velocities.airspeedKt.getValue() - 140) * ((Gain.rollKpHighTemp - Gain.rollKpLowTemp) / (360 - 140));
+			Gain.pitchKpCalc = Gain.pitchKpLowTemp + (Velocities.airspeedKt.getValue() - 140) * ((Gain.pitchKpHighTemp - Gain.pitchKpLowTemp) / (360 - 140));
+			
+			if (Gain.rollKpLowTemp > Gain.rollKpHighTemp) {
+				Gain.rollKpCalc = math.clamp(Gain.rollKpCalc, Gain.rollKpHighTemp, Gain.rollKpLowTemp);
+			} else if (Gain.rollKpLowTemp < Gain.rollKpHighTemp) {
+				Gain.rollKpCalc = math.clamp(Gain.rollKpCalc, Gain.rollKpLowTemp, Gain.rollKpHighTemp);
+			}
+			if (Gain.pitchKpLowTemp > Gain.pitchKpHighTemp) {
+				Gain.pitchKpCalc = math.clamp(Gain.pitchKpCalc, Gain.pitchKpHighTemp, Gain.pitchKpLowTemp);
+			} else if (Gain.pitchKpLowTemp < Gain.pitchKpHighTemp) {
+				Gain.pitchKpCalc = math.clamp(Gain.pitchKpCalc, Gain.pitchKpLowTemp, Gain.pitchKpHighTemp);
+			}
+			
+			Gain.rollKp.setValue(Gain.rollKpCalc);
+			Gain.pitchKp.setValue(Gain.pitchKpCalc);
+		}
+		
+		# Calculate Roll Command Kp
+		Gain.rollCmdKpCalc = Gain.hdgGain.getValue() + (Velocities.airspeedKt.getValue() - 140) * ((Gain.hdgGain.getValue() + 1.0 - Gain.hdgGain.getValue()) / (360 - 140));
+		Gain.rollCmdKpCalc = math.clamp(Gain.rollCmdKpCalc, Gain.hdgGain.getValue(), Gain.hdgGain.getValue() + 1.0);
+		
+		Gain.rollCmdKp.setValue(Gain.rollCmdKpCalc);
 	},
 	ap1Master: func(s) {
 		if (s == 1) {
