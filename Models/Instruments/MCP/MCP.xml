@@ -1203,7 +1203,7 @@
 		<type>select</type>
 		<object-name>cmd.c.lt</object-name>
 		<condition>
-			<property>unused/unused</property>
+			<property>it-autoflight/output/ap3</property>
 		</condition>
 	</animation>
 	<animation>
@@ -1228,7 +1228,7 @@
 			</binding>
 		</action>
 	</animation>
-	<!--animation>
+	<animation>
 		<name>CMD C pick</name>
 		<type>pick</type>
 		<object-name>cmd.c</object-name>
@@ -1237,10 +1237,10 @@
 			<repeatable type="bool">false</repeatable>
 			<binding>
 				<command>property-toggle</command>
-				<property></property>
+				<property>it-autoflight/input/ap3</property>
 			</binding>
 		</action>
-	</animation-->
+	</animation>
 	<animation>
 		<name>CMD R pick</name>
 		<type>pick</type>
@@ -1350,6 +1350,11 @@
 			<binding>
 				<command>property-assign</command>
 				<property>it-autoflight/input/ap2</property>
+				<value>0</value>
+			</binding>
+			<binding>
+				<command>property-assign</command>
+				<property>it-autoflight/input/ap3</property>
 				<value>0</value>
 			</binding>
 		</action>
