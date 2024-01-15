@@ -150,7 +150,7 @@ it0uchpods
 		<name>n21</name>
 		<offsets>
 			<x-m>-0.0045</x-m>
-			<y-m> 0.0270</y-m>
+			<y-m> 0.0340</y-m>
 			<z-m> 0.0755</z-m>
 		</offsets>
 		<alignment>right-center</alignment>
@@ -167,7 +167,7 @@ it0uchpods
 		<name>n22</name>
 		<offsets>
 			<x-m>-0.0045</x-m>
-			<y-m> 0.0934</y-m>
+			<y-m> 0.1005</y-m>
 			<z-m> 0.0755</z-m>
 		</offsets>
 		<alignment>right-center</alignment>
