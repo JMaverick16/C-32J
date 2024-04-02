@@ -1,6 +1,13 @@
 # BOEING 757-200 SYSTEMS FILE
 #############################
 
+# Handle FGFS Autopilot Disconnect Binding
+controls.autopilotDisconnect = func() {
+	itaf.ITAF.ap1Master(0);
+	itaf.ITAF.ap2Master(0);
+	itaf.ITAF.ap3Master(0);
+}
+
 ## LIVERY SELECT
 ################
 if (getprop("sim/model/variant") == 2) {
