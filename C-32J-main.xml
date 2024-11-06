@@ -403,35 +403,30 @@
 	<it-autoflight>
 		<config>
 			<roll>
-				<kp-low>0.13</kp-low>
-				<kp-high>0.07</kp-high>
-				<ti>1.0</ti>
-				<td>0.0001</td>
+				<kp-low>0.13</kp-low> <!-- Roll rate gain at low speed -->
+				<kp-high>0.07</kp-high> <!-- Roll rate gain at high speed -->
 			</roll>
 			<pitch>
-				<kp-low>-0.15</kp-low>
-				<kp-high>-0.07</kp-high>
-				<ti>0.5</ti>
-				<td>0.001</td>
+				<kp-low>-0.15</kp-low> <!-- Pitch rate gain at low speed -->
+				<kp-high>-0.07</kp-high> <!-- Pitch rate gain at high speed -->
 			</pitch>
+			<yaw>
+				<gain-factor>1.0</gain-factor> <!-- Yaw rate gain scaling factor for align/rollout -->
+			</yaw>
 			<cmd>
-				<alt>-5</alt>
-				<flch-accel>2</flch-accel>
-				<roll>1.6</roll>
+				<alt>-5</alt> <!-- Altitude deviation gain -->
+				<flch-accel>2</flch-accel> <!-- Level change accel/decel limit -->
+				<roll>1.6</roll> <!-- Roll heading deviation base gain -->
 			</cmd>
-			<autoland> 
-				<pitch-kp>0.01</pitch-kp>
-				<yaw-kp>-0.05</yaw-kp>
-			</autoland>
 			<rollout>
-				<roll-kp>-0.1</roll-kp>
-				<pitch-nose>0.15</pitch-nose>
-				<pitch-rate>-1.5</pitch-rate>
-				<yaw-kp>-0.02</yaw-kp>
+				<aileron>-0.1</aileron> <!-- Aileron to counter wind-induced banking on ground -->
+				<pitch-nose>0.1</pitch-nose> <!-- Forward pressure to keep nose gear on ground -->
+				<pitch-rate>-1.5</pitch-rate> <!-- Rate to lower nose to ground after touchdown -->
 			</rollout>
 		</config>
 		<settings>
 			<accel-ft type="double">1000</accel-ft> <!-- Acceleration AGL when T/O CLB changes to SPD CLB, 0 to disable -->
+			<align-ft type="int">200</align-ft> <!-- AGL when ALIGN engages during autoland -->
 			<auto-bank-limit-calc type="bool">1</auto-bank-limit-calc> <!-- Disable to add a custom auto bank limit schedule -->
 			<autoland-without-ap type="bool">0</autoland-without-ap> <!-- Engage LAND and FLARE Modes even if the AP is off -->
 			<autothrottle-max type="double">0.95</autothrottle-max> <!-- Thrust Max Limit Normalized -->
